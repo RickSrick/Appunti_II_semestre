@@ -1,4 +1,4 @@
-# Appunti_II_semestre
+# Appunti II semestre
 appunti del secondo anno di ingegneria informatica UNIPD
 
 

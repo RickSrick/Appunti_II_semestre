@@ -1,0 +1,92 @@
+{
+  "main": {
+    "id": "76edd096b9865ef8",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f5c779f2319743c",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ef52b42243b16709",
+    "type": "split",
+    "children": [
+      {
+        "id": "e55fe310f993f30c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef128bccd89de640",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "1f18dc5c1042ee1d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "71dc5484f06fb4b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5e53f8239dc925e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a373abfb156e98ac",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "0f5c779f2319743c",
+  "lastOpenFiles": [
+    "Tensione elettrica.md",
+    "Campo Elettrico.md",
+    "Amperometro.md"
+  ]
+}

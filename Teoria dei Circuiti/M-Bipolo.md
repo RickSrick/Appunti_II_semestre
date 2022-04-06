@@ -12,8 +12,12 @@ Varrà quindi la relazione:
 $$\sum_{k=0}^{n-1}{i_k(t)}~=~i_n(t)$$
 Si può quindi considerare $i_n$ come il ritorno comune di tutte le correnti degli altri terminali: $n-1$ porte, ciascuna avente un morsetto costituito da uno dei primi $n-1$ morsetti e come altro morsetto, il morsetto comune.
 
-![M-BIPOLO|500](M-Bipolo_1.png)
+![M-BIPOLO|500](Images/M-Bipolo_1.png)
 
 Ad esempio, il transistor npn è un tripolo, che conviene considerare come un doppio bipolo:
 
-![TRANSISTOR NPN|500](M-Bipolo_2.png)
+![TRANSISTOR NPN|500](Images/M-Bipolo_2.png)
+
+### POTENZA ELETTRICA SCAMBIATA
+La potenza scambiata è pari alla somma delle potenza scambiate alle m porte:
+$$p(t)~=~\sum_{k=1}^m{p_k(t)}~=~\sum_{}$$

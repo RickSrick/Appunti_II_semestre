@@ -4,7 +4,7 @@ N-Polo con $n = 2$.
 
 ![](N-Poli)
 
-![BIPOLO|500](Bipolo_1.png)
+![BIPOLO|500](Images/Bipolo_1.png)
 
 In ogni istante, la corrente entrante ad un terminale è uguale alla corrente uscente all'altro terminale, pertanto il bipolo è caratterizzato da __una__ corrente e __una__ tensione.
 
@@ -12,7 +12,7 @@ In ogni istante, la corrente entrante ad un terminale è uguale alla corrente us
 - ==Convenzione dell'utilizzatore== (1): corrente entrante nel bipolo al terminale con riferimento $+$ della tensione
 - ==Convenzione del generatore== (2): corrente uscente dal bipolo al terminale con riferimento $+$ della tensione
 
-![CONVENZIONI BIPOLO|500](Bipolo_2.png)
+![CONVENZIONI BIPOLO|500](Images/Bipolo_2.png)
 
 ### POTENZA ELETTRICA SCAMBIATA
 Si consideri un bipolo con tensione $v(t)$ e corrente $i(t)$.

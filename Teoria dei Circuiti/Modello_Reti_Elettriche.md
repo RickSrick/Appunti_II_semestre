@@ -1,6 +1,6 @@
 # MODELLO RETI ELETTRICHE
 
-![MODELLO RETI ELETTRICHE|600](Modello_Reti_Elettriche_1.png)
+![MODELLO RETI ELETTRICHE|600](Images/Modello_Reti_Elettriche_1.png)
 
 Le grandezze che vengono usate per studiare il comportamento del componente sono la ==corrente== e la ==tensione==.
 A ciascun terminale è associata una corrente, e a ciascuna coppia di morsetti è associata una tensione.
@@ -17,7 +17,7 @@ Si ha quindi che la totale corrente (con riferimento) uscente dalla superficie l
 
 Ogni componente è rappresentato da una superficie chiusa, da cui emergono tratti filiformi, ciascuno dei quali ha per estremo un punto.
 
-![SCHEMATIZZAZIONE DEI COMPONENTI|600](Modello_Reti_Elettriche_2.png)
+![SCHEMATIZZAZIONE DEI COMPONENTI|600](Images/Modello_Reti_Elettriche_2.png)
 
 Se il componente ha 2 terminali, è detto ==bipolo==, se ne ha 3 ==tripolo==, con n terminali è detto [[N-Poli|n-polo]].
 
@@ -26,7 +26,7 @@ I componenti elettrici sono collegati tra di loro, la ==rete elettrica è data d
 
 I ==morsetti in comune== in un nodo hanno tutti lo ==stesso potenziale==.
 
-![SCHEMA RETE ELETTRICA|550](Modello_Reti_Elettriche_3.png)
+![SCHEMA RETE ELETTRICA|550](Images/Modello_Reti_Elettriche_3.png)
 
 Ci sono due aspetti caratterizzanti la rete elettrica:
 - tipologia (i tipi di componenti che costituiscono al rete)

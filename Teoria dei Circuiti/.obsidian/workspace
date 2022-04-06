@@ -7,8 +7,24 @@
         "id": "0f5c779f2319743c",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "M-Bipolo.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "d3905b17f83862ed",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Tensione_elettrica.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -45,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -66,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tensione_elettrica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,10 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0f5c779f2319743c",
+  "active": "d3905b17f83862ed",
   "lastOpenFiles": [
-    "Tensione elettrica.md",
-    "Campo Elettrico.md",
-    "Amperometro.md"
+    "Tensione_elettrica.md",
+    "Porta_Elettrica.md",
+    "N-Poli.md",
+    "Modello_Reti_Elettriche.md",
+    "M-Bipolo.md",
+    "Legge_di_Coulomb.md",
+    "Correnti_Elettriche.md",
+    "Cariche_Elettriche.md",
+    "Campo_Elettrico.md",
+    "Bipolo.md"
   ]
 }

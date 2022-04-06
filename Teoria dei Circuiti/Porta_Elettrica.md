@@ -3,3 +3,5 @@ Dato un [[N-Poli|n-polo]], può accadere che al corrente entrante a un terminale
 Ad una porta si attribuisce un valore unico di corrente e di tensione, detti ==corrente di porta== e ==tensione di porta==.
 
 Ad esempio, i morsetti di un [[Bipolo|bipolo]] sono una porta.
+
+Valgono le stesse regole e convenzioni dei bipoli, per il calcolo della potenza scambiata.

@@ -4,5 +4,5 @@ Tale forza è:
 - diretta secondo la congiungente delle cariche
 - attrattiva fra due cariche di segno opposto, repulsiva altrimenti
 $$\Delta\vec{F}_c(P)~=~\frac{1}{4\pi\epsilon_0}~\frac{q\Delta q}{r^2_{QP}}~\vec{u}_{QP}$$
-![LEGGE DI COULOMB|400](Legge_Di_Coulomb_1.png)
+![LEGGE DI COULOMB|400](Images/Legge_Di_Coulomb_1.png)
 

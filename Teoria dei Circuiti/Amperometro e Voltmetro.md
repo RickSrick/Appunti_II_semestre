@@ -3,7 +3,7 @@ Strumento che dato un conduttore filiforme, ne misura la corrente che lo attrave
 
 Ha due morsetti, $+$ e $-$ .
 
-![AMPEROMETRO|400](Amperometro.png)
+![AMPEROMETRO|400](Images/Amperometro.png)
 
 ### AMPEROMETRO IDEALE
 - non modifica il circuito
@@ -14,7 +14,7 @@ Strumento misura la tensione presente tra due capi di un conduttore filiforme.
 
 Ha due morsetti, $+$ e $-$ .
 
-![VOLTMETRO|400](Voltmetro.png)
+![VOLTMETRO|400](Images/Voltmetro.png)
 
 ### VOLTMETRO IDEALE
 - non modifica il circuito

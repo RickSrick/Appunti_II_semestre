@@ -11,7 +11,7 @@ Dovuto al modo del mezzo in cui sono presenti le cariche
 
 Definiamo come intensità di corrente elettrica la grandezza scalare
 $$i(t)~=~\frac{dq}{dt}$$
-![CORRENTE ELETTRICA|300](Correnti_Elettriche_1.png)
+![CORRENTE ELETTRICA|300](Images/Correnti_Elettriche_1.png)
 
 Il verso di riferimento della corrente sarà concorde con il versore $\vec{n}$.
 
@@ -27,7 +27,7 @@ ovvero la corrente à il flusso del vettore $\vec{J}$ attraverso la superficie o
 
 ## CORRENTE NEI CONDUTTORI FILIFORMI
 $$i~=~\int_S{\vec{J}~\cdot~\vec{t}~dS}~=~\vec{J}~\cdot~\vec{t}~S~=~\pm JS$$
-![CORRENTE ELETTRICA|500](Correnti_Elettriche_2.png)
+![CORRENTE ELETTRICA|500](Images/Correnti_Elettriche_2.png)
 
 ## CAMPO DI CORRENTE SOLENOIDALE
 Consideriamo una regione di spazio S.

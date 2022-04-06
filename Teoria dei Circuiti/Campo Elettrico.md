@@ -1,5 +1,5 @@
 # CAMPO ELETTRICO
-Se osservo delle cariche sorgenti in moto, ottengo un campo elettrico:
+Se osservo delle cariche sorgenti in moto dovuto a una Forza di Coulomb [[Forza di Coulomb|{...}]], ottengo un campo elettrico:
 $$\vec{E}(p,t)~=~\frac{d\vec{F}(p,t)}{dq}$$
 ## CAMPO ELETTROSTATICO
 Considero un circuito orientato chiuso qualsiasi.

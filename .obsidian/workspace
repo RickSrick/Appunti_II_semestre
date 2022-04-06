@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "6f1543952310096f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d9b308ac47a38b20",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Teoria dei Circuiti/Forza di Coulomb.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f545127b9d6db719",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b112c17b56f505c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "381997dcd4fe3c51",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "38d4405c013caa14",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ee55fbf0bd049dae",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b6a62cac38c5f08",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5166988a5ae8990a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Teoria dei Circuiti/Forza di Coulomb.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d9b308ac47a38b20",
+  "lastOpenFiles": [
+    "Teoria dei Circuiti/Forza di Coulomb.md",
+    "Teoria dei Circuiti/Campo Elettrico.md",
+    "Teoria dei Circuiti/Correnti Elettriche.md",
+    "Teoria dei Circuiti/Cariche Elettriche.md",
+    "Teoria dei Circuiti/Tensione elettrica.md",
+    "Images/Correnti_Elettriche_2.png",
+    "Images/Correnti_Elettriche_1.png",
+    "Teoria dei Circuiti/Amperometro.md"
+  ]
+}

@@ -3,7 +3,7 @@ Si consideri un circuito elettrico realizzato mediante un generatore elettrico (
 
 Utilizzando un [[Amperometro,_Voltmetro_e_Wattmetro#AMPEROMETRO|amperometro]] e un [[Amperometro,_Voltmetro_e_Wattmetro#VOLTMETRO|voltmetro]] si misurano la corrente $I$ e la ddp $V$ tra $S_A$ e $S_B$, superfici parallele poste a distanza $l$.
 
-![LEGGE DI OHM|500](Legge_Di_Ohm_1.png)
+![LEGGE DI OHM|500](Images/Legge_Di_Ohm_1.png)
 
 Spostando il contatto del voltmetro sul bordo si $S_A$, la misurazione non varia (lo stesso vale per $S_B$).
 $S_A$ e $S_B$ sono equipotenziali.

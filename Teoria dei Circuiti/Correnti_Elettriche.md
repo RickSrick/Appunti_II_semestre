@@ -2,7 +2,7 @@
 ## CORRENTI DI CONDUZIONE
 Avvengono nei conduttori metallici, in cui, accanto a elettroni strettamente legati ai rispettivi nuclei, ci sono anche elettroni liberi.
 
-Gli elettroni liberisi muovono in modo disordinato nel metallo, ma sotto l'azione di un campo elettrico [[Campo Elettrico|{...}]], prevale un modo ordinato nella direzione del campo, creando quindi una corrente in quella direzione.
+Gli elettroni liberisi muovono in modo disordinato nel metallo, ma sotto l'azione di un [[Campo_Elettrico|campo elettrico]], prevale un modo ordinato nella direzione del campo, creando quindi una corrente in quella direzione.
 
 ## CORRENTI DI CONVEZIONE
 Dovuto al modo del mezzo in cui sono presenti le cariche

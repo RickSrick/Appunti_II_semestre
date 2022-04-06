@@ -7,7 +7,7 @@ Si definisce tensione elettrica:
 $$V(t) = \int_l{\vec{E}(p,t)~\cdot~\vec{t}~dl}\qquad[V] = V$$
 Il verso di percorrenza della corrende è detto ==riferimento della tensione==.
 
-In quanto la tensione include in $\vec{E}(p,t)$ anche il campo indotto, la tensione non è conservativa [[Campo Elettrico|{...}]], quindi ==dipende dal percorso==.
+In quanto la tensione include in $\vec{E}(p,t)$ anche il campo indotto, la tensione non è [[Campo_Elettrico|conservativa]], quindi ==dipende dal percorso==.
 $$V_{AB}(t)~=~\int_{A,l}^B\vec{E}(p,t)~\cdot~\vec{t}~dl$$
 Esistono varie notazioni che indicano il riferimento della tensione:
 - Al posto dei pedici, si mette un segno $+$ in corrispondenza del punto di inizio e un $-$ in corrispondenza al punto di fine
@@ -24,7 +24,7 @@ $V_{AB}$ considerata sempre sullo stesso percorso.
 
 ### REGIME STAZIONARIO
 
-Nel caso ci si trovi a regime stazionario, otteniamo che il campo elettrico indotto è nullo, pertanto il campo elettrico è uguale al campo elettrostatico e quindi, a regime stazionario, la tensione è una differenza di potenziale [[Campo Elettrico#CAMPO ELETTROSTATICO|{...}]]:
+Nel caso ci si trovi a regime stazionario, otteniamo che il campo elettrico indotto è nullo, pertanto il campo elettrico è uguale al campo elettrostatico e quindi, a regime stazionario, la tensione è una [[Campo_Elettrico#CAMPO ELETTROSTATICO|differenza di potenziale (ddp)]]:
 $$V_{AB}~=~V(A)-V(B)$$
 
 

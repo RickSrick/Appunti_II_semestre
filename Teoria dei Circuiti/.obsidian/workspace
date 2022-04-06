@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tensione_elettrica.md",
+                "file": "M-Bipolo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,13 +99,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d3905b17f83862ed",
+  "active": "0f5c779f2319743c",
   "lastOpenFiles": [
+    "M-Bipolo.md",
     "Tensione_elettrica.md",
     "Porta_Elettrica.md",
     "N-Poli.md",
     "Modello_Reti_Elettriche.md",
-    "M-Bipolo.md",
     "Legge_di_Coulomb.md",
     "Correnti_Elettriche.md",
     "Cariche_Elettriche.md",

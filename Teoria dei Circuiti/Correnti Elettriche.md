@@ -2,7 +2,7 @@
 ## CORRENTI DI CONDUZIONE
 Avvengono nei conduttori metallici, in cui, accanto a elettroni strettamente legati ai rispettivi nuclei, ci sono anche elettroni liberi.
 
-Gli elettroni liberisi muovono in modo disordinato nel metallo, ma sotto l'azione di un campo elettrico, prevale un modo ordinato nella direzione del campo, creando quindi una corrente in quella direzione.
+Gli elettroni liberisi muovono in modo disordinato nel metallo, ma sotto l'azione di un campo elettrico [[Campo Elettrico|{...}]], prevale un modo ordinato nella direzione del campo, creando quindi una corrente in quella direzione.
 
 ## CORRENTI DI CONVEZIONE
 Dovuto al modo del mezzo in cui sono presenti le cariche
@@ -11,7 +11,7 @@ Dovuto al modo del mezzo in cui sono presenti le cariche
 
 Definiamo come intensità di corrente elettrica la grandezza scalare
 $$i(t)~=~\frac{dq}{dt}$$
-![Immagine Correnti Elettriche 1|300](../Images/Correnti_Elettriche_1.png)
+![|300](Correnti_Elettriche_1.png)
 
 Il verso di riferimento della corrente sarà concorde con il versore $\vec{n}$.
 
@@ -27,7 +27,7 @@ ovvero la corrente à il flusso del vettore $\vec{J}$ attraverso la superficie o
 
 ## CORRENTE NEI CONDUTTORI FILIFORMI
 $$i~=~\int_S{\vec{J}~\cdot~\vec{t}~dS}~=~\vec{J}~\cdot~\vec{t}~S~=~\pm JS$$
-![Immagine Correnti Elettriche 2|500](../Images/Correnti_Elettriche_2.png)
+![|500](Correnti_Elettriche_2.png)
 
 ## CAMPO DI CORRENTE SOLENOIDALE
 Consideriamo una regione di spazio S.

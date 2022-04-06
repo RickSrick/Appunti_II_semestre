@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Teoria dei Circuiti/Amperometro e Voltmetro.md",
+            "file": "Teoria dei Circuiti/Tensione elettrica.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoria dei Circuiti/Amperometro e Voltmetro.md",
+                "file": "Teoria dei Circuiti/Tensione elettrica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "d9b308ac47a38b20",
   "lastOpenFiles": [
+    "Teoria dei Circuiti/Tensione elettrica.md",
+    "Teoria dei Circuiti/Legge di Coulomb.md",
+    "Teoria dei Circuiti/Correnti Elettriche.md",
+    "Teoria dei Circuiti/Campo Elettrico.md",
+    "Teoria dei Circuiti/Cariche Elettriche.md",
     "Teoria dei Circuiti/Amperometro e Voltmetro.md",
     "Teoria dei Circuiti/Images/Amperometro.png",
     "Teoria dei Circuiti/Images/Voltmetro.png",
-    "Teoria dei Circuiti/Tensione elettrica.md",
-    "Teoria dei Circuiti/Campo Elettrico.md",
     "Teoria dei Circuiti/Images/Legge_Di_Coulomb_1.png",
-    "Teoria dei Circuiti/Cariche Elettriche.md",
-    "Teoria dei Circuiti/Correnti Elettriche.md",
-    "Teoria dei Circuiti/Legge di Coulomb.md",
     "Teoria dei Circuiti/Images/Tensione_Elettrica_3.png"
   ]
 }

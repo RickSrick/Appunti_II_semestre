@@ -1,7 +1,7 @@
 # CAMPO ELETTRICO
 Se osservo delle cariche sorgenti in moto dovuto a una Forza di Coulomb [[Legge di Coulomb|{...}]], ottengo un campo elettrico:
 $$\vec{E}(p,t)~=~\frac{d\vec{F}(p,t)}{dq}~=~\frac{1}{4\pi\epsilon_0}~\frac{q(Q)}{r^2_{QP}}~\vec{u}_{QP}$$
-![|400](Legge_Di_Coulomb_1.png)
+![LEGGE DI COULOMB|400](Legge_Di_Coulomb_1.png)
 
 ## CAMPO ELETTROSTATICO
 Considero un circuito orientato chiuso qualsiasi.

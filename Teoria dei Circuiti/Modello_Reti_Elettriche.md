@@ -2,7 +2,7 @@
 
 ![MODELLO RETI ELETTRICHE|600](Images/Modello_Reti_Elettriche_1.png)
 
-Le grandezze che vengono usate per studiare il comportamento del componente sono la ==corrente== e la ==tensione==.
+Le grandezze che vengono usate per studiare il comportamento del componente sono la corrente e la tensione.
 A ciascun terminale è associata una corrente, e a ciascuna coppia di morsetti è associata una tensione.
 
 Si considerano superfici in quiete e linee in quiete.

@@ -20,4 +20,13 @@ Ad esempio, il transistor npn è un tripolo, che conviene considerare come un do
 
 ### POTENZA ELETTRICA SCAMBIATA
 La potenza scambiata è pari alla somma delle potenza scambiate alle m porte:
-$$p(t)~=~\sum_{k=1}^m{p_k(t)}~=~\sum_{}$$
+$$p(t)~=~\sum_{k=1}^m{p_k(t)}~=~\sum_{k=1}^m{v_k(t)~i_k(t)}$$
+Si può considerare un m-bipolo come un n-polo anche per calcolare la potenza scambiata:
+$$p(t)~=~\sum_{k=1}^{n-1}{p_k(t)}~=~\sum_{k=1}^{n-1}{v_k(t)~i_k(t)}$$
+Come già detto si tratta il m-bipolo come un n-polo con m=n-1 porte prendendo un terminale comune.
+
+Come per i bipoli calcoliamo il lavoro elettrico scambiato da un m-bipolo:
+$$\Delta L~=~\int_{\Delta L}{p(t)~dt~=~\int_{\Delta t}{V(t)~i(t)~dt}}$$
+Un m-bipolo è passivo se, convenzionate tutte le porte con la convenzione dell'utilizzatore, il totale laboro elettrico entrante, per ogni t, non è negativo.
+
+Un m-bipolo non passivo si dice attivo.

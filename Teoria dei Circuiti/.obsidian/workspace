@@ -7,24 +7,8 @@
         "id": "0f5c779f2319743c",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "M-Bipolo.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "d3905b17f83862ed",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Tensione_elettrica.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -81,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "M-Bipolo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +84,15 @@
   },
   "active": "0f5c779f2319743c",
   "lastOpenFiles": [
-    "M-Bipolo.md",
-    "Tensione_elettrica.md",
-    "Porta_Elettrica.md",
-    "N-Poli.md",
-    "Modello_Reti_Elettriche.md",
+    "Legge_di_Ohm.md",
+    "Generatore_Elettrico.md",
     "Legge_di_Coulomb.md",
+    "Effetto_Joule.md",
     "Correnti_Elettriche.md",
-    "Cariche_Elettriche.md",
-    "Campo_Elettrico.md",
-    "Bipolo.md"
+    "Tensione_elettrica.md",
+    "Modello_Reti_Elettriche.md",
+    "Resistore_Ideale.md",
+    "Images/Resistore_1.png",
+    "Porta_Elettrica.md"
   ]
 }

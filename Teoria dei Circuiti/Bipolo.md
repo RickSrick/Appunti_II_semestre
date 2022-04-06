@@ -18,7 +18,7 @@ In ogni istante, la corrente entrante ad un terminale è uguale alla corrente us
 Si consideri un bipolo con tensione $v(t)$ e corrente $i(t)$.
 Definiamo come ==potenza scambiata dal bipolo==:
 $$p(t)~=~v(t)~i(t)~=~\frac{dL}{dq}~\frac{dq}{dt}~=~\frac{dL}{dt}\qquad[p]~=~VA~=~\frac{J}{s}$$
-La potenza è il laboro svolto per unità di tempo.
+La potenza è il lavoro svolto per unità di tempo.
 
 Quando la potenza viene calcolata con la convenzione dell'utilizzatore, la potenza si dice ==entrante== (assorbita), quando viene calcolata con la convenzione del generatore, la potenza si dice ==uscente== (erogata).
 

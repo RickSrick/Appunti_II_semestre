@@ -7,8 +7,12 @@
         "id": "0f5c779f2319743c",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Legge_di_Ohm.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -45,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -66,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Legge_di_Ohm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,8 +89,15 @@
   },
   "active": "0f5c779f2319743c",
   "lastOpenFiles": [
-    "Tensione elettrica.md",
-    "Campo Elettrico.md",
-    "Amperometro.md"
+    "Legge_di_Ohm.md",
+    "Generatore_Elettrico.md",
+    "Legge_di_Coulomb.md",
+    "Effetto_Joule.md",
+    "Correnti_Elettriche.md",
+    "Tensione_elettrica.md",
+    "Modello_Reti_Elettriche.md",
+    "Resistore_Ideale.md",
+    "Images/Resistore_1.png",
+    "Porta_Elettrica.md"
   ]
 }

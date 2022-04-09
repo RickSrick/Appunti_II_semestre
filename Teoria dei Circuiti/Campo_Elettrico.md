@@ -1,6 +1,8 @@
 # CAMPO ELETTRICO
-Se osservo delle cariche sorgenti in moto, ottengo un campo elettrico:
-$$\vec{E}(p,t)~=~\frac{d\vec{F}(p,t)}{dq}$$
+Se osservo delle cariche sorgenti in moto dovuto a una Forza di Coulomb, ottengo un campo elettrico:
+$$\vec{E}(p,t)~=~\frac{d\vec{F}(p,t)}{dq}~=~\frac{1}{4\pi\epsilon_0}~\frac{q(Q)}{r^2_{QP}}~\vec{u}_{QP}$$
+![](Legge_di_Coulomb)
+
 ## CAMPO ELETTROSTATICO
 Considero un circuito orientato chiuso qualsiasi.
 La circuitazione di un campo elettrostatico su questo circuito è 0:
@@ -8,7 +10,7 @@ $$\oint_l{~\vec{E_c}~\cdot~\vec{t}~dl} = 0$$
 
 Il ==campo elettrostatico== è quindi ==conservativo==, e che il risultato dipende solo dal punto iniziale e finale del circuito:
 $$\int_{A,l}^B{\vec{E_c}(p,t)~\cdot~\vec{t}~dl} = V(A)~-~V(B)$$
-$V(...)$ è detto ==potenziale elettrostatico==.
+$V(...)$ è detto [[Tensione_elettrica#REGIME STAZIONARIO|potenziale elettrostatico]].
 
 ## CAMPO ELETTRICO
 Quando provo a verificare se il campo elettrostatico coincide con quello elettrico, si ottiene che

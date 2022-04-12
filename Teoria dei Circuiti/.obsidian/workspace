@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Legge_di_Ohm.md",
-            "mode": "source",
+            "file": "Generatore_Ideale_Di_Corrente.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Legge_di_Ohm.md",
+                "file": "Generatore_Ideale_Di_Corrente.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "0f5c779f2319743c",
   "lastOpenFiles": [
+    "Generatore_Ideale_Di_Corrente.md",
     "Legge_di_Ohm.md",
-    "Generatore_Elettrico.md",
-    "Legge_di_Coulomb.md",
+    "M-Bipolo.md",
+    "N-Poli.md",
+    "Porta_Elettrica.md",
+    "Resistore_Ideale.md",
+    "Tensione_elettrica.md",
     "Effetto_Joule.md",
     "Correnti_Elettriche.md",
-    "Tensione_elettrica.md",
-    "Modello_Reti_Elettriche.md",
-    "Resistore_Ideale.md",
-    "Images/Resistore_1.png",
-    "Porta_Elettrica.md"
+    "Images/Generatore_Ideale_Di_Corrente_2.png"
   ]
 }

@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Generatore_Ideale_Di_Corrente.md",
-            "mode": "preview",
+            "file": "Parallelo_Di_Bipoli.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Generatore_Ideale_Di_Corrente.md",
+                "file": "Parallelo_Di_Bipoli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "0f5c779f2319743c",
   "lastOpenFiles": [
-    "Generatore_Ideale_Di_Corrente.md",
-    "Legge_di_Ohm.md",
-    "M-Bipolo.md",
-    "N-Poli.md",
-    "Porta_Elettrica.md",
-    "Resistore_Ideale.md",
+    "Parallelo_Di_Bipoli.md",
+    "Serie_Di_Bipoli.md",
     "Tensione_elettrica.md",
-    "Effetto_Joule.md",
-    "Correnti_Elettriche.md",
-    "Images/Generatore_Ideale_Di_Corrente_2.png"
+    "Images/Serie_Parallelo_02.png",
+    "Images/Serie_Parallelo_01.png",
+    "Images/Parallelo_Di_Bipoli_02.png",
+    "Serie_Parallelo.md",
+    "N-Poli.md",
+    "Images/Serie_Parallelo_0.png",
+    "Images/Serie_di_bipoli_02.png"
   ]
 }

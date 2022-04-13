@@ -56,3 +56,6 @@ Per formare il grafo di una rete di n-poli, bisogna posizionare un lato per ogni
 Il grafo ottenuto potrebbe non essere connesso.
 
 ![GRAFO CONNESSO|600](Images/Topologia_06.png)
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Modello_Reti_Elettriche]]

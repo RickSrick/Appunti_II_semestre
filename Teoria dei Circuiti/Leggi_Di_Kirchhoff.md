@@ -1,6 +1,6 @@
 # LEGGI DI KIRCHHOFF
 ## LEGGE DI KIRCHHOFF DELLE CORRENTI (LKC)
-Data una rete di [[N-Poli|n-poli]] in regime variabile quasi stazionario, è nulla in ogni istante la somma algebrica delle correnti dei lati di un qualsiasi insieme di taglio:
+Data una rete di n-poli in regime variabile quasi stazionario, è nulla in ogni istante la somma algebrica delle correnti dei lati di un qualsiasi insieme di taglio:
 $$\sum_{insieme~di~taglio}{\pm i(t)}=0$$
 ## LEGGE DI KIRCHHOFF DELLE TENSIONI (LKT)
 Data una rete di n-poli in regime variabile quasi stazionario, è nulla in ogni istante la somma algebrica delle tensioni dei lati appartenenti ad una qualsiasi maglia:

@@ -30,3 +30,5 @@ $$V_{AB}~=~V(A)-V(B)$$
 
 ### LEGAME TENSIONE - LAVORO
 $$V~=~\int_l{\vec{E}~\cdot~\vec{t}~dl}~=$$$$\qquad=~\int_l~\frac{d\vec{F}}{dt}~\cdot~\vec{t}~dl~=$$$$\qquad\quad=~\frac{d}{dt}~\int_l~\vec{F}~\cdot~\vec{t}~dl~=$$$$=~\frac{d}{dt}(L)\qquad$$
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Campo_Elettrico]]

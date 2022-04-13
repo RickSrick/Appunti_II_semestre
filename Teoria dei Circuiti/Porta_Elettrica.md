@@ -5,3 +5,7 @@ Ad una porta si attribuisce un valore unico di corrente e di tensione, detti ==c
 Ad esempio, i morsetti di un [[Bipolo|bipolo]] sono una porta.
 
 Valgono le stesse regole e convenzioni dei bipoli, per il calcolo della potenza scambiata.
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[N-Poli]]
+[[Bipolo]]

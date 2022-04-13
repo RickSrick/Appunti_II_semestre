@@ -4,3 +4,6 @@
 - La tensione fra una qualsiasi coppia di morsetti (o terminali) è una ddp
 
 ![N-POLO|500](Images/N-Polo.png)
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Modello_Reti_Elettriche]]

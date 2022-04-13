@@ -12,3 +12,6 @@ Un generatore elettrico a carico per il quale è $G_iV<<J$ è approssimabile con
 A regime stazionario, si usano anche i simboli indicati di seguente:
 
 ![GIC|500](Images/Generatore_Ideale_Di_Corrente_2.png)
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Generatore_Elettrico]]

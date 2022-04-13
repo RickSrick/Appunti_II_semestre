@@ -19,7 +19,7 @@ Ogni componente è rappresentato da una superficie chiusa, da cui emergono tratt
 
 ![SCHEMATIZZAZIONE DEI COMPONENTI|600](Images/Modello_Reti_Elettriche_2.png)
 
-Se il componente ha 2 terminali, è detto ==bipolo==, se ne ha 3 ==tripolo==, con n terminali è detto [[N-Poli|n-polo]].
+Se il componente ha 2 terminali, è detto ==bipolo==, se ne ha 3 ==tripolo==, con n terminali è detto n-polo.
 
 ## RETI ELETTRICHE
 I componenti elettrici sono collegati tra di loro, la ==rete elettrica è data dalla loro interconnessione==.
@@ -31,3 +31,7 @@ I ==morsetti in comune== in un nodo hanno tutti lo ==stesso potenziale==.
 Ci sono due aspetti caratterizzanti la rete elettrica:
 - tipologia (i tipi di componenti che costituiscono al rete)
 - topologia (il modo con cui i componenti sono interconnessi)
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Campo_Elettrico]]
+[[Correnti_Elettriche]]

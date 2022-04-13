@@ -10,7 +10,7 @@ $$\oint_l{~\vec{E_c}~\cdot~\vec{t}~dl} = 0$$
 
 Il ==campo elettrostatico== è quindi ==conservativo==, e che il risultato dipende solo dal punto iniziale e finale del circuito:
 $$\int_{A,l}^B{\vec{E_c}(p,t)~\cdot~\vec{t}~dl} = V(A)~-~V(B)$$
-$V(...)$ è detto [[Tensione_elettrica#REGIME STAZIONARIO|potenziale elettrostatico]].
+$V(...)$ è detto potenziale elettrostatico.
 
 ## CAMPO ELETTRICO
 Quando provo a verificare se il campo elettrostatico coincide con quello elettrico, si ottiene che
@@ -27,3 +27,6 @@ $\vec{E_i}(p,t)$ rappresenta il campo elettrico indotto.
 	- densità di carica e campo di corrente variabili nel tempo
 	- $\vec{E}(p,t)~=~\vec{E_c}(p,t)~+~\vec{E_i}(p,t)$
 	- $\vec{E_i}(p,t)$ non è conservativo
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Cariche_Elettriche]]

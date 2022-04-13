@@ -8,3 +8,6 @@ $$V=E$$
 A regime stazionario, valgono anche i simboli indicati di seguito:
 
 ![GIT|500](Images/Generatore_Ideale_Di_Tensione_2.png)
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Generatore_Elettrico]]

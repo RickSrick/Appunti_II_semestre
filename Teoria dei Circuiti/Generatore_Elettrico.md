@@ -1,6 +1,4 @@
 # GENERATORE ELETTRICO
-Elemento facente parte di una [[Modello_Reti_Elettriche|rete elettrica]].
-
 Abbiamo già introdotto alcune forze che generano una corrente elettrica.
 
 Esistono tuttavia altri tipi di fenomeni che generano forze del genere, ad esempio fenomeni di natura ==chimica, termica, meccanica==, ecc... che agiscono sui supporti materiali delle cariche.
@@ -46,3 +44,7 @@ La tensione $V$ tra i morsetti $A$ e $B$ è differente dalla tensione a vuoto.
 $V_0-V=E-V$ è proporzionale alla corrente I.
 Si definisce resistenza interna $R_i$ del generatore il coefficiente di proporzionalità tra la differenza $V_0-V=E-V$ e la corrente $I$.
 $$V=E-R_iI$$
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Campo_Elettrico]]
+[[Legge_di_Coulomb]]
+[[Modello_Reti_Elettriche]]

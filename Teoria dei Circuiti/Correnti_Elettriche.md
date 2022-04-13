@@ -34,3 +34,7 @@ Consideriamo una regione di spazio S.
 Il valore delle cariche uscenti $q_{usc}$ è opposto al valore delle cariche entranti $q_{int}$, quindi si ha che 
 $$i_{usc}(t)~=~-\frac{dq_{int}(t)}{dt}$$
 In un campo di corrente solenoidale, le grandezze sono costanti nel tempo, quindi si ha che $I_{usc}~=~0$.
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Campo_Elettrico]]
+[[Cariche_Elettriche]]

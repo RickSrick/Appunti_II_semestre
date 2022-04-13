@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0f5c779f2319743c",
+        "id": "7ae2fdcd7293572f",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Parallelo_Di_Bipoli.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -53,7 +49,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 448
   },
   "right": {
     "id": "71dc5484f06fb4b3",
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Parallelo_Di_Bipoli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +82,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0f5c779f2319743c",
+  "active": "7ae2fdcd7293572f",
   "lastOpenFiles": [
-    "Parallelo_Di_Bipoli.md",
-    "Serie_Di_Bipoli.md",
-    "Tensione_elettrica.md",
-    "Images/Serie_Parallelo_02.png",
-    "Images/Serie_Parallelo_01.png",
-    "Images/Parallelo_Di_Bipoli_02.png",
-    "Serie_Parallelo.md",
-    "N-Poli.md",
-    "Images/Serie_Parallelo_0.png",
-    "Images/Serie_di_bipoli_02.png"
+    "Analisi_Rete_Potenziale_Ai_Nodi.md",
+    "Analisi_Delle_Reti_Di_Bipoli.md",
+    "Analisi_Rete_Correnti_Di_Anello.md",
+    "Analisi_Rete_Lineare_Regime_Stazionario.md",
+    "Images/Caratteristica_Esterna_Resistore_01.png",
+    "Images/Caratteristica_Esterna_GIT_01.png",
+    "Legge_di_Coulomb.md",
+    "Topologia.md",
+    "Modello_Reti_Elettriche.md",
+    "N-Poli.md"
   ]
 }

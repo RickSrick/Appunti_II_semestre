@@ -26,3 +26,6 @@ Dipende inoltre da un parametro dipendente dal mezzo($\rho$):
 $$R=\rho \frac{l}{S}=\frac{1}{\gamma}~\frac{l}{S}$$
 $\rho$ è la ==resistività== e $\gamma$ è la ==conducibilità==.
 $$[\rho]=\ohm m\qquad\gamma=\frac{1}{\rho}\qquad[\gamma]=\ohm^{-1}m^{-1}$$
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Amperometro,_Voltmetro_e_Wattmetro]]

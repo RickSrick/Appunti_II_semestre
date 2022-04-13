@@ -10,3 +10,6 @@ Si orienta la tensione dle diodo con il segno $+$ sull'anodo e con il segno $-$ 
 Applicando una tensione positiva si ha ==polarizzazione diretta==, la corrente con il riferimento indicato risulta positiva
 
 Applicando una tensione negativa si ha ==polarizzazione inversa==, la corrente con il riferimento indicato risulta negativa
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[Bipolo]]

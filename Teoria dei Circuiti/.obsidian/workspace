@@ -84,15 +84,15 @@
   },
   "active": "7ae2fdcd7293572f",
   "lastOpenFiles": [
-    "Analisi_Rete_Potenziale_Ai_Nodi.md",
     "Analisi_Delle_Reti_Di_Bipoli.md",
+    "Analisi_Rete_Teorema_Di_Norton.md",
+    "Images/Teorema_Di_Norton_01.png",
+    "Analisi_Rete_Teorema_Di_Thevenin.md",
+    "Argomenti Ignorati.md",
+    "Images/Teorema_Di_Thevenin_01.png",
+    "Analisi_Rete_Teorema_Di_Sostituzione.md",
+    "Analisi_Rete_Potenziale_Ai_Nodi.md",
     "Analisi_Rete_Correnti_Di_Anello.md",
-    "Analisi_Rete_Lineare_Regime_Stazionario.md",
-    "Images/Caratteristica_Esterna_Resistore_01.png",
-    "Images/Caratteristica_Esterna_GIT_01.png",
-    "Legge_di_Coulomb.md",
-    "Topologia.md",
-    "Modello_Reti_Elettriche.md",
-    "N-Poli.md"
+    "Analisi_Rete_Lineare_Regime_Stazionario.md"
   ]
 }

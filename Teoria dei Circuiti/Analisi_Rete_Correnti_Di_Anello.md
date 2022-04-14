@@ -44,6 +44,7 @@ $$R_{A_{kk}}I_{A_k}-\sum_{h\neq k}{R_{A_kh}}I_{A_h}=E_{A_k}$$
 - $R_{A_kh}$ è la resistenza del lato comune agli anelli $k$ e $h$ (==mutua resistenza tra anelli==)
 - $E_{A_k}$ è la somma algebrica delle tensioni impresse dai GIT presenti sull'anello $k$ (==f.e.m. di anello==)
 
+### LATO ANOMALO
 Se nella rete è presente un lato costituito da un GIC senza in parallelo un resistore, tale lato è indicato come anomalo.
 In questo caso si applica il metodo delle correnti di anello considerando come incognita supplementare la tensione $V_h$ del lato anomalo (del GIC).
 La corrente $I_h$ del lato anomalo è pari a $J_h$:

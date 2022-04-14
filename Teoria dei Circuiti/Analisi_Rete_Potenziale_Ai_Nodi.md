@@ -23,3 +23,9 @@ $$G_{N_{kk}}V_{N_k}-\sum_{h\neq k}{G_{N_{kh}}V_{N_h}}=J_{N_k}$$
 - $G_{N_{kk}}$ è la somma delle conduttanze dei lati che hanno un morsetto collegato al nodo k (==autoconduttanza di nodo==)
 - $G_{N_{kh}}$ è la conduttanza fra i nodi k e h (==mutua conduttanza tra i nodi==)
 - $J_{N_k}$ è la somma algebrica delle correnti impresse dei GIC collegati al nodo k
+
+### LATO ANOMALO
+Se nella rete è presente un lato costituito da un GIT senza avere in serie un resistore, tale lato è indicato come ==lato anomalo==.
+In questo caso, si applica il metodo dei potenziali ai nodi, considerando come incognita la corrente $I_h$ del lato anomalo.
+Si aggiunge quindi un'equazione supplementare:
+$$V_h=E_h=\pm(V_{Nr}-V_{Ns})$$

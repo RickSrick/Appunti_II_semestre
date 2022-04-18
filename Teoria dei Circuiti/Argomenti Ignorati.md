@@ -1,1 +1,2 @@
 - Campo Magnetico, Lezione 3
+- Dimostrazione teorema Thevenin, Lezione 12

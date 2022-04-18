@@ -30,3 +30,7 @@ $$\Delta L~=~\int_{\Delta L}{p(t)~dt~=~\int_{\Delta t}{V(t)~i(t)~dt}}$$
 Un m-bipolo è passivo se, convenzionate tutte le porte con la convenzione dell'utilizzatore, il totale laboro elettrico entrante, per ogni t, non è negativo.
 
 Un m-bipolo non passivo si dice attivo.
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[N-Poli]]
+[[Porta_Elettrica]]

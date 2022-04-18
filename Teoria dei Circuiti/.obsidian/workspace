@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0f5c779f2319743c",
+        "id": "7ae2fdcd7293572f",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Legge_di_Ohm.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -53,7 +49,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 448
   },
   "right": {
     "id": "71dc5484f06fb4b3",
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Legge_di_Ohm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +82,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0f5c779f2319743c",
+  "active": "7ae2fdcd7293572f",
   "lastOpenFiles": [
-    "Legge_di_Ohm.md",
-    "Generatore_Elettrico.md",
-    "Legge_di_Coulomb.md",
-    "Effetto_Joule.md",
-    "Correnti_Elettriche.md",
-    "Tensione_elettrica.md",
-    "Modello_Reti_Elettriche.md",
-    "Resistore_Ideale.md",
-    "Images/Resistore_1.png",
-    "Porta_Elettrica.md"
+    "Analisi_Delle_Reti_Di_Bipoli.md",
+    "Analisi_Rete_Teorema_Di_Norton.md",
+    "Images/Teorema_Di_Norton_01.png",
+    "Analisi_Rete_Teorema_Di_Thevenin.md",
+    "Argomenti Ignorati.md",
+    "Images/Teorema_Di_Thevenin_01.png",
+    "Analisi_Rete_Teorema_Di_Sostituzione.md",
+    "Analisi_Rete_Potenziale_Ai_Nodi.md",
+    "Analisi_Rete_Correnti_Di_Anello.md",
+    "Analisi_Rete_Lineare_Regime_Stazionario.md"
   ]
 }

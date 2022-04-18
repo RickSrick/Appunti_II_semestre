@@ -27,3 +27,19 @@ $$L(t)~=~\int_{-\infty}^t{p(t^*)~dt^*}$$
 
 Un bipolo si dice ==passivo== se il ==lavoro elettrico entrante== (con convenzione dell'utilizzatore) è ==non negativo==.
 Se un bipolo non è passivo, si dice ==attivo==.
+
+#### BIPOLI IDEALI PARTICOLARI
+- Cortocircuito: $V=0,\forall I$
+	Si ottiene dal resistore con $R=0$
+- Circuito aperto: $I=0,\forall V$
+	Si ottiene dal resistore, con $G=0$ o dal GIC con $J=0$
+
+## BIPOLI IDEALI A REGIME VARIABILE QUASI STAZIONARIO
+Oltre ai bipoli ideali visti precedentemente, si aggiungono anche gli ==interruttori==
+- Interruttore che chiude in $t=t^*$:
+	Bipolo che commuta all'istante di tempo $t^*$ passando da circuito aperto a cortocircuito
+- Interruttore che apre in $t=t^*$
+	Bipolo che commuta all'istante di tempo $t^*$ passando da cortocircuito a circuito aperto
+
+#### MATERIALE NECESSARIO PER IL CAPITOLO:
+[[N-Poli]]

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Lezione 1/Application.md",
+            "file": "Lezione 3-4/Scrum.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lezione 1/Application.md",
+                "file": "Lezione 3-4/Scrum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,14 +89,15 @@
   },
   "active": "c727166e4161b593",
   "lastOpenFiles": [
-    "Lezione 1/Application.md",
-    "Lezione 1/Software.md",
-    "Lezione 1/Software Engineering.md",
-    "Lezione 1/Ciclo di Vita.md",
-    "Lezione 10-11/GRASP/Information Expert.md",
-    "Lezione 10-11/GRASP/GRASP.md",
-    "Lezione 10-11/GRASP/Creation.md",
-    "this.drawio.png",
-    "this.drawio (1).png"
+    "Lezione 3-4/Scrum.md",
+    "Lezione 3-4/Tecniche Agile/Pair Programming.md",
+    "Lezione 3-4/Tecniche Agile/Tecniche Agile.md",
+    "Lezione 3-4/Tecniche Agile/Test Driven.md",
+    "Lezione 3-4/Tecniche Agile/User Stories.md",
+    "Lezione 3-4/Tecniche Agile/Refactoring.md",
+    "Lezione 3-4/Agile.md",
+    "Lezione 3-4/Extreme Programming.md",
+    "img/Pasted image 20220425110048.png",
+    "img/Pasted image 20220425110024.png"
   ]
 }

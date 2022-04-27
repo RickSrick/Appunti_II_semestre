@@ -7,8 +7,12 @@
         "id": "c727166e4161b593",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Lezione 3-4/Scrum.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Lezione 3-4/Scrum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,14 +89,14 @@
   },
   "active": "c727166e4161b593",
   "lastOpenFiles": [
-    "Lezione 3/Tecniche Agile/Pair Programming.md",
-    "Lezione 3/Tecniche Agile/Tecniche Agile.md",
-    "Lezione 3/Tecniche Agile/Test Driven.md",
-    "Lezione 3/Tecniche Agile/User Stories.md",
-    "Lezione 3/Tecniche Agile/Refactoring.md",
-    "Lezione 3/Agile.md",
-    "Lezione 3/Extreme Programming.md",
-    "Lezione 3/Scrum.md",
+    "Lezione 3-4/Scrum.md",
+    "Lezione 3-4/Tecniche Agile/Pair Programming.md",
+    "Lezione 3-4/Tecniche Agile/Tecniche Agile.md",
+    "Lezione 3-4/Tecniche Agile/Test Driven.md",
+    "Lezione 3-4/Tecniche Agile/User Stories.md",
+    "Lezione 3-4/Tecniche Agile/Refactoring.md",
+    "Lezione 3-4/Agile.md",
+    "Lezione 3-4/Extreme Programming.md",
     "img/Pasted image 20220425110048.png",
     "img/Pasted image 20220425110024.png"
   ]

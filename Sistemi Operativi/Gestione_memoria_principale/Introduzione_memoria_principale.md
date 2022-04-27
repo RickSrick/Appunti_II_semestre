@@ -13,6 +13,7 @@ Le librerie dinamiche richiedono che il programma in esecuzione ne richieda il c
 
 ## CONTEXT SWITCH
 Se il prossimo processo da eseguire non è in memoria e non c'è spazio sufficiente, bisogna sostituirlo ad un altro processo presente in memoria: ==CONTEXT SWITCH==. Può richiedere molto tempo, ma può essere ridotto se si conosce a priori la memoria necessaria.
+![[Scheduler#CONTEXT SWITCH]]
 
 ## INPUT QUEUE
 I programmi risiedono su disco sotto forma di file binari eseguibili.

@@ -22,7 +22,6 @@ Serve un meccanismo per distinguere le pagine presenti in memoria da quelle resi
 Inizialmente posto a _i_ per tutte le pagine; durante la traduzione degli indirizzi, se il bit di validità vale _i_ viene generata una trap al SO: ==PAGE FAULT==.
 Il SO consulta una tabella interna delle pagine (conservata con il ==TCB==) per decidere se si tratta di riferimento non valido (abort) o pagina non in memoria.
 ![[Processi#STATO DI UN PROCESSO]]
-(link a TCB/PCB/processi in Linux)
 Nel secondo caso:
 - si individua la pagina richiesta su disco
 - si seleziona un frame libero: se esiste lo si usa, altrimenti si applica un _algoritmo di sostituzione_ per selezionare un _frame vittima_

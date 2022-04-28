@@ -1,5 +1,5 @@
 Per poter essere eseguiti, i programmi devono essere trasferiti, almeno in parte, nella memoria principale, così da "diventare" processi.
-Per ottenere l'aumento delle prestazioni fornito dallo scheduling, tale memoria dev'essere condivisa.
+Per ottenere l'aumento delle prestazioni fornito dallo scheduling (link a scheduling), tale memoria dev'essere condivisa.
 La scelta del sistema di gestione della memoria dipende dall'architettura del sistema di calcolo del sistema.
 
 La ==memoria principale== e i ==registri== sono gli unici dispositivi di memoria a cui la CPU può accedere direttamente:

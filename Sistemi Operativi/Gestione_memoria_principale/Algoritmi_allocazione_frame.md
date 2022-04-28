@@ -20,7 +20,7 @@ Si allocano frame sulla base di:
 	- non rende disponibili a processi che ne facciano richiesta pagine di altri processi scarsamente utilizzate
 	- possibile un sottoutilizzo della memoria
 La sostituzione globale garantisce un maggiore throughput, ed è implementata nei SO più diffusi.
-(link a definizione throughput)
+![[Definizioni#MISURE]]
 
 # THRASHING
 Se un processo non ha abbastanza frame a disposizione, la frequenza di page fault è abbastanza alta.

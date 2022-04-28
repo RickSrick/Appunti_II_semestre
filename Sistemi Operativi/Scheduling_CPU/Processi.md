@@ -37,7 +37,7 @@ Un programma è un'_entità passiva_ memorizzata su disco, mentre un processo è
 - un programma descrive un insieme di processi (_istanze del programma_)
 
 # COMUNICAZIONE TRA PROCESSI
-La comuncazione tra processi può essere necessaria per:
+La comunicazione tra processi può essere necessaria per:
 - condividere informazioni
 - velocità computazionale (e.g. task diviso in sotto-task da eseguire in parallelo tra diversi core)
 - modularità del codice

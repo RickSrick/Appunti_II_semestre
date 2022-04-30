@@ -10,4 +10,4 @@ A seconda del SO si possono avere:
 - _partizioni di swap_, sezioni del disco interamente dedicate allo swapping e inizializzate con un proprio tipo di file system (e.g. Linux)
 L'uso della partizione è generalmente migliore dal punto vista delle prestazioni, perché evita che lo swap vada soggetto alla frammentazione tipica di alcuni file system.
 
-![[Memoria_principale#SWAPPING OUT]]
+![[Introduzione_memoria_principale#SWAPPING OUT]]

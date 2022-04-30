@@ -1,5 +1,5 @@
 Per poter essere eseguiti, i programmi devono essere trasferiti, almeno in parte, nella memoria principale, così da "diventare" processi.
-Per ottenere l'aumento delle prestazioni fornito dallo scheduling, tale memoria dev'essere condivisa.
+Per ottenere l'aumento delle prestazioni fornito dallo scheduling (link a scheduling), tale memoria dev'essere condivisa.
 La scelta del sistema di gestione della memoria dipende dall'architettura del sistema di calcolo del sistema.
 
 La ==memoria principale== e i ==registri== sono gli unici dispositivi di memoria a cui la CPU può accedere direttamente:
@@ -13,6 +13,7 @@ Le librerie dinamiche richiedono che il programma in esecuzione ne richieda il c
 
 ## CONTEXT SWITCH
 Se il prossimo processo da eseguire non è in memoria e non c'è spazio sufficiente, bisogna sostituirlo ad un altro processo presente in memoria: ==CONTEXT SWITCH==. Può richiedere molto tempo, ma può essere ridotto se si conosce a priori la memoria necessaria.
+![[Scheduler#CONTEXT SWITCH]]
 
 ## INPUT QUEUE
 I programmi risiedono su disco sotto forma di file binari eseguibili.

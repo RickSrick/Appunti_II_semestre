@@ -7,8 +7,12 @@
         "id": "7ae2fdcd7293572f",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Analisi_Rete_Teorema_Di_Thevenin.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Analisi_Rete_Teorema_Di_Thevenin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +89,15 @@
   },
   "active": "7ae2fdcd7293572f",
   "lastOpenFiles": [
-    "Analisi_Delle_Reti_Di_Bipoli.md",
-    "Analisi_Rete_Teorema_Di_Norton.md",
-    "Images/Teorema_Di_Norton_01.png",
     "Analisi_Rete_Teorema_Di_Thevenin.md",
+    "Analisi_Rete_Teorema_Di_Norton.md",
+    "Tensione_elettrica.md",
+    "GLT.md",
+    "GLC.md",
+    "Analisi_Delle_Reti_Di_Bipoli.md",
+    "Images/Teorema_Di_Norton_01.png",
     "Argomenti Ignorati.md",
     "Images/Teorema_Di_Thevenin_01.png",
-    "Analisi_Rete_Teorema_Di_Sostituzione.md",
-    "Analisi_Rete_Potenziale_Ai_Nodi.md",
-    "Analisi_Rete_Correnti_Di_Anello.md",
-    "Analisi_Rete_Lineare_Regime_Stazionario.md"
+    "Analisi_Rete_Teorema_Di_Sostituzione.md"
   ]
 }

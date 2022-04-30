@@ -24,9 +24,11 @@ Alla fin fine lo scrum che abbiamo oggi è comunque datato 1993.
 - **Scrum Master:** si occupa di rispettare la metodologia SCRUM, rimuovere impedimenti e garantire il funzionamento di tutto il ciclo.
 
 ****
-#### Eventi SCRUM
-- Sprint : due settimane di sviluppo e testing (raggiungere gli sprint goal)
-- Sprint Planning : pianificare cosa si andrà a fare durante la fase di sprint (creare gli sprint goal)
-- Daily Scrum: Feedback giornaliero di come stanno andando le cose (**NO problem  solving**) 
-- Sprint Review:  
-- Sprint Retrospective
+#### Eventi Scrum
+- [[Sprint]]
+- [[Daily Scrum]]
+****
+#### Artefatti Scrum
+- [[Product Backlog]]
+- [[Sprint Backlog]]
+- [[Product Increment]]

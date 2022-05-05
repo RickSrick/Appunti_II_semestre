@@ -1,0 +1,2 @@
+## Cos'è il Product Increment
+Uno [[Scrum#Artefatti Scrum|scrum artifact]] che registra la somma delle feature del [[Product Backlog]] **completate!** Per questo motivo solo il [[Scrum#Ruoli nella metodologia SCRUM|product owner (PO)]] può erogare un simile documento. L'obiettivo di tale documento è definire cosa è "vendibile" come prodotto finito.

@@ -1,6 +1,6 @@
 # STATO DI UN PROCESSO
 ==STATO DI UN PROCESSO==: tutte le informazioni modificabile contenuti nei registri condivisi nel sistema che sono accessibili da P.
-I processi vengono rappresentati da un ==DESCRITTORE DI PROCESSO / STRUTTURA DI CONTROLLO / PROCESS CONTROL BLOCK (PCB) / VETTORE DI STATO==: contiene tutte le informazioni relative ad un processo.
+I processi vengono rappresentati da un ==DESCRITTORE DI PROCESSO / STRUTTURA DI CONTROLLO / PROCESS CONTROL BLOCK (PCB) / VETTORE DI STATO==, il quale contiene tutte le informazioni relative ad un processo.
 Il PCB viene chiamato anche ==TCB== in Linux (nel gergo di Linux si parla di _task_).
 Ogni descrittore di processo è collegato ad una struttura di processi, che consiste in una lista concatenata lineare.
 ![550](descrittore_processo.png)

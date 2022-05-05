@@ -13,7 +13,7 @@ Lo scheduler deve prendere decisioni in quattro casi:
 4. termina
 ==NON PREEMPTIVE / COOPERATIVO==: scheduling effettuato solo nei casi 1 e 4, non possiede diritto di prelazione
 Altrimenti, ==PREEMPTIVE==
-(link a preemptive) ![[Risorse]]
+![[Risorse#PREEMPTION PRELAZIONE]]
 In caso di scheduler preemptive, bisogna tenere in considerazione:
 - accesso a dati condivisi (prelazione durante la modifica di dati con risultati imprevedibili)
 - possibilità di prelazione di processi del kernel (normalmente modificano dati vitali per il sistema)

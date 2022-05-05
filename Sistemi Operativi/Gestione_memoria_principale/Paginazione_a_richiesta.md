@@ -1,5 +1,4 @@
-# PAGINAZIONE SU RICHIESTA
-[[Paginazione]]
+# [[Paginazione|PAGINAZIONE]] SU RICHIESTA
 
 ## PAGER
 I processi possono essere caricati per intero su RAM durante il loading oppure si può caricare una certa pagina in memoria solo quando è necessaria.

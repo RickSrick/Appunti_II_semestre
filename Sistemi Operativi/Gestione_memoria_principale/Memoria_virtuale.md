@@ -23,4 +23,4 @@ La memoria virtuale facilita la ==CONDIVISIONE== di file e memoria mediante cond
 Esempio:
 	- le _librerie di sistema_ sono condivisibili mediante mappature delle pagine logiche di più processi sugli stessi frame
 	- ogni processo vede le librerie all'interno del suo spazio di indirizzi virtuali, ma le pagine fisiche che le ospitano sono in condivisione tra tutti i processi che le utilizzano
-(link a stack e heap)
+![[Processi#STRUTTURA DI UN PROCESSO]]

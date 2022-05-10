@@ -10,8 +10,4 @@ Un programma è una collezione di ==SEGMENTI==: unità logiche, come:
 Ciascun segmento ha una lunghezza variabile, che dipende dal compito svolto dal segmento come parte del programma utente.
 Ogni elemento del segmento è indentificato dall'offset al suo interno; ogni indirizzo logico è quindi formato dalla coppia <numero di segmento, offset>.
 ![500](segmentazione.png)
-Per ogni processo si usa una ==TABELLA DEI SEGMENTI==.
-![[Tabella_dei_segmenti#TABELLA DEI SEGMENTI]]
-
-
-![[Confronto_segmentazione_paginazione#CONFRONTO TRA SEGMENTAZIONE E PAGINAZIONE]]
+Per ogni processo si usa una [[Tabella_dei_segmenti|tabella dei segmenti]].

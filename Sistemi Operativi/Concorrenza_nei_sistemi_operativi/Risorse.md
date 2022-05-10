@@ -1,5 +1,6 @@
 # RISORSE
 ==RISORSA==: astrazione che rappresenta un'entità necessaria al processo per svolgere il proprio lavoro (può essere sia l'output di un altro processo che spazio di memoria).
+(link a processi)
 Vari tipi di risorse:
 - ==CONDIVISIBILI==: possono essere usate da più processi in parallelo (e.g. RAM)
 - ==NON CONDIVISIBILI==: non possono essere usate da più processi in parallelo (e.g. stampante)
@@ -11,5 +12,5 @@ Il protocollo di accesso alle risorse da parte dei thread prevede:
 - ==UTILIZZO==
 - ==RILASCIO==
 
-### PREEMPTION / PRELAZIONE
+## PREEMPTION / PRELAZIONE
 ==PREEMPTION / PRELAZIONE==: rimozione forzata di una risorsa (==SOTTRAIBILE==) ad un processo (e.g. CPU sottratta ad un processo a bassa priorità se uno a priorità maggiore ne ha bisogno)

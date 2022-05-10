@@ -2,12 +2,15 @@
 Nonostante i semafori rappresentino un meccanismo pratico ed efficace per sincronizzare i processi, il loro uso scorretto può generare problemi difficili da individuare, in quanto si manifestano solo in presenza di particolari sequenze di esecuzione. Per semplificare la gestione della mutua esclusione, si definiscono i ==MONITOR==:
 - per effettuare l'allocazione di risorse tramite monitor, un processo deve richiamare una routine interna al monitor
 - la mutua esclusione è rigidamente forzata ai confini del monitor stesso, al quale può accedere solo un processo alla volta
-![400](monitor.png)
-![400](monitor2.png)
 
 Tuttavia, tale definizione di monitor non è sufficientemente potente per modellare alcuni schemi di sincronizzazione per permettere ad un processo di attendere, causa occupazione della risorsa richiesta, dopo l'ingresso al monitor.
 Per questo si dichiarano apposite _variabili condition_.
-==VARIABILE CONDITION==: variabile $x$ che può essere usata solo in relazione alle operazioni $x.wait()$ e $x.signal()$, e dotata di una coda di processi:
+(link a processo)
+![400](monitor.png)
+![400](monitor2.png)
+
+## ==VARIABILE CONDITION==
+Variabile $x$ che può essere usata solo in relazione alle operazioni $x.wait()$ e $x.signal()$, e dotata di una coda di processi:
 - $x.wait()$: il processo chiamante si mette nella coda d'attesa di $x$, rimanendo al di fuori del monitor, e vi rimane finchè un altro processo non chiama $x.signal()$
 - $x.signal()$: il processo chiamante attiva un processo sospeso della coda di $x$, in modo tale che possa accedere al monitor
 

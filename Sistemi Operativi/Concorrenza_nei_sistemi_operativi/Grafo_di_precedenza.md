@@ -11,7 +11,8 @@ Proprietà:
 - _non riflessiva_: $\neg (\text{P}_{i} < \bullet \text{P}_{i})$
 ![400](grafo_precedenza.png)
 
-==SISTEMA CHIUSO==: esiste un singolo processo iniziale e un singolo processo finale
+==SISTEMA CHIUSO==: esiste un singolo processo iniziale e un singolo processo finale.
+(link a processo)
 Se il sistema è aperto, è possibile renderlo chiuso aggiungendo dei processi dummy.
 ![500](grafo_precedenza2.png)
 

@@ -1,7 +1,5 @@
-# ALGORITMI PER LA SOSTITUZIONE DELLE PAGINE
-[[Paginazione]]
-
-Algoritmi per la ==SOSTITUZIONE DELLE PAGINE==: scelgono quali frame sostituire in caso di necessità per minimizzare la quantità di page fault
+# ALGORITMI PER LA SOSTITUZIONE DELLE [[Paginazione|PAGINE]]
+Algoritmi per la ==SOSTITUZIONE DELLE PAGINE==: scelgono quali [[Paginazione|frame]] sostituire in caso di necessità per minimizzare la quantità di [[Paginazione#PAGE FAULT|page fault]].
 Gli algoritmi per la sostituzione delle pagine vengono valutati eseguendoli su una particolare stringa di riferimenti a memoria (==REFERENCE STRING==) e contando il numero di page fault provocati su quella stringa:
 	- stringa costituita dai soli numeri di pagina, non indirizzi completi
 	- accessi multipli alla stessa pagina non provocano page fault

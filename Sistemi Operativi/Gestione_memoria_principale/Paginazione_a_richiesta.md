@@ -7,8 +7,7 @@ I processi possono essere caricati per intero su RAM durante il loading oppure s
 ## PAGE DEMANDING
 Quando un processo sta per essere caricato in memoria, il pager ipotizza quali pagine saranno usate prima che il processo venga di nuovo rimosso dalla memoria.
 Così, anzichè caricare in memoria tutto il processo, il pager trasferisce in memoria solo le pagine che ritiene necessarie.
-Serve quindi una _MMU_ con ulteriori funzionalità.
-![[MMU#MMU]]
+Serve quindi una [[MMU]] con ulteriori funzionalità.
 
 ## BIT DI VALIDITÀ
 - Se la pagina è già presente in memoria, si prosegue l'esecuzione normalmente
@@ -16,11 +15,9 @@ Serve quindi una _MMU_ con ulteriori funzionalità.
 Serve un meccanismo per distinguere le pagine presenti in memoria da quelle residenti su disco: aggiungere alla tabella delle pagine un ==BIT DI VALIDITÀ==:
 - _v_: pagina in memoria
 - _i_: pagina non valida o non residente in memoria
-[[Tabella_delle_pagine]]
 ![500](bit_di_validita1.png)
-Inizialmente posto a _i_ per tutte le pagine; durante la traduzione degli indirizzi, se il bit di validità vale _i_ viene generata una trap al SO: ==PAGE FAULT==.
-Il SO consulta una tabella interna delle pagine (conservata con il ==TCB==) per decidere se si tratta di riferimento non valido (abort) o pagina non in memoria.
-![[Processi#STATO DI UN PROCESSO]]
+Inizialmente posto a _i_ per tutte le pagine; durante la traduzione degli indirizzi, se il bit di validità vale _i_ viene generata una trap al SO, ovvero un [[Paginazione#PAGE FAULT|page fault]].
+Il SO consulta una tabella interna delle pagine (conservata con il [[Processi#STATO DI UN PROCESSO|TCB]]) per decidere se si tratta di riferimento non valido (abort) o pagina non in memoria.
 Nel secondo caso:
 - si individua la pagina richiesta su disco
 - si seleziona un frame libero: se esiste lo si usa, altrimenti si applica un _algoritmo di sostituzione_ per selezionare un _frame vittima_
@@ -37,8 +34,7 @@ Nel secondo caso:
 ## SOVRALLOCAZIONE
 ==SOVRALLOCAZIONE==: durante l'esecuzione di un processo utente si verifica un page fault, ma non vi sono frame liberi per caricare la pagina richiesta in memoria.
 Soluzione: ==SOSTITUZIONE DI PAGINA==: si trova una pagina in memoria che non risulta attualemente utilizzata e si sposta sul disco.
-Bisogna scegliere un _algoritmo di sostituzione_ che scelega un frame _vittima_ e che provochi il minor numero possibile di page fault.
-![[Algoritmi_sostituzione_pagina]]
+Bisogna scegliere un [[Algoritmi_sostituzione_pagina|algoritmo di sostituzione]] che scelega un frame _vittima_ e che provochi il minor numero possibile di page fault.
 
 La sovrallocazione si verifica quando è richiesta più memoria di quella effettivamente disponibile; la si può prevenire modificando la routine di servizio del page fault, includendo la sostituzione delle pagine.
 Si impiega un ==BIT DI MODIFICA/DIRTY BIT== per ridurre il sovraccarico dei trasferimenti di pagine: solo le pagine modificate vengono riscritte su disco.

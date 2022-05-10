@@ -1,6 +1,6 @@
-# CONFRONTO TRA SEGMENTAZIONE E PAGINAZIONE
+# CONFRONTO TRA [[Segmentazione|SEGMENTAZIONE]] E [[Paginazione|PAGINAZIONE]]
 VANTAGGI DELLA PAGINAZIONE:
-- elimina la frammentazione esterna (tuttavia può portare a frammentazione interna, in quanto le pagine sono di dimensioni fisse e il processo può non occupare tutta la memoria del suo ultimo frame)
+- elimina la [[Frammentazione#FRAMMENTAZIONE ESTERNA|frammentazione esterna]] (tuttavia può portare a [[Frammentazione#FRAMMENTAZIONE INTERNA|frammentazione interna]], in quanto le pagine sono di dimensioni fisse e il processo può non occupare tutta la memoria del suo ultimo frame)
 - facilita l'implementazione di complesse tecniche di ottimizzazione (come i meccanismi di _memoria virtuale_)
 
 VANTAGGI DELLA SEGMENTAZIONE:
@@ -8,8 +8,6 @@ VANTAGGI DELLA SEGMENTAZIONE:
 - la natura dei segmenti permette di rappresentare più fedelmente la struttura logica del programma
 - uso dinamico della memoria
 - prestazioni migliori, in quanto ogni segmento è contiguo
-
-![[Frammentazione]]
 
 Possibile anche combinare segmentazione e paginazione
 ![550](fusione.png)

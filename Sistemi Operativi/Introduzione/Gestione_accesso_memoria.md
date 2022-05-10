@@ -2,7 +2,6 @@
 La CPU e i device di I/O sono collegati ad un bus comune che permette l'accesso ad una memoria condivisa, e possono effettuare operazioni concorrenti.
 I device di I/O accedono alla memoria attraverso dei controllori, ciascuno dei quali gestisce un ==BUFFER== locale (memoria usata temporaneamente per l'entrata e l'uscita dei dati).
 La CPU sposta i dati da/verso la memoria principale da/verso i buffer locali, e l'I/O avviene effettivamente sui dati contenuti nelle periferiche.
-Il controllore informa la CPU quando ha portato a termine l’operazione di I/O, causando un ==INTERRUPT==.
-![[Interrupt]]
+Il controllore informa la CPU quando ha portato a termine l’operazione di I/O, causando un [[Interrupt|interrupt]].
 Al verificarsi di un interrupt, il controllo viene trasferito all’opportuna routine di gestione, utilizzando il vettore degli interrupt (residente nella memoria) che contiene gli indirizzi di tutte le routine di servizio. Si salva inoltre l’indirizzo dell’istruzione “interrotta” e lo “stato” della CPU, dalla quale dovrà riprendere l’esecuzione al termine della gestione dell’interruzione. Durante la gestione di un interrupt altri eventuali interrupt vengono momentaneamente disabilitati.
 ==TRAP==: interruzione generata da errori nel sistema o da una richiesta utente.

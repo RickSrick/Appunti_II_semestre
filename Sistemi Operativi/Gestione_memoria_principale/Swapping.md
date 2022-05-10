@@ -7,7 +7,7 @@ Richiesta di una pagina = riferimento alla pagina
 ![550](swapping.png)
 A seconda del SO si possono avere:
 - _file di swap_, che risiedono nel file system (e.g. Windows)
-- _partizioni di swap_, sezioni del disco interamente dedicate allo swapping e inizializzate con un proprio tipo di file system (e.g. Linux)
+- _partizioni di swap_, sezioni del disco interamente dedicate allo swapping e inizializzate con un proprio tipo di [[File_system|file system]] (e.g. Linux)
 L'uso della partizione è generalmente migliore dal punto vista delle prestazioni, perché evita che lo swap vada soggetto alla frammentazione tipica di alcuni file system.
 
 ![[Introduzione_memoria_principale#SWAPPING OUT]]

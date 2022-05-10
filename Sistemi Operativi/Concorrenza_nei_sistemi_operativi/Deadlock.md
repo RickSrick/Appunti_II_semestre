@@ -1,6 +1,7 @@
 # DEADLOCK
-==DEADLOCK / STALLO==: insieme di thread bloccati, dove ognuno dei quali possiede delle [[Risorse|risorse]] e attende di acquisire altre risorse allocate ad altri thread dell'insieme.
+==DEADLOCK / STALLO==: insieme di [[Thread|thread]] bloccati, dove ognuno dei quali possiede delle [[Risorse|risorse]] e attende di acquisire altre [[Risorse|risorse]] allocate ad altri thread dell'insieme.
 In un ambiente multiprogrammato, gli stalli si verificano più frequentemente, poichè più thread possono competere per un insieme limitato di risorse.
+(link a multiprogrammazione)
 In presenza di uno stallo è necessario eliminare i processi bloccati e a loro volta i processi che dipendono da quelli bloccati, e così via.
 
 Condizioni necessarie (ma non sufficienti) per il verificarsi di uno stallo:

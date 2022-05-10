@@ -1,15 +1,14 @@
-# ALGORITMI PER L'ALLOCAZIONE DEI FRAME
-Algoritmi per l'==ALLOCAZIONE DEI FRAME==: determinano quanti frame vengono assegnati a ciascun processo
+# ALGORITMI PER L'ALLOCAZIONE DEI [[Paginazione|FRAME]]
+Algoritmi per l'==ALLOCAZIONE DEI FRAME==: determinano quanti frame vengono assegnati a ciascun processo.
 Ciascun processo richiede un numero minimo di frame, determinato dall'architettura, mentre il numero massimo è determinato dalla disponibilità di memoria.
 
 ## ALLOCAZIONE UNIFORME
-Assegnare ad ogni processo la stessa quantità di frame (possibile implementarla mantenando un _pool di frame liberi_)
-![[Algoritmi_sostituzione_pagina#POOL DI FRAME LIBERI]]
+Assegnare ad ogni processo la stessa quantità di frame; possibile implementarla mantenando un _[[Algoritmi_sostituzione_pagina#POOL DI FRAME LIBERI|pool di frame liberi]]_).
 
 ## ALLOCAZIONE PROPORZIONALE
 Si allocano frame sulla base di:
 - dimensione del processo
-- priorità del processo (==ALLOCAZIONE CON PRIORITÀ==): se un processo genera page fault, si seleziona per la sostituzione uno dei suoi frame oppure un frame di un processo con priorità minore
+- priorità del processo (==ALLOCAZIONE CON PRIORITÀ==): se un processo genera [[Paginazione#PAGE FAULT|page fault]], si seleziona per la sostituzione uno dei suoi frame oppure un frame di un processo con priorità minore
 
 # SOSTITUZIONE DEI FRAME
 - ==SOSTITUZIONE GLOBALE==: il SO seleziona il frame da sostituire dall'insieme di tutti i frame
@@ -19,8 +18,7 @@ Si allocano frame sulla base di:
 - ==SOSTITUZIONE LOCALE==: il SO, per ogni processo, seleziona il frame da sostituire solo dal relativo insieme di frame allocati
 	- non rende disponibili a processi che ne facciano richiesta pagine di altri processi scarsamente utilizzate
 	- possibile un sottoutilizzo della memoria
-La sostituzione globale garantisce un maggiore throughput, ed è implementata nei SO più diffusi.
-![[Definizioni#MISURE]]
+La sostituzione globale garantisce un maggiore [[Definizioni#MISURE|throughput]], ed è implementata nei SO più diffusi.
 
 # THRASHING
 Se un processo non ha abbastanza frame a disposizione, la frequenza di page fault è abbastanza alta.
@@ -35,9 +33,8 @@ Se un processo non ha abbastanza frame a disposizione, la frequenza di page faul
 	- se $\Delta$ è troppo grande comprende più località
 	- se $\Delta \rightarrow \infty$ comprende l'intero programma
 - $D = \sum \text{WSS}_{i} \equiv$ numero totale di pagine richieste
-Politica: se $D > m$ presente thrashing; occorre sospendere un processo o sottoporlo a _swapping_
+Politica: se $D > m$ presente thrashing; occorre sospendere un processo o sottoporlo a _[[Swapping#SWAPPING|swapping]]_.
 ![550](working-set.png)
-![[Swapping#SWAPPING]]
 Problema: la finestra di working-set è mobile, con riferimenti che entrano ed escono. Si approssima con un interrupt del timer e un bit di riferimento.
 Esempio:
 	- il timer emette un interrupt ogni 5000 unità di tempo
@@ -55,8 +52,7 @@ Costituisce un approccio più diretto e intuitivo rispetto al working-set, ma ha
 ![550](frequenza_page_fault.png)
 
 # PREPAGING
-Utilizzato per ridurre il numero di page fault necessari allo startup del processo in regime di paginazione a richiesta pura.
-![[Paginazione_a_richiesta#PAGINAZIONE A RICHIESTA PURA]]
+Utilizzato per ridurre il numero di page fault necessari allo startup del processo in regime di [[Paginazione_a_richiesta#PAGINAZIONE A RICHIESTA PURA|paginazione a richiesta pura]].
 ==PREPAGING==: si portano in memoria tutte o alcune delle pagine necessarie al processo, prima che vengano referenziate (ad esempio, memorizzare il working-set al momento della sospensione per I/O per poi riprendere tutte le pagine che gli appartengono).
 Se le pagine precaricate non vengono usate, si sprecano I/O e memoria:
 - il costo dei page fault evitati è maggiore o minore del costo di prepaging relativo al caricamento delle pagine inutilizzate?

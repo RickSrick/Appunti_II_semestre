@@ -6,6 +6,12 @@ Risiede nella memoria centrale; di norma, presenete una tabella per processo.
 ==PAGE-TABLE LENGTH REGISTER==: indica la dimensione della tabella
 Così ogni accesso a dati o istruzioni richiede due accessi in memoria, uno per la tabella e uno per i dati cercati; per risolvere il problema, ==REGISTRI ASSOCIATIVI==.
 
+Associare una tabella delle pagine ad ogni processo può occupare troppa memoria.
+Possibili soluzioni:
+- [[Paginazione_gerarchica|paginazione gerarchica]]
+- [[Tabella_delle_pagine_hash|tabella delle pagine hash]]
+- [[Tabella_delle_pagine_invertita|tabella delle pagine invertita]]
+
 # REGISTRI ASSOCIATIVI
 ==REGISTRI ASSOCIATIVI / TRANSLATION LOOK-ASIDE BUFFER (TLB)==: si effettua una ricerca parallela veloce su una piccola tabella.
 Dato l'indirizzo (p,d), se p è nel registro associativo, si recupera il numero del frame dal registro, altrimenti lo si recupera dalla tabella delle pagine in memoria.

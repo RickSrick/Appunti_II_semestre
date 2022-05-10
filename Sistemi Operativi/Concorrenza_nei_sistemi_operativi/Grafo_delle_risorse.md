@@ -27,5 +27,4 @@ Si può applicare un algoritmo chiamato ==INDIVIDUAZIONE DEL BLOCCO CRITICO==:
 - una ==RIDUZIONE== è possibile se un processo può vedersi assegnate le risorse in modo da soddisfare la sua richiesta; se un processo può vedersi assegnate tutte le risorse che richiede, può terminare
 - un grafo di Holt è ==COMPLETAMENTE RIDUCIBILI== se è esiste una serie di riduzioni che elimina tutti gli archi del grafo
 - un sistema non è in stallo se e solo se il suo grafo di Holt è completamente riducibile, ovvero tutti i processi possono terminare
-Questo algoritmo può essere ritrovato nell'_algoritmo del banchiere_.
-![[Prevenzione_deadlock#ALGORITMO DEL BANCHIERE]]
+Questo algoritmo può essere ritrovato nell'[[Prevenzione_deadlock#ALGORITMO DEL BANCHIERE|algoritmo del banchiere]].

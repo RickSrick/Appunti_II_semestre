@@ -6,8 +6,7 @@ Ogni descrittore di processo è collegato ad una struttura di processi, che cons
 ![550](descrittore_processo.png)
 Il supporto alla sincronizzazione dei processi è implementato nel kernel dalle primitive _wait_ e _signal_; in questo modo:
 - sono utilizzabili da tutti i processi
-- _wait_ può accedere al dispatcher e causarne l'attivazione
-![[Dispatcher]]
+- _wait_ può accedere al [[Dispatcher|dispatcher]] e causarne l'attivazione
 
 I processi possono trovarsi in tre stati:
 - ==RUNNING==: in esecuzione
@@ -17,9 +16,8 @@ I processi possono trovarsi in tre stati:
 Operazioni per spostarsi tra stati:
 - ==ASSIGN==: dispatcher assegna processo a CPU (da waiting a running)
 - ==RESIGN==: dispatcher sottrae processa a CPU (da running a waiting)
-- ==SUSPEND==: mette processo in attesa, e.g. _wait_ su un semaforo (da running a ready)
+- ==SUSPEND==: mette processo in attesa, e.g. _wait_ su un [[Semafori|semaforo]] (da running a ready)
 - ==RESUME==: risveglia processo sospeso, e.g. _signal_ su un semaforo (da ready a waiting)
-![[Semafori]]
 
 # STRUTTURA DI UN PROCESSO
 Ogni processo include:

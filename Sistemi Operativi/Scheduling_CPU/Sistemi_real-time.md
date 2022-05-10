@@ -13,5 +13,3 @@ Esistono requisiti di latenza diversi per eventi diversi:
 	- prelazione di ogni processo in esecuzione nel kernel
 	- cessione, da parte dei processi a bassa priorità, delle risorse richieste dal processo ad alta priorità
 ![450](latenza_dispatch.png)
-
-![[Criteri_scheduling_real_time#CRITERI PER LO SCHEDULING PER Sistemi_real-time SISTEMI REAL-TIME]]

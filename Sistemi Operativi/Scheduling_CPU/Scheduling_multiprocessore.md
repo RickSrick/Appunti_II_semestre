@@ -3,21 +3,21 @@
 Lo scheduling diventa più complesso quando sono presenti più CPU nel sistema di calcolo. Si assume come ipotesi che le unità di elaborazione siano identiche nelle loro funzioni: ==SISTEMI OMOGENEI==.
 Bisogna ripartire il carico di lavoro.
 
-## MULTIELABORAZIONE ASIMMETRICA
+## ==MULTIELABORAZIONE ASIMMETRICA==
 Lo scheduling, l'elaborazione dell'I/O e le altre attività del sistema sono affidate ad un solo processore (==MASTER SERVER==). Si riduce così la necessità di condividere dati.
 
-## MULTIELABORAZIONE SIMMETRICA / SYMMETRIC  MULTI-PROCESSING (SMP)
+## ==MULTIELABORAZIONE SIMMETRICA / SYMMETRIC  MULTI-PROCESSING (SMP)==
 I processi pronti formano una coda comune oppure vi è una coda per ogni processore, e ciascun processore ha un proprio scheduler che seleziona la coda migliore da cui prelevare il prossimo processo da eseguire. Questo metodo viene adottato da molti SO attuali, come Windwos, Mac OS X e Linux.
 L'accesso concorrente di più processori ad una struttura dati comune rende delicata la programmazione degli scheduler:
 - devono evitare di scegliere contemporaneamente lo stesso processo
 - devono evitare che qualche processo vada "perso"
 
 Ci sono due possibilità per implementare le code di attesa:
-- ==COMMON READY QUEUE==: comune a tutti i processore; l'accesso alla coda deve essere gestito tramite lock per evitare le possibili race condition
+- ==COMMON READY QUEUE==: comune a tutti i processore; l'accesso alla coda deve essere gestito tramite [[Lock|lock]] per evitare le possibili [[Race_condition|race condition]]
 - ==PER-CORE RUN QUEUES==: una per ogni processore; serve un uso più efficiente della cache per compensare il possibile sbilanciamento del carico di lavoro
 ![450](smp_code.png)
 
-Tradizionalmente i sistemi SMP hanno reso possibile la concorrenza fra thread con l'utilizzo di diversi processori fisici; questi sistemi su processori multicore sono più veloci e consumano meno energia.
+Tradizionalmente i sistemi SMP hanno reso possibile la concorrenza fra [[Thread|thread]] con l'utilizzo di diversi processori fisici; questi sistemi su processori multicore sono più veloci e consumano meno energia.
 Quando un processore accede alla memoria, una quantità significativa di tempo (fino al 50%) è trascorsa in attesa della disponibilità di dati: ==STALLO DELLA MEMORIA==. Progetti hardware recenti di _hyperthreading_ implementano unità di calcolo multithread in cui due o più thread hardware sono assegnati ad una singola CPU.
 
 Due versioni del SMP:

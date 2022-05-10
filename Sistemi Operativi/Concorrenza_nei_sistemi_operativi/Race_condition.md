@@ -1,7 +1,7 @@
 # RACE CONDITION
 ==RACE CONDITION / CORSA CRITICA==: più processi accedono in concorrenza e modificano dati condivisi; l'esito dell'esecuzione dipende dall'ordine di esecuzione di questi processi.
-Tali situazioni si verificano spesso nei SO, nei quali diversi componenti agiscono su risorse condivise, soprattutto nei sistemi multicore, in cui diversi thread vengono eseguiti in parallelo su unità di calcolo distinte.
-(link a multicore)
+Tali situazioni si verificano spesso nei SO, nei quali diversi componenti agiscono su [[Risorse|risorse]] condivise, soprattutto nei sistemi multicore, in cui diversi thread vengono eseguiti in parallelo su unità di calcolo distinte.
+(link a multicore, processi)
 Per evitare le corse critiche occorre che i processi siano ==SINCRONIZZATI==. A questo scopo, alcune operazioni devono essere ==ATOMICHE==: vengono completate senza subire interruzioni. Se due processi tentano di accedere agli stessi dati contemporaneamente, le istruzioni in linguaggio macchina possono risultare ==INTERFOGLIATE==, e la sequenza effettiva di esecuzione dipende da come i processi vengono schedulati.
 
 Esempio:
@@ -25,19 +25,16 @@ Molti sistemi forniscono soluzioni hardware per risolvere problemi legati alle s
 - in un sistema monoprocessore è sufficiente interdire le interruzioni mentre si modificano le variabili condivise, eseguendo quindi il processo senza possibilità di [[Risorse#PREEMPTION PRELAZIONE|prelazione]] (soluzione inefficiente nei sistemi multiprocessore)
 - molte architetture attuali forniscono speciali istruzioni atomiche implementate in hardware
 Tuttavia, queste soluzioni sono complicate e generalmente inaccessibili ai programmatori di applicazioni. I progettisti di SO hanno quindi implementato soluzioni software per risolvere questi problemi:
-- ==LOCK==
-	![[Lock]]
-- ==SEMAFORI==
-	![[Semafori]]
-- ==MONITOR==
-	![[Monitor]]
+- [[Lock|lock]]
+- [[Semafori|semafori]]
+- [[Monitor|monitor]]
 
 ## SEZIONI CRITICHE E KERNEL
 In particolare, il codice del kernel dovrà regolare l'accesso ai dati condivisi, nel caso in cui più processi utente richiedano servizi al SO.
 A questo proposito, esistono due tipi di kernel:
-- ==KERNEL SENZA DIRITTO DI [[Risorse#PREEMPTION PRELAZIONE|PRELAZIONE]]==: i processi vengono eseguiti finchè non escono dalla modalità kernel, si bloccano o restituiscono volontariamente la CPU
+- ==KERNEL SENZA DIRITTO DI PRELAZIONE==: i processi vengono eseguiti finchè non escono dalla modalità kernel, si bloccano o restituiscono volontariamente la CPU
 	- immuni dai problemi legati all'ordine degli accessi alle strutture dati del kernel: non si consente l'interruzione forzata di processi attivi in modalità di sistema
-- ==KERNEL CON DIRITTO DI [[Risorse#PREEMPTION PRELAZIONE|PRELAZIONE]]==: si consente la prelazione di processi in esecuzione in modalità kernel
+- ==KERNEL CON DIRITTO DI PRELAZIONE==: si consente la prelazione di processi in esecuzione in modalità kernel
 	- critici per [[Scheduling_multiprocessore#MULTIELABORAZIONE SIMMETRICA SYMMETRIC MULTI-PROCESSING SMP|sistemi SMP]], in cui due processi in modalità kernel possono essere eseguiti su processori distinti
 	- necessari in ambito [[Sistemi_real-time|real-time]]: permettono ai processi in tempo reale di far valere il loro diritto di precedenza
 	- utili nei sistemi time-sharing: diminuiscono il [[Definizioni#MISURE|tempo medio di risposta]]

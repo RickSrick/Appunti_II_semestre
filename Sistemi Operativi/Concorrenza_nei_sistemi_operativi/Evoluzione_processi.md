@@ -24,7 +24,7 @@ Nel caso semplice di due processi la loro evoluzione è rappresentabile con un s
 Esempio 1:
 ![450](evoluzione_processi.png)
 ($\text{R}_{1}$, $\text{R}_{2}$: risorse non condivisibili)
-In questo caso non possono esserci [[Deadlock|deadlock]], in quanto ogni processo usa risorse non condivisibili separate.
+In questo caso non possono esserci [[Deadlock|deadlock]], in quanto ogni processo usa [[Risorse|risorse]] non condivisibili separate.
 
 Esempio 2:
 ![450](evoluzione_processi2.png)

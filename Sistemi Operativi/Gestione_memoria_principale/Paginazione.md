@@ -6,8 +6,7 @@ Si divide la memoria logica in blocchi della stessa dimensione: ==PAGINE==
 
 Si ottiene così uno spazio degli indirizzi logici totalmente separato da quello degli indirizzi fisici
 Per eseguire un processo che impiega _n_ pagine, serve trovare _n_ frame liberi prima di caricarlo, anche non contigui.
-Si impiega una ==TABELLA DELLE PAGINE== per tradurre gli indirizzi logici negli indirizzi fisici corrispondenti.
-![[Tabella_delle_pagine]]
+Si impiega una ==[[Tabella_delle_pagine|TABELLA DELLE PAGINE]]== per tradurre gli indirizzi logici negli indirizzi fisici corrispondenti.
 
 ## INDIRIZZI LOGICI NELLA PAGINAZIONE
 Gli indirizzi logici generati dalla CPU vengono divisi in due parti:
@@ -15,7 +14,7 @@ Gli indirizzi logici generati dalla CPU vengono divisi in due parti:
 - ==OFFSET NELLA PAGINA (d)==: viene combinato con l'indirizzo base del frame per ricavare l'indirizzo fisico corrispondente
 
 ## PAGINAZIONE E FRAMMENTAZIONE
-Con questo metodo si elimina la frammentazione esterna, rimanendo con solo quella interna (relativa all'ultimo frame assegnato).
+Con questo metodo si elimina la [[Frammentazione#FRAMMENTAZIONE ESTERNA|frammentazione esterna]], rimanendo con solo quella [[Frammentazione#FRAMMENTAZIONE INTERNA|interna]] (relativa all'ultimo frame assegnato).
 Esempio:
 	Dimensione della pagina: 2048 byte
 	Dimensione del processo: 72766 byte
@@ -25,13 +24,11 @@ Nel caso peggiore frammentazione interna di 1 byte (contenuto in 1 frame), nel c
 Nonostante ciò, frame piccoli non sono sempre preferibili:
 - la tabella delle pagine consuma memoria
 - I/O più efficiente per pagine/frame grandi (la loro dimensione cresce nella storia dei SO)
-![[Frammentazione]]
 
 ## PAGE FAULT
 ==PAGE FAULT==: processo fa riferimento ad una pagina non presente in memoria principale
 Il SO risponde al page fault trasferendo la pagina richiesta in memoria, sospendendo il processo nel mentre.
-Se la memoria fisica è piena, bisogna scaricare una pagina della memoria. Per decidere quali, si implementano ==ALGORITMI DI SOSTITUZIONE PAGINA== basati su alcuni parametri. Le informazioni necessarie a questi algoritmi sono memorizzati in alcuni bit presenti in ogni elemento della tabella delle pagine.
-![[Algoritmi_sostituzione_pagina]]
+Se la memoria fisica è piena, bisogna scaricare una pagina della memoria. Per decidere quali, si implementano ==[[Algoritmi_sostituzione_pagina|ALGORITMI DI SOSTITUZIONE PAGINA]]== basati su alcuni parametri. Le informazioni necessarie a questi algoritmi sono memorizzati in alcuni bit presenti in ogni elemento della tabella delle pagine.
 
 ## DIMENSIONE DELLE PAGINE
 Criteri per determinare la dimensione delle pagine:
@@ -41,24 +38,10 @@ Criteri per determinare la dimensione delle pagine:
 - dimensione ed efficienza della TLB
 - frammentazione
 ==TLB REACH==: quantità di memoria accessibile via TLB
-Idealmente, il _working-set_ di ogni processo dovrebbe essere contenuto nella TLB, altrimenti si verificano molti page fault e il tempo di esecuzione diventa proibitivo.
-![[Algoritmi_allocazione_frame#WORKING-SET]]
+Idealmente, il _[[Algoritmi_allocazione_frame#WORKING-SET|working-set]]_ di ogni processo dovrebbe essere contenuto nella TLB, altrimenti si verificano molti page fault e il tempo di esecuzione diventa proibitivo.
+
 Aumentare le dimensioni delle pagine potrebbe portare ad un incremento della frammentazione.
 Si possono prevedere pagine di diverse dimensioni e permettere l'utilizzo di quelle più grandi ai processi che le richiedono, senza aumentare la frammentazione.
 
 ## PAGINAZIONE E MEMORIA VIRTUALE
-Non sempre un processo necessita della presenza di tutti i suoi frame in memoria; questo consente di implementare meccanismi di ==MEMORIA VIRTUALE==: si scrivono su disco blocchi di memoria (pagine) da caricare in memoria principale solo quando servono.
-![[Memoria_virtuale#MEMORIA VIRTUALE]]
-
-## PROBLEMA
-Associare una tabella delle pagine ad ogni processo può occupare troppa memoria
-Possibili soluzioni:
-- ==PAGINAZIONE GERARCHICA==
-	![[Paginazione_gerarchica#PAGINAZIONE GERARCHICA]]
-- ==TABELLA DELLE PAGINE HASH==
-	![[Tabella_delle_pagine_hash]]
-- ==TABELLA DELLE PAGINE INVERTITA==
-	![[Tabella_delle_pagine_invertita#TABELLA DELLE PAGINE INVERTITA]]
-
-
-![[Confronto_segmentazione_paginazione#CONFRONTO TRA SEGMENTAZIONE E PAGINAZIONE]]
+Non sempre un processo necessita della presenza di tutti i suoi frame in memoria; questo consente di implementare meccanismi di ==[[Memoria_virtuale#MEMORIA VIRTUALE|MEMORIA VIRTUALE]]==: si scrivono su disco blocchi di memoria (pagine) da caricare in memoria principale solo quando servono.

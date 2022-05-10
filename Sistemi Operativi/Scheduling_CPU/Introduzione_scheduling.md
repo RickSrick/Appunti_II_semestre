@@ -1,6 +1,5 @@
 ## INTERRUPT
-==INTERRUPT==: meccanismo dell'elaboratore per salvare il contatore di programma del processo interrotto per poi trasferire il controllo ad una locazione di memoria usata come inizio di un segmento di programma per determinare la causa dell'interruzione e agire di conseguenza (==INTERRUPT HANDLER==).
-![[Interrupt]]
+==[[Interrupt|INTERRUPT]]==: meccanismo dell'elaboratore per salvare il contatore di programma del processo interrotto per poi trasferire il controllo ad una locazione di memoria usata come inizio di un segmento di programma per determinare la causa dell'interruzione e agire di conseguenza (==INTERRUPT HANDLER==).
 
 ## ISTRUZIONI PRIVILEGIATE
 ==ISTRUZIONI PRIVILEGIATE==: sottoinsieme di istruzioni utilizzabili esclusivamente dal sistema operativo:
@@ -22,6 +21,5 @@ Il ==KERNEL== è composto da tre sezioni, implementate direttamente in hardware 
 	- determinare l'origine dell'interruzione
 	- attivare il segmento di codice specifico per l'interruzione identificata
 - ==DISPATCHER==: assegna i CPU core ai vari processi
-- terza sezione: implementa i costrutti per la sincronizzazione dei processi (e.g. semafori)
-	![[Semafori]]
+- terza sezione: implementa i costrutti per la sincronizzazione dei processi (e.g. [[Semafori|semafori]])
 Ogni sistem è anche dotato di un orologio in tempo reale (==REAL-TIME CLOCK (RTC)==) per misurare gli intervalli di tempo.

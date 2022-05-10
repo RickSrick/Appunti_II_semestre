@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "18b6221807e2ee2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "855289636e79ceaa",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "11a10b293b19070e",
+    "type": "split",
+    "children": [
+      {
+        "id": "271c3dad7e52356f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51521408acd26d61",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "467df341451be962",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "\"link a\"",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "34ffee804900c13a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef39c63468a631f0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4914eeb65ea9a624",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "855289636e79ceaa",
+  "lastOpenFiles": [
+    "Gestione_file/File.md",
+    "Gestione_file/File_system.md",
+    "Gestione_file/File_system_remoti.md",
+    "Gestione_file/Avviamento_SO.md",
+    "Gestione_file/Gestione_spazio_libero.md",
+    "Gestione_file/Buffer_cache.md",
+    "Gestione_file/Allocazione.md",
+    "Gestione_file/Condivisione_file.md",
+    "Gestione_file/Directory.md",
+    "Gestione_file/Struttura_directory.md"
+  ]
+}

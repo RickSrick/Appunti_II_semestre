@@ -3,10 +3,10 @@ Il ==SOTTOSISTEMA PER LA GESTIONE DEI [[File|FILE]]== è la parte più visibile 
 Così come i sottosistemi per la gestione dei processi e della memoria "virtualizzano" rispettivamente la CPU e la memoria centrale, così il [[File_system|file system]] "virtualizza" i dispositivi di memorizzazione permanente, fornendone una visione logica uniforme.
 
 Un sistema di calcolo può infatti utilizzare diversi media per registrare stabilmente le informazioni, ognuno con caratteristiche diverse:
-- disco rigido
+- [[Hard_disk_drive|disco rigido]]
 - dischi ottici
-- dischi a stato solido
-- memorie flash
+- [[Solid_state_drive|dischi a stato solido]]
+- [[Solid_state_drive|memorie flash]]
 Compito del SO è quindi quello di astrarre la complessità di utilizzo dei diversi mezzi di memorizzazione fornendone una visione logica e metodi d'accesso uniformi.
 
 Sono presenti quindi due livelli:

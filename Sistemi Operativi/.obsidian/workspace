@@ -7,8 +7,12 @@
         "id": "855289636e79ceaa",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Gestione_memoria_principale/Mappatura.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Gestione_memoria_principale/Mappatura.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +89,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
-    "Gestione_file/File.md",
-    "Gestione_file/File_system.md",
-    "Gestione_file/File_system_remoti.md",
-    "Gestione_file/Avviamento_SO.md",
-    "Gestione_file/Gestione_spazio_libero.md",
-    "Gestione_file/Buffer_cache.md",
+    "Gestione_memoria_principale/Mappatura.md",
+    "Gestione_file/Nastro.md",
+    "Gestione_file/Montaggio.md",
+    "Gestione_file/Tabelle_file_aperti.md",
+    "Gestione_file/Struttura_disco.md",
+    "Gestione_file/Solid_state_drive.md",
+    "Gestione_file/Accesso_file.md",
     "Gestione_file/Allocazione.md",
-    "Gestione_file/Condivisione_file.md",
-    "Gestione_file/Directory.md",
-    "Gestione_file/Struttura_directory.md"
+    "Gestione_file/Buffer_cache.md",
+    "Gestione_file/Directory.md"
   ]
 }

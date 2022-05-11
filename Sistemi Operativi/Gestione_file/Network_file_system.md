@@ -1,7 +1,7 @@
 # NETWORK FILE SYSTEM (NFS)
 ==NETWORK FILE SYSTEM (NFS)==: rappresenta sia una realizzazione che una definizione di un sistema per accesso a file remoti attraverso LAN o WAN. Nasce in ambiente UNIX (_Solaris_ e _SunOS_) ed usa i protocolli _UDP/IP_ (_Unreliable Datagram Protocol_ su Ethernet) o _TCP/IP_, secondo la rete di comunicazione. È supportato da Linux.
-
 Nel contesto dell'NFS si considera un insieme di stazioni di lavoro interconnesse come un insieme di calcolatori indipendenti con [[File_system|file system]] indipendenti. Bisogna garantire un certo grado di condivisione tra i file system, su richiesta esplicita, in modo trasparente.
+
 Una directory remota viene [[Montaggio|montata]] su una [[Directory|directory]] del file system locale. La directory montata assume l'aspetto di un sottoalbero integrante del file system locale e sostituisce il sottoalbero che discende dalla directory locale.
 La directory remota si specifica come argomento dell'operazione di montaggio in modo esplicito: occorre fornirne la locazione, o il nome del calcolatore. I file al suo interno diventano quindi accessibili in modo del tutto trasparente.
 Potenzialmente, ogni file system, o ogni directory in un file system, nel rispetto dei diritti d'accesso, può essere montato in modo remoto su qualsiasi directory locale.

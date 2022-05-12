@@ -7,12 +7,8 @@
         "id": "855289636e79ceaa",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Gestione_memoria_principale/Mappatura.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -40,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"link a\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -69,14 +65,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gestione_memoria_principale/Mappatura.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -89,15 +84,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
-    "Gestione_memoria_principale/Mappatura.md",
-    "Gestione_file/Nastro.md",
-    "Gestione_file/Montaggio.md",
-    "Gestione_file/Tabelle_file_aperti.md",
-    "Gestione_file/Struttura_disco.md",
-    "Gestione_file/Solid_state_drive.md",
-    "Gestione_file/Accesso_file.md",
-    "Gestione_file/Allocazione.md",
-    "Gestione_file/Buffer_cache.md",
-    "Gestione_file/Directory.md"
+    "Affidabilità_sistemi/Calcolo_affidabilità.md",
+    "Affidabilità_sistemi/Affidabilità.md",
+    "Affidabilità_sistemi/Fault_tolerance.md",
+    "Affidabilità_sistemi/Guasti.md",
+    "Gestione_file/RAID.md",
+    "Gestione_file/Scheduling_disco.md",
+    "Gestione_file/Connessione_dispositivi_memoria.md",
+    "Gestione_file/Malfunzionamenti.md",
+    "Gestione_file/Hard_disk_drive.md",
+    "Concorrenza_nei_sistemi_operativi/Semafori.md"
   ]
 }

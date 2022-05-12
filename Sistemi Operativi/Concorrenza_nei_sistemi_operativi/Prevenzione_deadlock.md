@@ -1,12 +1,11 @@
 # PREVENZIONE DEL [[Deadlock|DEADLOCK]]
-- ==ALLOCAZIONE GLOBALE==: richiede tutte le [[Risorse|risorse]] che il processo necessita per il suo completamento:
+- ==ALLOCAZIONE GLOBALE==: richiede tutte le [[Risorse|risorse]] che il [[Processi|processo]] necessita per il suo completamento:
 	- realizzabile quando sono note esattamente le risorse utilizzate dai processi
 	- permette di evitare il deadlock in un sistema di più processi, al costo di un cattivo utilizzo delle risorse
 - ==ALLOCAZIONE GERARCHICA==: stabilire ordinamento delle risorse in base alla loro importanza:
 	- un processo che sta usando risorse può acquisirne di più importanti
 	- se vuole acquisire una risorsa meno importante rispetto a quella usata, deve prima rilasciare quest'ultima prima di richiedere quella meno importante
 - ==ALGORITMO DEL BANCHIERE==
-(link a processo)
 
 ## ALGORITMO DEL BANCHIERE
 Dati _n_ processi:

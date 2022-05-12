@@ -19,3 +19,4 @@ Altri tipi di programma:
 	- non fanno parte del sistema operativo
 	- eseguiti dagli utenti
 	- lanciati da linea di comando, dal click del mouse o da pressione sul touchscreen
+	- definiscono le modalità di utilizzo delle risorse del sistema per risolvere i problemi di calcolo degli utenti (e.g. word processor, compilatori, web browser, sistemi per database, fogli di calcolo, giochi)

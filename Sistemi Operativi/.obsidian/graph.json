@@ -11,7 +11,7 @@
       "query": "path:Introduzione",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 6407397
       }
     },
     {
@@ -25,28 +25,28 @@
       "query": "path:Concorrenza_nei_sistemi_operativi",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 11224222
       }
     },
     {
       "query": "path:Scheduling_CPU",
       "color": {
         "a": 1,
-        "rgb": 5431378
+        "rgb": 1998878
       }
     },
     {
       "query": "path:Gestione_memoria_principale",
       "color": {
         "a": 1,
-        "rgb": 5431473
+        "rgb": 16743168
       }
     },
     {
       "query": "path:Gestione_file",
       "color": {
         "a": 1,
-        "rgb": 5419488
+        "rgb": 16716914
       }
     },
     {
@@ -67,6 +67,6 @@
   "repelStrength": 16.2393162393162,
   "linkStrength": 1,
   "linkDistance": 321,
-  "scale": 0.282743712524598,
+  "scale": 0.274583011985767,
   "close": false
 }

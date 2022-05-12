@@ -1,0 +1,4 @@
+# ARCHITETTURA DEL SISTEMA DI CALCOLO
+I sistemi di calcolo sono composti da una o più CPU e diversi [[Connessione_dispositivi_memoria|controllori di device di I/O]] connessi ad un bus comune, che permette l'accesso ad una memoria condivisa. Questi componenti competono per garantirsi cicli di memoria.
+Ciascun controllore gestisce un particolare tipo di periferica tramite un ==BUFFER== locale: memoria usata temporaneamente per l'entrata o l'uscita dei dati. La CPU sposta i dati da / verso la memoria principale verso / da i buffer locali. Le operazioni di I/O avvengono effettivamente sui dati contenuti nei buffer delle periferiche. Il controllore informa la CPU quando ha portato a termine l'operazione di I/O, causando un [[Interrupt|interrupt]]. 
+![500](Images/gestione_accesso_memoria.png)

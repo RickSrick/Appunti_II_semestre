@@ -17,7 +17,7 @@ Serve un meccanismo per distinguere le pagine presenti in memoria da quelle resi
 - _i_: pagina non valida o non residente in memoria
 ![500](bit_di_validita1.png)
 Inizialmente posto a _i_ per tutte le pagine; durante la traduzione degli indirizzi, se il bit di validità vale _i_ viene generata una trap al SO, ovvero un [[Paginazione#PAGE FAULT|page fault]].
-Il SO consulta una tabella interna delle pagine (conservata con il [[Processi#STATO DI UN PROCESSO|TCB]]) per decidere se si tratta di riferimento non valido (abort) o pagina non in memoria.
+Il SO consulta una tabella interna delle pagine (conservata con il [[Processi#STATO DI UN PROCESSO|PCB]]) per decidere se si tratta di riferimento non valido (abort) o pagina non in memoria.
 Nel secondo caso:
 - si individua la pagina richiesta su disco
 - si seleziona un frame libero: se esiste lo si usa, altrimenti si applica un _algoritmo di sostituzione_ per selezionare un _frame vittima_

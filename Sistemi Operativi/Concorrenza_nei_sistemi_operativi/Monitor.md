@@ -5,7 +5,6 @@ Nonostante i semafori rappresentino un meccanismo pratico ed efficace per sincro
 
 Tuttavia, tale definizione di monitor non è sufficientemente potente per modellare alcuni schemi di sincronizzazione per permettere ad un processo di attendere, causa occupazione della risorsa richiesta, dopo l'ingresso al monitor.
 Per questo si dichiarano apposite _variabili condition_.
-(link a processo)
 ![400](monitor.png)
 ![400](monitor2.png)
 

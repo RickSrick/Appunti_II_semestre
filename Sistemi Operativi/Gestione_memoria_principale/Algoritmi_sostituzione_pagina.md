@@ -6,7 +6,7 @@ Gli algoritmi per la sostituzione delle pagine vengono valutati eseguendoli su u
 	- i risultati dipendono significativamente dal numero di frame a disposizione
 Esempio di stringa _s_: _7 0 1 2 0 3 0 4 2 3 0 3 0 3 2 1 2 0 1 7 0 1_
 
-## FIRST IN - FIRST OUT (FIFO)
+## ==FIRST IN FIRST OUT (FIFO)==
 Implementato mediante una coda FIFO relativa alle pagine residenti in memoria: si sostituisce la pagina in testa alla coda.
 Esempio con stringa _s_ e 3 frame disponibili per processo:
 ![550](fifo.png)
@@ -24,13 +24,13 @@ Perchè accade con il FIFO?
 - può capitare che FIFO stronchi di continuo le pagine accedute al passo successivo
 - con il numero di frame può aumentare anche il numero di page fault
 
-## ALGORITMO OTTIMO (OPT)
+## ==ALGORITMO OTTIMO (OPT)==
 Sostituire la pagina che non verrà usata per il periodo di tempo più lungo.
 Esempio con stringa _s_ e 3 frame disponibili per processo:
 ![550](opt.png)
 È il minimo possibile per la stringa _s_, ma come si può conoscere l'identità delle pagine richieste se non si conosce il futuro? Non si può; infatti questo algoritmo è di solo interesse teorico: viene usato per misurare le prestazioni comparative di algoritrmi implementabili.
 
-## LEAST RECENTLY USED (LRU)
+## ==LEAST RECENTLY USED (LRU)==
 Si rimpiazza la pagina che non è stata usata per più tempo (occorre associare ad ogni pagina il momento dell'ultimo accesso).
 Esempio con stringa _s_ e 3 frame disponibili per processo:
 ![550](lru.png)
@@ -51,7 +51,7 @@ OPT e LRU sono ==ALGORITMI "A PILA"==, che non soffrono dell'anomalia di Belady.
 	- si rimpiazza la pagina il cui bit di riferimento vale 0, se zero (non si conosce l'ordine di accesso alle pagine)
 	- possibile registrare i bit di riferimento ad intervalli regolari in un registro a scorrimento ($\mathrm{p}_{i}$ con registro di scorrimento _11000100_ acceduta più recentemente di $\mathrm{p}_{j}$ con valore 01100101)
 
-## SECONDA CHANCE (CLOCK ALGORITHM)
+## ==SECONDA CHANCE (CLOCK ALGORITHM)==
 Si basa sul FIFO, con l'aggiunta di un bit di riferimento.
 Quando la pagina riceve una seconda chance, il bit di riferimento viene azzerato ed il tempo di arrivo viene aggiornato al tempo attuale:
 - se la pagina da rimpiazzare in ordine di clock ha il bit di riferimento a 0 viene rimpiazzata
@@ -72,13 +72,13 @@ Quando la pagina riceve una seconda chance, il bit di riferimento viene azzerato
 	- si sostituisce la prima pagina che si trova nella classe (0,0)
 	- azzera sempre il bit di riferimento nella ricerca della pagina da sostituire
 
-## ALGORITMI CON CONTEGGIO
+## ==ALGORITMI CON CONTEGGIO==
 Si mantiene un contatore del numero di riferimenti effettuati ad ogni pagina.
 - ==LEAST FREQUENTLY USED (LFU)==: si rimpiazza la pagina col valore minimo del contatore
 - ==MOST FREQUENTLY USED (MFU)==: si rimpiazza la pagina col valore massimo del contatore (presuppone che la pagina col valore minimo del contatore sia stata spostata recentemente in memoria e quindi deve essere ancora impiegata)
 L'implementazione è costosa e le prestazioni sono scadenti.
 
-## POOL DI FRAME LIBERI
+## ==POOL DI FRAME LIBERI==
 Si mantiene un pool di frame liberi; ci sono due modi di gestire un page fault:
 - si seleziona un frame vittima, ma prima di trascriverlo su disco si procede alla copia della pagina richiesta in un frame del pool (il processo può essere riavviato rapidamente senza attendere la fine del salvataggio su memoria di massa del frame vittima)
 - prima di accedere alla memoria di massa si controlla se la pagina richiesta è ancora presente nel pool dei frame liberi (non serve alcuna operazione di I/O)

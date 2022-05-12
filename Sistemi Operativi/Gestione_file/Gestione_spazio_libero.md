@@ -26,10 +26,9 @@ Si collegano tutti i blocchi liberi mediante puntatori e si mantiene un puntator
 	utile in quanto lo spazio viene spesso allocato e liberato in modo contiguo (e.g. [[Allocazione#ALLOCAZIONE CONTIGUA|allocazione contigua, extent]] e [[Allocazione#ALLOCAZIONE CONCATENATA|clustering]])
 ![600](schema_concatenato.png)
 ### ==TRIM==
-Comando [[Memoria_secondaria|ATA]] che consente al SO di informare un SSD su quali blocchi di dati può cancellare in quanto non sono in uso. (link a SSD) Il TRIM è complementare al [[Struttura_directory#DIRECTORY A GRAFO GENERALE|garbage collection]]:
+Comando [[Connessione_dispositivi_memoria|ATA]] che consente al SO di informare un [[Solid_state_drive|SSD]] su quali blocchi di dati può cancellare in quanto non sono in uso. Il TRIM è complementare al [[Struttura_directory#DIRECTORY A GRAFO GENERALE|garbage collection]]:
 - elimina la copiatura di pagine di dati scartate o non valide durante il processo di garbage collection per risparmiare tempo e migliorare le prestazioni dell'unità SSD
 - l'SSD ha un minor numero di pagine da spostare durante la garbage collecition, il che riduce il numero totale di cicli di programmazione / cancellazione sul supporto flash NAND e prolunga la vita dell'SSD
-(link a flash NAND?)
 
 ## PRESTAZIONI
 Se, nell'elemento di directory, si mantiene la data di ultimo accesso ad un file per consentire all'utente di risalire all'ultima volta che un file è stato letto, ogni volta che si apre un file per la lettura. si deve leggere e scrivere anche l'elemento della directory ad esso associato.

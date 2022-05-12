@@ -12,7 +12,6 @@ Proprietà:
 ![400](grafo_precedenza.png)
 
 ==SISTEMA CHIUSO==: esiste un singolo processo iniziale e un singolo processo finale.
-(link a processo)
 Se il sistema è aperto, è possibile renderlo chiuso aggiungendo dei processi dummy.
 ![500](grafo_precedenza2.png)
 
@@ -21,8 +20,7 @@ Due insieme di processi $\text{C}_{a}$ e $\text{C}_{b}$ possono essere combinati
 
 ## MASSIMO GRADO DI PARALLELISMO
 ==MASSIMO GRADO DI PARALLELISMO==: cardinalità del più grande sottoinsieme di processi tale per cui, dati due nodi qualsiasi del sottoinsieme, non esiste un percorso orientato che li connette.
-Indica quanti sottoprocessi indipendenti potrebbero essere parallelizzati. Per ridurre il massimo grado di parallelismo (i.e. ottimizzare il sistema per hardware con un numero prefissato di core) si può agire sui vari insiemi che hanno un massimo grado di parallelismo maggiore del numero di core.
-(link a sistemi multicore?)
+Indica quanti sottoprocessi indipendenti potrebbero essere parallelizzati. Per ridurre il massimo grado di parallelismo (i.e. ottimizzare il sistema per hardware con un [[Multiprocessore_multicore#SISTEMI MULTICORE|numero prefissato di core]]) si può agire sui vari insiemi che hanno un massimo grado di parallelismo maggiore del numero di core.
 
 ## INTERFERENZA E DETERMINATEZZA
 ==SISTEMA DETERMINATO==: quando più processi cooperano, le loro diverse velocità e l'ordine d'esecuzione non influenzano il risultato finale.

@@ -8,7 +8,7 @@ Esempio: i problemi di assegnazione delle risorse impongono decisioni politiche,
 Tradizionalmente i SO venivano scritti in linguaggio _assembly_; successivamente, furono utilizzati linguaggi specifici per la programmazione di sistema, quali _Algol_ e _PL/1_; attualmente vengono invece sviluppati in linguaggi di alto livello, particolarmente orientati al sistema, come C o C++.
 In realtà, normalmente, si utilizza un mix di linguaggi:
 - componenti di basso livello sviluppate in assembly (e.g. driver dei dispositivi)
-- kernel in C (link a kernel?)
+- [[Sistema_operativo#STRUTTURA DEL SISTEMA DI CALCOLO|kernel]] in C
 - [[Programmi_di_sistema|programmi di sistema]] realizzati tramite C, C++ e linguaggi di scripting, quali PERL, Python, shell script
 	caratteristiche:
 	- veloci da codificare

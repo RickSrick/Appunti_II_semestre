@@ -1,6 +1,5 @@
 # PARALLELISMO E CONCORRENZA
-(link a multicore, processo)
-Nelle architetture multicore, sono presenti diverse unità di calcolo sullo stesso chip, ognuna delle quali appare al SO come un chip separato. Su questi sistemi i thread possono essere eseguiti in parallelo, poichè il sistema li può assegnare a diverse unità di calcolo.
+Nelle [[Multiprocessore_multicore#SISTEMI MULTICORE|architetture multicore]], sono presenti diverse unità di calcolo sullo stesso chip, ognuna delle quali appare al SO come un chip separato. Su questi sistemi i [[Thread|thread]] possono essere eseguiti in parallelo, poichè il sistema li può assegnare a diverse unità di calcolo.
 
 - ==PARALLELISMO==: eseguire più calcoli / task contemporaneamente
 	- task multipli, o diverse parti dello stesso task, vengono eseguiti contemporaneamente in sistemi multi-processore o multi-core

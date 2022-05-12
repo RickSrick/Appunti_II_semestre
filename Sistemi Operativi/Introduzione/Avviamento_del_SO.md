@@ -1,10 +1,8 @@
 # AVVIAMENTO DEL SO
-==BOOTSTRAP==: insieme dei processi che vengono eseguiti per caricare il SO nella fase d'avvio.
+==BOOTSTRAP==: insieme dei processi che vengono eseguiti da un computer durante la fase di avvio, in particolare dall'accensione fino al completo caricamento in memoria primaria del kernel del sistema operativo a partire dalla memoria secondaria.
+==BIOS==: insieme di routine software che fornisce una serie di funzioni di base per l'accesso all'hardware. È tipicamente memorizzato nella ROM e viene identificato con il termine di ==FIRMWARE==. 
+==BOOTSTRAP LOADER==: inizializza e controlla tutte le componenti del sistema, Procede al caricamento del kernel del SO e ne lancia l'esecuzione. Normalmente è memorizzato su [[Hard_disk_drive|disco fisso]], nel [[Avviamento_so_memoria#BOOT BLOCK|Master Boot Record]].
 
-All'accensione del computer il programma di bootstrap (==BOOTLOADER==) viene caricato dal ==BIOS==. Viene eseguito dall'accensione fino al completo caricamento del kernel del SO in memoria principale; dopodichè il controllo della macchina passa al SO. Normalmente il bootloader è memorizzato su disco fisso, nel Master Boot Record (MBR).
+Quando si accende un elaboratore, occorre attendere alcuni istanti per poter iniziare a lavorare: durante questa pausa il computer carica il kernel e i programmi di sistema, che garantiscono i servizi fondamentali per l'esecuzione dei programmi utente.
 
-Il BIOS è tipicamente memorizzato nella ROM e viene identificato col nome di ==FIRMWARE==. È un insieme di routine software che fornisce una serie di funzioni base per l'accesso base all'hardware:
-- inizializza e controlla tutte le componenti di sistema
-- procede al caricamento del kernel del SO e ne lancia l'esecuzione
-- 
-Recentemente, il BIOS sta lasciando il posto a un nuovo firmware, ==UEFI==, che si trova nella cartella _efi_ nella relativa partizione di sistema.
+Recentemente il BIOS ha lasciato il posto a un nuovo firmware: ==UEFI==. Con il suo avvanto, il funzionamento del boot loader è cambiato sostanzialmente, a cominciare dal fatto che si trova, fisicamente, nella cartella _efi_ contenuta nella relativa [[Struttura_disco|partizione]] di sistema.

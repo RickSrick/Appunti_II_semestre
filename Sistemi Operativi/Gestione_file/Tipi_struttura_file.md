@@ -1,4 +1,4 @@
-# TIPI DI FILE
+# TIPI DI [[File|FILE]]
 ==TIPO==: attributo di un file che ne indica la struttura logica interna e ne permette la corretta interpretazione.
 Alcuni SO gestiscono diversi tipi di file, ovvero li riconoscono in modo da manipolare i file in maniera ragionevole.
 Esistono tre tecniche principali per identificare i tipi di file:

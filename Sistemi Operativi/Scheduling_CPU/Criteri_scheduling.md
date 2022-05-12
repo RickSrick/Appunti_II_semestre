@@ -1,4 +1,4 @@
-# CRITERI PER LO SCHEDULING
+# CRITERI PER LO [[Scheduling|SCHEDULING]]
 Normalmente si ottimizzano i valori medi, ma talvolta è più opportuno privilegiare i valori massimi/minimi (e.g. ridurre il [[Definizioni#MISURE|tempo massimo di risposta]] per garantire che tutti gli utenti ricevano un buon servizio).
 Per i sistemi time-sharing invece è più significativo ridurre la varianza dei tempi di risposta rispetto al valore medio: un sistema con un tempo di risposta prevedibile è migliore di un sistema mediamente più rapido ma molto variabile.
 
@@ -25,7 +25,7 @@ Usando il tempo di burst come priorità:
 
 ## ROUND ROBIN
 A ciascun processo viene associata una piccola quantità di tempo di CPU, detta ==QUANTO DI TEMPO== e indicata con _q_ (di solito 10-100 millisecondi); dopo un quanto di tempo, il processo è obbligato a rilasciare la CPU e a tornare nella ready queue.
-Se _q_ diventa grande, il Round Robin diventa simile al FCFS. Inoltre, _q_ deve rimanere grande rispetto al tempo di [[Scheduler#CONTEXT SWITCH|context switch]] (di solito inferiore a 10 microsecondi), altrimenti l'overhead diventa troppo alto.
+Se _q_ diventa grande, il Round Robin diventa simile al FCFS. Inoltre, _q_ deve rimanere grande rispetto al tempo di [[Processi#CONTEXT SWITCH|context switch]] (di solito inferiore a 10 microsecondi), altrimenti l'overhead diventa troppo alto.
 In media si ha un tempo medio di attesa e di turnaround maggiore rispetto a SJF, ma anche un miglior tempo medio di risposta.
 Esempio con processi:
 ![300](rr1.png)

@@ -1,5 +1,4 @@
-# SCHEDULING IN SISTEMI MULTIPROCESSORE
-(link a multiprocessore)
+# SCHEDULING IN [[Multiprocessore_multicore#SISTEMI MULTIPROCESSORE|SISTEMI MULTIPROCESSORE]]
 Lo scheduling diventa più complesso quando sono presenti più CPU nel sistema di calcolo. Si assume come ipotesi che le unità di elaborazione siano identiche nelle loro funzioni: ==SISTEMI OMOGENEI==.
 Bisogna ripartire il carico di lavoro.
 
@@ -11,6 +10,7 @@ I processi pronti formano una coda comune oppure vi è una coda per ogni process
 L'accesso concorrente di più processori ad una struttura dati comune rende delicata la programmazione degli scheduler:
 - devono evitare di scegliere contemporaneamente lo stesso processo
 - devono evitare che qualche processo vada "perso"
+![450](smp.png)
 
 Ci sono due possibilità per implementare le code di attesa:
 - ==COMMON READY QUEUE==: comune a tutti i processore; l'accesso alla coda deve essere gestito tramite [[Lock|lock]] per evitare le possibili [[Race_condition|race condition]]

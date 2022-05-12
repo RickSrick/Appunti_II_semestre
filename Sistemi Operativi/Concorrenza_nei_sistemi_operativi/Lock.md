@@ -1,5 +1,5 @@
 # LOCK
-==LOCK==:strumento più semplice per gestire gli accessi alle [[Race_condition#SEZIONE CRITICA|sezioni critiche]]: il processo che vuole accedere alla propria sezione critica deve acquisire il possesso del lock, per poi restituirlo al momento dell'uscita. (link a processo)
+==LOCK==:strumento più semplice per gestire gli accessi alle [[Race_condition#SEZIONE CRITICA|sezioni critiche]]: il [[Processi|processo]] che vuole accedere alla propria sezione critica deve acquisire il possesso del lock, per poi restituirlo al momento dell'uscita.
 ![400](lock.png)
 ==LOCK MUTEX== (_mutex_ da _mutual exclusion_, mutua esclusione):
 - metodo per acquisire: $acquire()$

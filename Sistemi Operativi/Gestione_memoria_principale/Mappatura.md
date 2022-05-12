@@ -14,7 +14,7 @@ Problema: quando aggiornare il contenuto del file su disco?
 - quando il [[Paginazione_a_richiesta#PAGER|pager]] scandisce le pagine per controllarne il [[Paginazione_a_richiesta#SOVRALLOCAZIONE|dirty bit]]
 
 ## MAPPATURA IN MEMORIA DELL'I/O
-Ogni [[Memoria_secondaria|controllore di I/O]] è dotato di registri contenenti istruzioni e dati in via di trasferimento.
+Ogni [[Connessione_dispositivi_memoria|controllore di I/O]] è dotato di registri contenenti istruzioni e dati in via di trasferimento.
 ==MAPPATURA IN MEMORIA DELL'I/O==: indirizzi di memoria compresi in certi intervalli vengono riservati alla mappatura dei registri dei dispositivi. Metodo adatto per dispositivi con tempi di risposta rapidi, come i controllori video.
 Esempio:
 	- a ciascuna posizione sullo schermo corrisponde una locazione mappata in memoria

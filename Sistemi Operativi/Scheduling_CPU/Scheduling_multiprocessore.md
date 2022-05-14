@@ -18,7 +18,7 @@ Ci sono due possibilità per implementare le code di attesa:
 ![450](smp_code.png)
 
 Tradizionalmente i sistemi SMP hanno reso possibile la concorrenza fra [[Thread|thread]] con l'utilizzo di diversi processori fisici; questi sistemi su processori multicore sono più veloci e consumano meno energia.
-Quando un processore accede alla memoria, una quantità significativa di tempo (fino al 50%) è trascorsa in attesa della disponibilità di dati: ==STALLO DELLA MEMORIA==. Progetti hardware recenti di _hyperthreading_ implementano unità di calcolo multithread in cui due o più thread hardware sono assegnati ad una singola CPU.
+Quando un processore accede alla memoria, una quantità significativa di tempo (fino al 50%) è trascorsa in attesa della disponibilità di dati: ==STALLO DELLA MEMORIA==. Progetti hardware recenti di _hyperthreading_ implementano unità di calcolo [[Thread#MULTITHREADING|multithread]] in cui due o più thread hardware sono assegnati ad una singola CPU.
 
 Due versioni del SMP:
 - ==BILANCIAMENTO DEL CARICO==: ripartire uniformemente il carico di lavoro sui vari processori (è automatico in sistemi con ready queue comune)

@@ -1,6 +1,6 @@
 # SCHEDULER
-==SCHEDULER (AD ALTO LIVELLO)==: implementa l'algoritmo di [[Scheduling|scheduling]] che assegna priorità ai processi in [[Processi#STATO DI UN PROCESSO|stato ready]], possibilmente in modo dinamico.
-==SCHEDULTER A MEDIO TERMINE==: rimozione temporanea, in caso di sovraccarico, della memoria di un processo attivo ([[Swapping|swapping]])
+==SCHEDULER (AD ALTO LIVELLO)==: implementa l'algoritmo di [[Scheduling|scheduling]] che assegna priorità ai processi in [[Processo#STATO DI UN PROCESSO|stato ready]], possibilmente in modo dinamico.
+==SCHEDULER A MEDIO TERMINE==: rimozione temporanea, in caso di sovraccarico, della memoria di un processo attivo ([[Swapping|swapping]])
 ==SCHEDULER A BASSO LIVELLO==: [[Dispatcher|dispatcher]]
 
 I processi sono memorizzati in una struttura dati (e.g. heap) da cui viene estratto il processo con priorità minore.
@@ -17,4 +17,4 @@ In caso di scheduler preemptive, bisogna tenere in considerazione:
 - accesso a dati condivisi (prelazione durante la modifica di dati con risultati imprevedibili)
 - possibilità di prelazione di processi del kernel (normalmente modificano dati vitali per il sistema)
 - interruzione di operazioni cruciali effettuate dal SO
-- gestione del [[Processi#CONTEXT SWITCH|context switch]] tra i processi A e B
+- gestione del [[Processo#CONTEXT SWITCH|context switch]] tra i processi A e B

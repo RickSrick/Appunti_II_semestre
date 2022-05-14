@@ -1,5 +1,5 @@
 # RISORSE
-==RISORSA==: astrazione che rappresenta un'entità necessaria al [[Processi|processo]] per svolgere il proprio lavoro (e.g. output di un altro processo, spazio di memoria).
+==RISORSA==: astrazione che rappresenta un'entità necessaria al [[Processo|processo]] per svolgere il proprio lavoro (e.g. output di un altro processo, spazio di memoria).
 Vari tipi di risorse:
 - ==CONDIVISIBILI==: possono essere usate da più processi in parallelo (e.g. RAM)
 - ==NON CONDIVISIBILI==: non possono essere usate da più processi in parallelo (e.g. stampante)

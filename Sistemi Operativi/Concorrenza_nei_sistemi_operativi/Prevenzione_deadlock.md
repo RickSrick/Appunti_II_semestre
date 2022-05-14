@@ -1,5 +1,5 @@
 # PREVENZIONE DEL [[Deadlock|DEADLOCK]]
-- ==ALLOCAZIONE GLOBALE==: richiede tutte le [[Risorse|risorse]] che il [[Processi|processo]] necessita per il suo completamento:
+- ==ALLOCAZIONE GLOBALE==: richiede tutte le [[Risorse|risorse]] che il [[Processo|processo]] necessita per il suo completamento:
 	- realizzabile quando sono note esattamente le risorse utilizzate dai processi
 	- permette di evitare il deadlock in un sistema di più processi, al costo di un cattivo utilizzo delle risorse
 - ==ALLOCAZIONE GERARCHICA==: stabilire ordinamento delle risorse in base alla loro importanza:

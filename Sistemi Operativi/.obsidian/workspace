@@ -36,9 +36,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": true,
+                "query": "multithread",
+                "matchingCase": true,
+                "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -49,7 +49,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 305
   },
   "right": {
     "id": "34ffee804900c13a",
@@ -84,15 +84,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
-    "Affidabilità_sistemi/Calcolo_affidabilità.md",
-    "Affidabilità_sistemi/Affidabilità.md",
     "Affidabilità_sistemi/Fault_tolerance.md",
     "Affidabilità_sistemi/Guasti.md",
-    "Gestione_file/RAID.md",
-    "Gestione_file/Scheduling_disco.md",
-    "Gestione_file/Connessione_dispositivi_memoria.md",
-    "Gestione_file/Malfunzionamenti.md",
-    "Gestione_file/Hard_disk_drive.md",
-    "Concorrenza_nei_sistemi_operativi/Semafori.md"
+    "Affidabilità_sistemi/Calcolo_affidabilità.md",
+    "Affidabilità_sistemi/Affidabilità.md",
+    "Gestione_memoria_principale/Memoria_principale_processi.md",
+    "Introduzione/Strutture_dati_kernel.md",
+    "Introduzione/Input_output.md",
+    "Introduzione/Interrupt.md",
+    "Struttura_dei_sistemi_operativi/Progettazione_sviluppo_SO.md",
+    "Introduzione/Thread.md"
   ]
 }

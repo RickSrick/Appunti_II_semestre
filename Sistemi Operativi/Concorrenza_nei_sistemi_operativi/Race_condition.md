@@ -1,5 +1,5 @@
 # RACE CONDITION
-==RACE CONDITION / CORSA CRITICA==: più [[Processi|processi]] accedono in concorrenza e modificano dati condivisi; l'esito dell'esecuzione dipende dall'ordine di esecuzione di questi processi.
+==RACE CONDITION / CORSA CRITICA==: più [[Processo|processi]] accedono in concorrenza e modificano dati condivisi; l'esito dell'esecuzione dipende dall'ordine di esecuzione di questi processi.
 Tali situazioni si verificano spesso nei SO, nei quali diversi componenti agiscono su [[Risorse|risorse]] condivise, soprattutto nei [[Multiprocessore_multicore#SISTEMI MULTICORE|sistemi multicore]], in cui diversi [[Thread|thread]] vengono eseguiti in parallelo su unità di calcolo distinte.
 Per evitare le corse critiche occorre che i processi siano ==SINCRONIZZATI==. A questo scopo, alcune operazioni devono essere ==ATOMICHE==: vengono completate senza subire interruzioni. Se due processi tentano di accedere agli stessi dati contemporaneamente, le istruzioni in linguaggio macchina possono risultare ==INTERFOGLIATE==, e la sequenza effettiva di esecuzione dipende da come i processi vengono schedulati.
 

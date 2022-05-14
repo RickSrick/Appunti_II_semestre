@@ -1,5 +1,5 @@
 # DIAGRAMMA TEMPORALE
-Un [[Processi|processo]] descrive un'entità attiva con un suo sviluppo. È importante quindi rappresentare la sua evoluzione temporale.
+Un [[Processo|processo]] descrive un'entità attiva con un suo sviluppo. È importante quindi rappresentare la sua evoluzione temporale.
 Si utilizza un ==DIAGRAMMA TEMPORALE==:
 - ascissa: tempo ($\text{t}_{0}$: istante iniziale, $\text{t}_{f}$: istante finale)
 - ordinata: stato del processo ($\text{S}_{0}$: stato iniziale, $\text{S}_{f}$: stato finale)

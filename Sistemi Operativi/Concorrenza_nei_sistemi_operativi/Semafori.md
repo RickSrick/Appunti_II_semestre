@@ -17,7 +17,7 @@ Tutte le modifiche al valore del semaforo contenute nei metodi $wait(S)$ e $sign
 Dato che occorre garantire che due processi non eseguano $wait(S)$ e $signal(S)$ sullo stesso semaforo allo stesso istante, queste chiamate devono essere effettuate all'interno della [[Race_condition#SEZIONE CRITICA|sezione critica]]. Si può quindi nuovamente creare una situazione di _attesa attiva / busy waiting_ dei processi in attesa ad un semaforo: questi si trovano nel ciclo del codice della entry section. Questo può costituire un problema per i [[Multiprogrammazione|sistemi multiprogrammati]], in quanto così vengono sprecati cicli di CPU che altri processi potrebbero usare in modo più produttivo.
 Per evitare questa situazione si può definire il semaforo in modo un po' diverso, in modo tale che ogni struttura semaforo contenga:
 - un valore intero (numero di processi in attesa)
-- un puntatore alla testa di una lista dei processi in attesa, formata dai [[Processi#STATO DI UN PROCESSO|PCB]]
+- un puntatore alla testa di una lista dei processi in attesa, formata dai [[Processo#STATO DI UN PROCESSO|PCB]]
 ![450](semafori2.png)
 Con questo semaforo, si usano due metodi, forniti dal SO come [[Chiamate_di_sistema|system call]]:
 - $block()$: posiziona il processo che richiede di essere bloccato nell'oppurtuna d'attesa, ovvero sospende il processo che invoca il metodo (chiamato all'interno di $wait(S)$)

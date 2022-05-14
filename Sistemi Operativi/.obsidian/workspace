@@ -84,6 +84,7 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
+    "readme.txt.md",
     "Affidabilità_sistemi/Fault_tolerance.md",
     "Affidabilità_sistemi/Guasti.md",
     "Affidabilità_sistemi/Calcolo_affidabilità.md",
@@ -92,7 +93,6 @@
     "Introduzione/Strutture_dati_kernel.md",
     "Introduzione/Input_output.md",
     "Introduzione/Interrupt.md",
-    "Struttura_dei_sistemi_operativi/Progettazione_sviluppo_SO.md",
-    "Introduzione/Thread.md"
+    "Struttura_dei_sistemi_operativi/Progettazione_sviluppo_SO.md"
   ]
 }

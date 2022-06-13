@@ -13,6 +13,7 @@ Inizialmente, ad ogni file viene allocato un extent; se questo non è sufficient
 Ciascun file è costituito da una lista concatenata di blocchi, i quali possono essere sparsi ovunque nel disco. Ciascuno di loro contiene un puntatore al successivo, e il file termina quando si incontra un blocco con puntatore vuoto.
 Nella directory si mantengono gli indirizzi dei blocchi iniziale e finale.
 Non si ha spreco di spazio, ovvero niente frammentazione esterna. Quando necessita di un nuovo blocco per far crescere il file, il SO invoca il sottosistema per la [[Gestione_spazio_libero|gestione dello spazio libero]]. L'efficienza può essere migliorata raccogliendo i blocchi in cluster, aumentando però la frammentazione interna.
+Nota per gli esercizi: ogni blocco contiene sia il puntatore al successivo che i dati del file; quindi, una parte del blocco (e.g. 1 byte) non dovrà essere conteggiata nel calcolare quanti blocchi destinare un file.
 ![400](allocazione_concatenata.png)
 
 ## ==FILE ALLOCATION TABLE (FAT)==
@@ -21,6 +22,7 @@ L'elemento di directory contiene il numero del primo blocco del file: l'elemento
 ![550](fat.png)
 Il numero di bit usati per la FAT, ovvero per indirizzare i blocchi (FAT-12, FAT-16, FAT-32...), e la dimensione dei blocchi influenza la dimensione massima di una partizione. Ad esempio, con 12 bit il file system può indirizzare al massimo $2^{12}$ = 4096 blocchi, mentre con 32 bit si possono gestire $2^{32}$ = 4.294.967.296 blocchi.
 ![550](fat2.png)
+Nota per gli esercizi: i puntatori sono tutti contenuti nella FAT; i blocchi sono interamente destinati a contenere i dati del file, quindi la loro dimensione dev'essere conteggiata per intero per calcolare quanti blocchi destinare a un file.
 
 ## ==ALLOCAZIONE INDICIZZATA==
 Per ogni file, colleziona tutti i puntatori in un ==BLOCCO INDICE==, dotato di una _tabella indice_ dotata di accesso casuale.

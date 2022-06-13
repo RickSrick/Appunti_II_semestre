@@ -55,6 +55,13 @@
         "a": 1,
         "rgb": 5395168
       }
+    },
+    {
+      "query": "path:Sistemi_IO",
+      "color": {
+        "a": 1,
+        "rgb": 6226063
+      }
     }
   ],
   "collapse-display": true,

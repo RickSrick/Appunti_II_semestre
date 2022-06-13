@@ -17,6 +17,7 @@ La maggior parte delle organizzazioni può essere distinta in base a due caratte
 	- molteplici letture / scritture individuali avvengono in parallelo sui vari dischi di un gruppo
 	- ciò comporta data rate basso ma elevato I/O rate
 	- granularità idonea per _transaction processing_
+![550](raid_grana_grossa.png)
 
 ## ==SEZIONAMENTO==
 _Sezionamento / striping_, i dati vengono suddivisi in sezioni di uguale lunghezza e scritti su dischi differenti.

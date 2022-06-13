@@ -1,7 +1,5 @@
 # INPUT/OUTPUT (I/O)
 Una percentuale cospicua del codice del SO è dedicata alla gestione dell'==I/O==. L'interazione con i dispositivi di I/O è fondamentale per la progettazione di un SO affidabile ed efficiente.
-==CONTRLLORE==: speciale unità di elaborazione che si occupa di un particolare tipo di dispositivo, e che può gestire una o più unità ad esso connesse.
-==DEVICE DRIVER==: "SO" del controllore; presente uno per ciascun controllore di device, ne guida le operazioni di I/O e garantisce un'interfaccia comune fra kernel e controllore.
 
 In seguito ad una richiesta di I/O da parte di un processo utente, si verifica un [[Interrupt|interrupt]]. Dopo l'inizio dell'operazione di I/O, il flusso di esecuzione può seguire due percorsi distinti:
 - ==I/O SINCRONO==: si restituisce il controllo al processo utente solo dopo il completamento dell'operazione di I/O; la CPU è mantenuta in stato idle dalla [[Chiamate_di_sistema|systemm call]] $wait()$, e ad ogni istante si può avere una sola richiesta di $\mathrm{I} / \mathrm{O}$ in esecuzione

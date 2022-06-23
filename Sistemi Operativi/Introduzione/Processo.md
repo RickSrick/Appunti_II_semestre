@@ -12,8 +12,8 @@ Il SO è responsabile delle seguenti attività relative alla gestione dei proces
 Per prevenire processi che eseguono cicli infiniti senza più restituire il controllo al SO si ha un timer, realizzato mediante un clock e un contatore. Il SO inizializza il contatore al tempo massimo stimato di esecuzione del processo e lo decrementa ad ogni impulso. Quando il contatore ha valore zero, si genera un [[Interrupt|interrupt]], che restituisce il controllo al SO. Questo timer viene impostato ogni volta che un processo accede alla CPU.
 
 ## STATO DI UN PROCESSO
-==STATO DI UN PROCESSO==: tutte le informazioni modificabile contenuti nei registri condivisi nel sistema che sono accessibili da P.
-I processi vengono rappresentati da un ==DESCRITTORE DI PROCESSO / STRUTTURA DI CONTROLLO / PROCESS CONTROL BLOCK (PCB) / VETTORE DI STATO==, il quale contiene tutte le informazioni relative ad un processo.
+==STATO DI UN PROCESSO==: tutte le informazioni modificabili contenuti nei registri condivisi nel sistema che sono accessibili dal processo.
+I processi vengono rappresentati da un ==PROCESS CONTROL BLOCK (PCB) / DESCRITTORE DI PROCESSO / STRUTTURA DI CONTROLLO / VETTORE DI STATO==, il quale contiene tutte le informazioni relative ad un processo.
 Il PCB viene chiamato anche ==TCB== in Linux (nel gergo di Linux si parla di _task_).
 Ad ogni processo vengono associate le seguenti informazioni, conservate nel PCB:
 - stato del processo
@@ -26,7 +26,7 @@ Ad ogni processo vengono associate le seguenti informazioni, conservate nel PCB:
 ![175](pcb.png)
 Ogni descrittore di processo è collegato ad una struttura di processi, che consiste in una lista concatenata lineare.
 ![550](descrittore_processo.png)
-Il supporto alla sincronizzazione dei processi è implementato nel kernel dalle primitive _wait_ e _signal_; in questo modo:
+Il supporto alla sincronizzazione dei processi è implementato nel [[Sistema_operativo#STRUTTURA DEL SISTEMA DI CALCOLO|kernel]] dalle primitive _wait_ e _signal_; in questo modo:
 - sono utilizzabili da tutti i processi
 - _wait_ può accedere al [[Dispatcher|dispatcher]] e causarne l'attivazione
 
@@ -38,16 +38,16 @@ I processi possono trovarsi in cinque stati:
 - ==TERMINATED==: il processo ha terminato la propria esecuzione
 
 Transizioni tra stati:
-- raggiunto stato new: creazione di un nuovo processo
-- da new a ready: il SO ([[Scheduler|scheduler]] a lungo/medio termine) ammette il nuovo processo alla contesa attiva per la CPU (inclusione nella [[Scheduling|ready queue]])
-- da ready a running: in seguito al blocco del processo in esecuzione, il processo viene scelto dal dispatcher, fra tutti i processi pronti, per essere eseguito
-- da running a ready (==REVOCA / PRE-RILASCIO==):
+- _raggiunto stato new_: creazione di un nuovo processo
+- _da new a ready_: il SO ([[Scheduler|scheduler]] a lungo/medio termine) ammette il nuovo processo alla contesa attiva per la CPU (inclusione nella [[Scheduling|ready queue]])
+- _da ready a running_: in seguito al blocco del processo in esecuzione, il processo viene scelto dal dispatcher, fra tutti i processi pronti, per essere eseguito
+- _da running a ready_ (==REVOCA / PRE-RILASCIO==):
 	- [[Criteri_scheduling#PRIORITÀ SHORTEST JOB FIRST SJF SHORTEST PROCESS NEXT SPN|scheduling a priorità]], quando arriva al sistema un processo con priorità maggiore
 	- nei [[Criteri_scheduling#ROUND ROBIN|sistemi a partizione di tempo]], per esaurimento del quanto di tempo
 	- al verificarsi di un interrupt esterno (asincrono)
-- da running a waiting: richiesta di un servizio di I/O al SO, o per l’attesa di un qualche evento
-- da waiting a ready: il servizio richiesto viene completato, oppure al verificarsi dell’evento
-- raggiunto stato terminated: 
+- _da running a waiting_: richiesta di un servizio di I/O al SO, o per l’attesa di un qualche evento
+- _da waiting a ready_: il servizio richiesto viene completato, oppure l'evento si è verificato
+- _raggiunto stato terminated_:
 	- terminazione normale, con chiamata al SO per indicare il completamento delle attività
 	- terminazione anomala
 	- uso scorretto delle risorse (e.g. superamento dei limiti di memoria, superamento del tempo massimo di utilizzo della CPU)
@@ -85,9 +85,9 @@ Questo richiede un meccanismo di ==INTER-PROCESS COMMUNICATION (IPC)==:
 - ==SCAMBIO DI MESSAGGI==
 	- utile per scambiare piccole quantità di dati
 	- semplice da gestire e nessuna conflittualità: è tutto gestito dal kernel tramite system call
-	- non adatto a scambi frequenti (le system call continue rallentano)
+	- non adatto a scambi frequenti (le [[Chiamate_di_sistema|system call]] continue rallentano)
 - ==MEMORIA CONDIVISA==
 	- massima efficienza nella comunicazione e velocità maggiore: richiede l'intervento del kernel solo per allocare la memoria, non richiede system call, gli accessi sono gestiti dai processi
-	- fornisce prestazioni migliori nei multicore
+	- fornisce prestazioni migliori nei [[Multiprocessore_multicore#SISTEMI MULTICORE|multicore]]
 	- più difficile da gestire: problemi di coerenza dovuti alla migrazione di dati condivisi tra varie cache
 ![500](comunicazione_processi.png)

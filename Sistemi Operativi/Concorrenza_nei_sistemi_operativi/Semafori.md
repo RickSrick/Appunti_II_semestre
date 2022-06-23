@@ -14,13 +14,13 @@ Il semaforo contatore può essere utilizzato quando bisogna gestire l'accesso a 
 Tutte le modifiche al valore del semaforo contenute nei metodi $wait(S)$ e $signal(S)$ devono essere eseguite in modo indivisibile. Inoltre, il valore del semaforo non può essere modificato da più processi contemporaneamente. Nel caso di $wait(S)$, devono essere effettuate atomicamente sia la verifica del valore che il suo decremento.
 
 ## SEMAFORI E BUSY WAITING
-Dato che occorre garantire che due processi non eseguano $wait(S)$ e $signal(S)$ sullo stesso semaforo allo stesso istante, queste chiamate devono essere effettuate all'interno della [[Race_condition#SEZIONE CRITICA|sezione critica]]. Si può quindi nuovamente creare una situazione di _attesa attiva / busy waiting_ dei processi in attesa ad un semaforo: questi si trovano nel ciclo del codice della entry section. Questo può costituire un problema per i [[Multiprogrammazione|sistemi multiprogrammati]], in quanto così vengono sprecati cicli di CPU che altri processi potrebbero usare in modo più produttivo.
+Dato che occorre garantire che due processi non eseguano $wait(S)$ e $signal(S)$ sullo stesso semaforo allo stesso istante, queste chiamate devono essere effettuate all'interno della [[Race_condition#SEZIONE CRITICA|sezione critica]]. Si può quindi nuovamente creare una situazione di ==ATTESA ATTIVA / BUSY WAITING== dei processi in attesa ad un semaforo: questi si trovano nel ciclo del codice della entry section. Questo può costituire un problema per i [[Multiprogrammazione|sistemi multiprogrammati]], in quanto così vengono sprecati cicli di CPU che altri processi potrebbero usare in modo più produttivo.
 Per evitare questa situazione si può definire il semaforo in modo un po' diverso, in modo tale che ogni struttura semaforo contenga:
 - un valore intero (numero di processi in attesa)
 - un puntatore alla testa di una lista dei processi in attesa, formata dai [[Processo#STATO DI UN PROCESSO|PCB]]
 ![450](semafori2.png)
 Con questo semaforo, si usano due metodi, forniti dal SO come [[Chiamate_di_sistema|system call]]:
-- $block()$: posiziona il processo che richiede di essere bloccato nell'oppurtuna d'attesa, ovvero sospende il processo che invoca il metodo (chiamato all'interno di $wait(S)$)
+- $block()$: posiziona il processo che richiede di essere bloccato nell'oppurtuna coda d'attesa, ovvero sospende il processo che invoca il metodo (chiamato all'interno di $wait(S)$)
 - $wakeup()$: rimuove un processo dalla coda d'attesa e lo sposta nella ready queue (chiamato all'interno di $signal(S)$)
 ![700](semafori3.png)
 Mentre la definizione classica di semaforo ad attesa attiva implica che il valore del semaforo non può mai essere negativo, in questo nuovo semaforo il valore può essere negativo: se è negativo, il modulo del valore fornisce il numero di processi in attesa al semaforo.
@@ -28,7 +28,7 @@ Inoltre, questo nuovo tipo di semaforo può condurre a situazioni in cui ciascun
 Infine, un processo può attendere al semaforo per un tempo indefinito senza venir mai rimosso dalla coda d'attesa, causando un fenomeno di _starvation_. In particolare, può avvenire se la rimozione dei processi dalla coda avviene in modalità _LIFO (Last In First Out)_, mentre si può garantire che ciò non avvenga usando la modalità _FIFO (First In First Out)_.
 
 ## SEMAFORI PRIVATI
-In problemi reali la condizione per cui un processo può continuare a lavorare non dipende solo da una variabili, ma da diversi fattori chiamati ==CONDIZIONI DI SINCRONIZZAZIONE==.
+In problemi reali la condizione per cui un processo può continuare a lavorare non dipende solo da una variabile, ma da diversi fattori chiamati ==CONDIZIONI DI SINCRONIZZAZIONE==.
 Esempio:
 	abbiamo un processo che produce risorse consumabili e altri _N_ processi che consumano una certa quantità di risorse non prevedibile a priori. Supponiamo politica FIFO: i processi consumano le risorse nell'ordine della loro richiesta (chi prima ordina prima consuma)
 Per implementare complessi problemi di sincronizzazione, si introduce il ==SEMAFORO PRIVATO==: solo un processo può chiamare $wait(S)$, mentre $signal(S)$ può essere chiamato da qualsiasi processo.

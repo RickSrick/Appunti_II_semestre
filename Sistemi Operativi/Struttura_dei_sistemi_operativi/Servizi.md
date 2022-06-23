@@ -8,7 +8,7 @@ In fase di progettazione, il SO può essere definito o valutato in base a:
 - ==INTERFACCIA UTENTE==: tutti i SO attuali sono dotati di un'interfaccia utente, [[CLI|a riga di comando]] e/o [[GUI|grafica]]
 - ==ESECUZIONE DI PROGRAMMI==: capacità di caricare un programma in [[Memoria_principale_processi|memoria principale]] ed eseguirlo, eventualmente rilevando e gestendo situazioni di errore
 - ==OPERAZIONI DI I/O==
-- ==GESTIONE DEL FILE SYSTEM==: capacità dei programmi di creare, leggere, scrivere e cancellare file e di muoversi nella struttura delle directory
+- ==GESTIONE DEL [[File_system|FILE SYSTEM]]==: capacità dei programmi di creare, leggere, scrivere e cancellare [[File|file]] e di muoversi nella struttura delle [[Directory|directory]]
 - ==[[Processo#COMUNICAZIONE TRA PROCESSI|COMUNICAZIONI]]==: scambio di informazioni tra processi in esecuzione sullo stesso elaboratore o su sistemi indipendenti connessi in rete
 - ==RILEVAMENTO DI ERRORI==: il SO deve tenere il sistema di calcolo sotto controllo costante per rilevare errori, che possono verificarsi nella CPU, nella memoria, nei dispositivi di I/O o durante l'esecuzione di programmi utente
 

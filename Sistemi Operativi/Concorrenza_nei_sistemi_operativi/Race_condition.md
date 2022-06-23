@@ -21,7 +21,7 @@ L'accesso alle sezioni critiche dovrà quindi avere le seguenti caratteristiche:
 - ==ATTESA LIMITATA==: se un processo ha richiesto di entrare nella sua sezione critica, bisogna porre un limite al numero di volte in cui si consente ad altri processi di entrare nella propria sezione critica prima che venga soddisfatta la richiesta del primo processo (politica equa per evitare la _starvation_)
 
 Molti sistemi forniscono soluzioni hardware per risolvere problemi legati alle sezioni critiche:
-- in un sistema monoprocessore è sufficiente interdire le interruzioni mentre si modificano le variabili condivise, eseguendo quindi il processo senza possibilità di [[Risorse#PREEMPTION PRELAZIONE|prelazione]] (soluzione inefficiente nei sistemi multiprocessore)
+- in un sistema monoprocessore è sufficiente interdire le [[Interrupt|interruzioni]] mentre si modificano le variabili condivise, eseguendo quindi il processo senza possibilità di [[Risorse#PREEMPTION PRELAZIONE|prelazione]] (soluzione inefficiente nei sistemi multiprocessore)
 - molte architetture attuali forniscono speciali istruzioni atomiche implementate in hardware
 Tuttavia, queste soluzioni sono complicate e generalmente inaccessibili ai programmatori di applicazioni. I progettisti di SO hanno quindi implementato soluzioni software per risolvere questi problemi:
 - [[Lock|lock]]
@@ -31,9 +31,9 @@ Tuttavia, queste soluzioni sono complicate e generalmente inaccessibili ai progr
 ## SEZIONI CRITICHE E KERNEL
 In particolare, il codice del kernel dovrà regolare l'accesso ai dati condivisi, nel caso in cui più processi utente richiedano servizi al SO.
 A questo proposito, esistono due tipi di kernel:
-- ==KERNEL SENZA DIRITTO DI PRELAZIONE==: i processi vengono eseguiti finchè non escono dalla modalità kernel, si bloccano o restituiscono volontariamente la CPU
+- ==KERNEL SENZA DIRITTO DI PRELAZIONE==: i processi vengono eseguiti finchè non escono dalla [[Modalità|modalità kernel]], si bloccano o restituiscono volontariamente la CPU
 	- immuni dai problemi legati all'ordine degli accessi alle strutture dati del kernel: non si consente l'interruzione forzata di processi attivi in modalità di sistema
 - ==KERNEL CON DIRITTO DI PRELAZIONE==: si consente la prelazione di processi in esecuzione in modalità kernel
 	- critici per [[Scheduling_multiprocessore#MULTIELABORAZIONE SIMMETRICA SYMMETRIC MULTI-PROCESSING SMP|sistemi SMP]], in cui due processi in modalità kernel possono essere eseguiti su processori distinti
 	- necessari in ambito [[Sistemi_real-time|real-time]]: permettono ai processi in tempo reale di far valere il loro diritto di precedenza
-	- utili nei sistemi time-sharing: diminuiscono il [[Definizioni#MISURE|tempo medio di risposta]]
+	- utili nei sistemi [[Multiprogrammazione|time-sharing]]: diminuiscono il [[Definizioni#MISURE|tempo medio di risposta]]

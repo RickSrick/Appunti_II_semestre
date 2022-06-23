@@ -17,7 +17,7 @@ Nota per gli esercizi: ogni blocco contiene sia il puntatore al successivo che i
 ![400](allocazione_concatenata.png)
 
 ## ==FILE ALLOCATION TABLE (FAT)==
-Variante dell'allocazione concatenata implementata in MS-DOS e OS/2. Alla FAT viene riservata una porzione di disco all'inizio di ciascun volume, ha un elemento per ogni blocco del disco ed è indicizzata dal numero di blocco.
+Variante dell'allocazione concatenata implementata in MS-DOS e OS/2. Alla FAT viene riservata una porzione di disco all'inizio di ciascun [[Struttura_disco|volume]], ha un elemento per ogni blocco del disco ed è indicizzata dal numero di blocco.
 L'elemento di directory contiene il numero del primo blocco del file: l'elemento della FAT indicizzata da quel blocco contiene a sua volta il numero del blocco successivo del file; l'ultimo blocco ha come elemento nella tabella un valore speciale di fine file. I blocchi inutilizzati sono contrassegnati dal valore 0.
 ![550](fat.png)
 Il numero di bit usati per la FAT, ovvero per indirizzare i blocchi (FAT-12, FAT-16, FAT-32...), e la dimensione dei blocchi influenza la dimensione massima di una partizione. Ad esempio, con 12 bit il file system può indirizzare al massimo $2^{12}$ = 4096 blocchi, mentre con 32 bit si possono gestire $2^{32}$ = 4.294.967.296 blocchi.

@@ -5,7 +5,7 @@ Ha i seguenti scopi:
 - _eseguire i programmi_, supportando l'utente nel risolvere problemi
 - garantire _un'interazione agevole_ tra utente e macchina
 - _gestire in modo efficiente le risorse_ hardware e software del sistema di calcolo da parte dei vari [[Programmi_di_sistema|programmi di sistema e applicativi]]
-- _prevenire le interferenze_ tra le attività degli utenti (coordinare i processi)
+- _prevenire le interferenze_ tra le attività degli utenti (coordinare i [[Processo|processi]])
 - _protezione_ nell'uso delle [[Risorse|risorse]] e terminazione dei processi che ne abusano 
 ![SO|300](Images/struttura_so_1.png)
 # STRUTTURA DEL SISTEMA DI CALCOLO

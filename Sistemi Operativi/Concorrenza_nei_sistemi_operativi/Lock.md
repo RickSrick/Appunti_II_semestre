@@ -8,4 +8,4 @@
 - variabile booleana per indicare se il lock è disponibile o meno
 ![600](lock2.png)
 
-Usare i lock impone l'_attesa attiva / busy waiting_: mentre un processo si trova nella propria sezione critica, gli altri processi che vogliono accedere alla propria devono ciclare effettuando la chiamata ad $acquire()$.
+Usare i lock impone l'==ATTESA ATTIVA / BUSY WAITING==: mentre un processo si trova nella propria sezione critica, gli altri processi che vogliono accedere alla propria devono ciclare effettuando la chiamata ad $acquire()$.

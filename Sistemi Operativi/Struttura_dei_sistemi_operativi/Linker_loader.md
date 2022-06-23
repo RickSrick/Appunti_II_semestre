@@ -1,7 +1,7 @@
 # LINKER E LOADER
 Il codice sorgente di ogni programma viene compilato in file oggetto progettati per essere caricati in qualsiasi posizione di memoria fisica: ==FILE OGGETTO RILOCABILI==. Vengono combinati dal ==LINKER== in un singolo file eseguibile binario in cui vengono incluse anche le funzioni di libreria e che risiedono in memoria secondaria. Questi file vengono poi caricati in memoria centrale dal ==LOADER== per essere eseguiti, e nella fase di rilocazione si assegnano gli indirizzi assoluti alle parti del programma e ai dati.
 
-I moderni sistemi _general purpose_ non collegano le librerie ai file eseguibili; piuttosto, le ==LIBRERIE COLLEGATE DINAMICAMENTE== (e.g. DLL in Windows) vengono caricate secondo necessità e sono condivise da tutti i programmi che utilizzano la stessa versione della libreria.
+I moderni sistemi _general-purpose_ non collegano le librerie ai file eseguibili; piuttosto, le ==LIBRERIE COLLEGATE DINAMICAMENTE== (e.g. DLL in Windows) vengono caricate secondo necessità e sono condivise da tutti i programmi che utilizzano la stessa versione della libreria.
 I file oggetto ed eseguibili hanno formati standard, affinchè il SO sappia come caricarli e avviarli (e.g. ==EXECUTABLE AND LINKABLE FORMAT (ELF)== su sistemi UNIX-like).
 ![500](linker_loader.png)
 

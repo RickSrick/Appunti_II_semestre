@@ -10,5 +10,5 @@ Nelle [[Multiprocessore_multicore#SISTEMI MULTICORE|architetture multicore]], so
 	- possibile grazie al _time slicing_ della CPU, ovvero allo [[Scheduler|scheduler]] che dedica l'unità di calcolo ai vari task per unità di tempo infinitesimali
 
 Due tipi di parallelismo:
-- ==DATA PARELLELISM==: la stessa operazione viene eseguita più volte contemporaneamente sullo stesso insieme di dati; questo viene partizionato in modo che più thread possa agire simultaneamente su segmenti diversi
+- ==DATA PARELLELISM==: la stessa operazione viene eseguita più volte contemporaneamente sullo stesso insieme di dati; questo viene partizionato in modo che più thread possano agire simultaneamente su segmenti diversi
 - ==TASK PARALLELISM==: distrubuzione di thread diversi in esecuzione nei diversi nodi di calcolo in ambienti di calcolo parallelo

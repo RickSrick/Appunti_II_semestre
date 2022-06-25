@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Scheduling_CPU/Scheduler.md",
+            "file": "Gestione_memoria_principale/Allocazione_memoria_kernel.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "f",
+                "query": "descrittor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scheduling_CPU/Scheduler.md",
+                "file": "Gestione_memoria_principale/Allocazione_memoria_kernel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
-    "Scheduling_CPU/Scheduler.md",
-    "Introduzione/Processo.md",
-    "Scheduling_CPU/Scheduling.md",
-    "Scheduling_CPU/Dispatcher.md",
-    "Concorrenza_nei_sistemi_operativi/Semafori.md",
-    "Concorrenza_nei_sistemi_operativi/Risorse.md",
-    "Concorrenza_nei_sistemi_operativi/Race_condition.md",
-    "Introduzione/Multiprogrammazione.md",
-    "Scheduling_CPU/Scheduling_multiprocessore.md",
-    "Concorrenza_nei_sistemi_operativi/Prevenzione_deadlock.md"
+    "Gestione_memoria_principale/Allocazione_memoria_kernel.md",
+    "Gestione_file/Strutture_dati_file_system.md",
+    "Gestione_file/Tipi_struttura_file.md",
+    "Gestione_file/Gestione_swap.md",
+    "Gestione_file/Gestione_file.md",
+    "Gestione_file/Struttura_disco.md",
+    "Struttura_dei_sistemi_operativi/Programmi_di_sistema.md",
+    "Gestione_memoria_principale/Memoria_virtuale.md",
+    "Gestione_memoria_principale/Mappatura.md",
+    "Gestione_memoria_principale/Paginazione_a_richiesta.md"
   ]
 }

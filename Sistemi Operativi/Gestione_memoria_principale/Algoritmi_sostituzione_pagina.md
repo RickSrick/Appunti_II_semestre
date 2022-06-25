@@ -16,7 +16,7 @@ Esempio di FIFO con stringa _1 2 3 4 1 2 5 1 2 3 4 5_, 3 frame:
 ![400](belady1.png)
 Esempio di FIFO con stringa _1 2 3 4 1 2 5 1 2 3 4 5_, 4 frame:
 ![400](belady2.png)
-==ANOMALIA DI BELADY==: aumentando il numero di frame aumenta il numero di page fault
+==ANOMALIA DI BELADY==: aumentando il numero di frame aumenta il numero di page fault.
 Perchè accade con il FIFO?
 - un processo richiede consecutivamente un insieme di pagine in maniera ciclica
 - l'insieme delle pagine richieste ciclicamente ha una dimensione uguale o maggiore del numero di frame fisici liberi
@@ -28,7 +28,8 @@ Perchè accade con il FIFO?
 Sostituire la pagina che non verrà usata per il periodo di tempo più lungo.
 Esempio con stringa _s_ e 3 frame disponibili per processo:
 ![550](opt.png)
-È il minimo possibile per la stringa _s_, ma come si può conoscere l'identità delle pagine richieste se non si conosce il futuro? Non si può; infatti questo algoritmo è di solo interesse teorico: viene usato per misurare le prestazioni comparative di algoritrmi implementabili.
+È il minimo possibile per la stringa _s_, ma come si può conoscere l'identità delle pagine richieste se non si conosce il futuro?
+Non si può; infatti questo algoritmo è di solo interesse teorico: viene usato per misurare le prestazioni comparative di algoritrmi implementabili.
 
 ## ==LEAST RECENTLY USED (LRU)==
 Si rimpiazza la pagina che non è stata usata per più tempo (occorre associare ad ogni pagina il momento dell'ultimo accesso).
@@ -39,9 +40,9 @@ OPT e LRU sono ==ALGORITMI "A PILA"==, che non soffrono dell'anomalia di Belady.
 
 ## VARIANTI DELL'LRU
 - ==IMPLEMENTAZIONE CON CONTATORE==:
-	- ciascuna pagine ha un contatore
+	- ciascuna pagina ha un contatore
 	- ogni volta che si fa riferimento ad una pagina si copia il momento in cui è stato effettuato il riferimento nel contatore
-	- quando si deve rimuovere una pagina si analizzano i contatori per scegliere quale pagine rimuovere (necessaria la ricerca lineare sulla tabella delle pagine)
+	- quando si deve rimuovere una pagina si analizzano i contatori per scegliere quale pagina rimuovere (necessaria la ricerca lineare sulla [[Tabella_delle_pagine|tabella delle pagine]])
 - ==IMPLEMENTAZIONE CON STACK==:
 	- si mantiene uno stack di numeri di pagina tramite lista doppiamente concatenata
 	- ogni volta che si fa riferimento ad un pagina si sposta la pagina in cima allo stack (non serve più fare ricerche per scegliere la pagina da rimuovere, ma mantenere lo stack aggiornato ha un costo)
@@ -53,17 +54,17 @@ OPT e LRU sono ==ALGORITMI "A PILA"==, che non soffrono dell'anomalia di Belady.
 
 ## ==SECONDA CHANCE (CLOCK ALGORITHM)==
 Si basa sul FIFO, con l'aggiunta di un bit di riferimento.
-Quando la pagina riceve una seconda chance, il bit di riferimento viene azzerato ed il tempo di arrivo viene aggiornato al tempo attuale:
 - se la pagina da rimpiazzare in ordine di clock ha il bit di riferimento a 0 viene rimpiazzata
-- se la pagina da rimpiazzare in ordine di clock ha il bit di riferimento a 1:
+- se la pagina da rimpiazzare in ordine di clock ha il bit di riferimento a 1 riceve una seconda chance:
 	- si pone il bit a 0
 	- si lascia la pagina in memoria
+	- il tempo di arrivo viene aggiornato al tempo attuale
 	- si rimpiazza la pagina successiva in ordine di clock in base alle stesse regole
 ![550](clock.png)
 
 ## VARIANTI DELLA SECONDA CHANCE
 - ==ALGORITMO SECONDA CHANCE MIGLIORATO==:
-	- si considera la coppia (_bit_riferimento_, _bit_modifica_)
+	- si considera la coppia (_bit_riferimento_, _[[Paginazione_a_richiesta#SOVRALLOCAZIONE|bit_modifica]]_)
 	- possibili 4 casi:
 		- (0,0): non recentemente usata né modificata; è la scelta migliore per la sostituzione
 		- (0,1): non usata recentemente ma modificata; dev'essere salvata su disco

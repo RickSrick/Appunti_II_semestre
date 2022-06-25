@@ -1,6 +1,6 @@
 # SEGMENTAZIONE
-==SEGMENTAZIONE==: schema di gestione della memoria che asseconda la visione dell'utente - generalmente non pensa alla memoria come ad un array lineare di dati.
-Un programma è una collezione di ==SEGMENTI==: unità logiche, come:
+==SEGMENTAZIONE==: schema di gestione della memoria che asseconda la visione dell'utente (generalmente non pensa alla memoria come ad un array lineare di dati).
+Un programma viene considerata come una collezione di ==SEGMENTI==: unità logiche, come:
 - programma principale
 - procedure e funzioni
 - variabili locali e globali

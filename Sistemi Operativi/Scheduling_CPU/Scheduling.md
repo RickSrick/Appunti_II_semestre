@@ -4,3 +4,4 @@ Si utilizzano tre code per lo scheduling:
 - ==JOB QUEUE==: insieme dei processi presenti nel sistema
 - ==READY QUEUE==: insieme dei processi pronti e in attesa di essere eseguiti, che risiedono in [[Memoria_principale_processi|memoria centrale]]
 - ==CODE DEI DISPOSITIVI==: insieme dei processi in attesa per un dispositivo di I/O
+![550](diagramma_scheduling.png)

@@ -2,7 +2,7 @@
 Fino a qualche anno fa molti sistemi utilizzavano un singolo processore general-purpose, pur inglobando molti microprocessori special-purpose. Da qualche anno, invece, i _sistemi multiprocessore_ e _multicore_ hanno iniziato a dominare il mondo della computazione, in quanto garantiscono:
 - maggiore [[Definizioni#MISURE|throughput]]
 - migliore economia di scala (prezzi più bassi rispetto a più sistemi monoprocessore)
-- incremento dell'affidabilità (i guasti non bloccano il sistema)
+- incremento dell'[[Affidabilità|affidabilità]] (i [[Guasti|guasti]] non bloccano il sistema)
 
 ## ==SISTEMI MULTIPROCESSORE==
 Sistemi a ==MEMORIA CONDIVISA==, ossia sistemi in cui tutte le CPU condividono una memoria fisica comune.

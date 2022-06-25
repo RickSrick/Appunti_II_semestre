@@ -6,7 +6,7 @@ I calcolatori accedono alla memoria secondaria in tre modi:
 
 ## MEMORIA SECONDARIA CONNESSA ALLA MACCHINA
 Alla memoria secondaria connessa alla macchina si accede dalle _porte locali di I/O_ che sono collegate al _bus di I/O_, al quale sono connessi i dischi, che possono anche essere rimovibili.
-Il trasferimento di dati in un bus è eseguito da [[tmp|controllori]]:
+Il trasferimento di dati in un bus è eseguito da [[Input_output|controllori]]:
 - ==ADATTATORI==: controllori posti all'estremità del bus relativa al calcolatore
 - ==CONTROLLORI DEI DISCHI==: incorporati in ciascuna unità a disco
 

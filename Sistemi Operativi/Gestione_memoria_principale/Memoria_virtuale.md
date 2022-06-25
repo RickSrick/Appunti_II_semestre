@@ -19,5 +19,5 @@ Mantenere solo porzioni di programmi in memoria ha dei vantaggi:
 
 La memoria virtuale facilita la ==CONDIVISIONE== di file e memoria mediante condivisione delle pagine fisiche.
 Esempio:
-	- le _librerie di sistema_ sono condivisibili mediante mappature delle pagine logiche di più processi sugli stessi frame
+	- le _librerie di sistema_ sono condivisibili mediante [[Mappatura|mappature]] delle pagine logiche di più processi sugli stessi frame
 	- ogni processo vede le librerie all'interno del suo spazio di indirizzi virtuali, ma le pagine fisiche che le ospitano sono in condivisione tra tutti i processi che le utilizzano

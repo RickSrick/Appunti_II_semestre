@@ -1,7 +1,7 @@
 #  BINDING
-==BINDING==: associazione di istruzioni e dati ad indirizzi di memoria
+==BINDING==: associazione di istruzioni e dati ad indirizzi di memoria.
 Può avvenire in fase di:
-- _compilazione_: se si conosce posizione in memoria del processo a priori, si può generare codice ==ASSOLUTO==; se cambia la locazione iniziale dev'essere ricompilato
+- _compilazione_: se si conosce la posizione in memoria del processo a priori, si può generare codice ==ASSOLUTO==; se cambia la locazione iniziale dev'essere ricompilato
 - _caricamento_: se non si conosce posizione in memoria del processo a priori, serve generare codice ==RILOCABILE==: il compilatore genera indirizzi relativi che vengono convertiti in indirizzi assoluti dal [[Linker_loader|loader]]; se cambia la locazione iniziale dev'essere ricaricato in memoria
 - _esecuzione_: il processo può essere spostato da una locazione di memoria all'altra in run-time: codice ==DINAMICAMENTE RILOCABILE==
 	- il codice contiene solo riferimenti relativi a se stesso

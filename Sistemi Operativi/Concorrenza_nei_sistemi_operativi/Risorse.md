@@ -11,5 +11,5 @@ Il protocollo di accesso alle risorse da parte dei thread prevede:
 - ==UTILIZZO==
 - ==RILASCIO==
 
-## PREEMPTION / PRELAZIONE
-==PREEMPTION / PRELAZIONE==: rimozione forzata di una risorsa (==SOTTRAIBILE==) ad un processo (e.g. CPU sottratta ad un processo a bassa priorità se uno a priorità maggiore ne ha bisogno)
+## ==PREEMPTION / PRELAZIONE==
+Rimozione forzata di una risorsa (==SOTTRAIBILE==) ad un processo (e.g. CPU sottratta ad un processo a bassa priorità se uno a priorità maggiore ne ha bisogno).

@@ -1,11 +1,10 @@
-# ALLOCAZIONE DELLA MEMORIA AL KERNEL
-Il kernel, per allocare la propria memoria, attinge ad una riserva di memoria libera diversa dalla lista dei frame usata per i processi utente:
-- il kernel richiede memoria per strutture dati dalle dimensioni variabili (serve un uso oculato della memoria per evitare sprechi: in molti SO, codice e dati del kernel non sono soggetti a paginazione)
+# ALLOCAZIONE DELLA MEMORIA AL [[Sistema_operativo#STRUTTURA DEL SISTEMA DI CALCOLO|KERNEL]]
+Il kernel, per allocare la propria memoria, attinge ad una riserva di memoria libera diversa dalla lista dei [[Paginazione|frame]] usata per i processi utente:
+- il kernel richiede memoria per strutture dati dalle dimensioni variabili (serve un uso oculato della memoria per evitare sprechi: in molti SO, codice e dati del kernel non sono soggetti a [[Paginazione|paginazione]])
 - parti della memoria del kernel devono essere contigue perchè alcuni dispositivi accedono direttamente alla memoria fisica senza l'interfaccia della [[Memoria_virtuale|memoria virtuale]], come i dispositivi di I/O
-Utilizza quindi un segmento di dimensione fissa, composto da pagine fisicamente contigue: ==BUDDY SYSTEM==
 
-## ALLOCATORE-POTENZA-DI-2
-Alloca memoria in blocchi di dimensioni pari a potenze di 2; la quantità richiesta viene arrotondata alla più piccola potenza di 2 che la contiene.
+## ==ALLOCATORE-POTENZA-DI-2==
+Utilizza un segmento di dimensione fissa, composto da pagine fisicamente contigue: ==BUDDY SYSTEM==. Alloca memoria in blocchi di dimensioni pari a potenze di 2; la quantità richiesta viene arrotondata alla più piccola potenza di 2 che la contiene.
 Quando si richiede meno memoria di quella che costituisce il segmento corrente, questo viene diviso in due segmenti gemelli di identica dimensione.
 Esempio:
 	si ha a disposizione un segmento da 256 KB, ma il kernel richiede 21 KB:
@@ -14,10 +13,10 @@ Esempio:
 	- si divide uno dei due segmenti in $C_{L}$ e $C_{R}$, ciascuno da 32 KB, uno dei quali viene utilizzato per soddisfare la richiesta
 ![400](allocatore_potenza_2.png)
 
-## ALLOCAZIONE A LASTRA
-==LASTRA/SLAB==: insieme di uno o più frame fisicamente contigui
-==CACHE==: insieme di una o più lastre contigue (contiguità non richiesta nelle nuove versioni di Linux)
-Esiste una sola cache per ciascuna categoria di strutture dati del kernel (PCB, descrittori di file, semafori, etc.), e ciascuna cache è popolata da istanze della relativa struttura dati.
+## ==ALLOCAZIONE A LASTRA==
+==LASTRA/SLAB==: insieme di uno o più frame fisicamente contigui.
+==CACHE==: insieme di una o più lastre contigue (contiguità non richiesta nelle nuove versioni di Linux).
+Ciascuna categoria di strutture dati del kernel ([[Processo#STATO DI UN PROCESSO|PCB]], [[Strutture_dati_file_system#STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO|descrittori di file]], [[Semafori|semafori]], etc.) è dotata di una sola cache, e ciascuna cache è popolata da istanze della relativa struttura dati.
 ![400](allocazione_lastra.png)
 Stati di una lastra:
 - _piena_: tutti gli oggetti contrassegnati come usati

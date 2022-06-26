@@ -4,7 +4,7 @@ Occorre risolvere il problema della corrispondenza tra ==RECORD LOGICI== e recor
 
 # METODI DI ACCESSO AI [[File|FILE]]
 ## ==ACCESSO DIRETTO==
-Modello di accesso che si ispira al disco: si opera su record di dati posti in posizione arbitraria, determinata rispetto ad un offset, nel file.
+Modello di accesso che si ispira al disco: si può accedere a record di dati posti in qualunque posizione nel file, determinata rispetto ad un offset. In questo modo si può scrivere o leggere record in ordine casuale o quando si vuole sovrascrivere un singolo record.
 ![350](accesso_diretto.png)
 
 ## ==ACCESSO SEQUENZIALE==
@@ -18,7 +18,7 @@ Modello di accesso che si ispira al nastro:
 
 ## ==ACCESSO INDICIZZATO==
 Modello di accesso che si ispira ai database che può essere realizzato sulla base del modello ad accesso diretto:
-- implica la costruzione di un _file indice_ per l'accesso al file, che viene mantenuto in memoria centrale
+- implica la costruzione di un ==FILE INDICE== per l'accesso al file, che viene mantenuto in memoria centrale
 - l'indice contiene puntatori ai blocchi del file
 - per reperire un elemento del file bisogna prima cercare nell'indice il puntatore corrispondente e poi utilizzare il puntatore per accedere ai dati
 - per file molto lunghi, il file indice può diventare troppo grande per risiedere in memoria, e viene quindi creato un indice per il file indice

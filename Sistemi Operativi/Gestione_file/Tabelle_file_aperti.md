@@ -15,8 +15,9 @@ Nei sistemi multiutente, sono presenti due livelli di tabelle:
 	- riferimenti a tutti i file aperti dal processo (sotto forma di puntatori all'elemento nella tabella di sistema, più informazioni di accesso specifiche del processo)
 	- puntatore alla posizione corrente nel file
 	- diritti di accesso
+
 In particolare:
-- _contatore di aperture_: conta il numero di processi che hanno aperto il file, per rimuovere opportunamente i dati dalla tabella dei file aperti alla chiusura del file da parte dell'ultimo processo (tabella di sistema)
-- _locazione del file su disco_: cache delle informazioni di accesso ai dati permanenti (tabella di sistema)
-- _puntatore alla posizione corrente nel file_: puntatore alI'ultima locazione dove è stata realizzata un'operazione di lettura/scrittura per ogni processo che ha aperto il file (tabella associata al processo)
-- _diritti di accesso_: controllati dal SO per permettere o negare le operazioni di I/O richieste (tabella associata al processo)
+- ==CONTATORE DI APERTURE==: conta il numero di processi che hanno aperto il file, per rimuovere opportunamente i dati dalla tabella dei file aperti alla chiusura del file da parte dell'ultimo processo (tabella di sistema)
+- ==LOCAZIONE DEL FILE SU DISCO==: cache delle informazioni di accesso ai dati permanenti (tabella di sistema)
+- ==PUNTATORE ALLA POSIZIONE CORRENTE NEL FILE==: puntatore alI'ultima locazione dove è stata realizzata un'operazione di lettura/scrittura per ogni processo che ha aperto il file (tabella associata al processo)
+- ==DIRITTI DI ACCESSO==: controllati dal SO per permettere o negare le operazioni di I/O richieste (tabella associata al processo)

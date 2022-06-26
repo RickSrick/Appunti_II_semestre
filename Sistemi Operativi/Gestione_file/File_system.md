@@ -23,18 +23,18 @@ Esistono diversi tipi di file system e non è raro che i sistemi operativi ne pr
 Il file system risiede nella memoria secondaria:
 - fornisce una semplice interfaccia verso i dispositivi di memorizzazione secondaria, realizzando il mapping fra indirizzi logici e fisici
 - fornisce la possibilità di accedere al disco in maniera efficiente, per memorizzare e recuperare rapidamente le informazioni
-I dischi sono un mezzo conveniente per la memorizzazione di file, in quanto:
+I [[Hard_disk_drive|dischi]] sono un mezzo conveniente per la memorizzazione di file, in quanto:
 - si possono riscrivere localmente
 - è possibile accedere direttamente a qualsiasi blocco di informazione del disco, ovvero a qualsiasi file, sia in modo [[Accesso_file#ACCESSO SEQUENZIALE|sequenziale]] che [[Accesso_file#ACCESSO DIRETTO|diretto]]
-Le operazioni di I/O su disco avvengono con _granularità di blocco_: ciascun blocco è composto da uno o più settori. I dispositivi fisici vengono controllati per mezzo di _device driver_.
+Le operazioni di I/O su disco avvengono con _granularità di blocco_: ciascun blocco è composto da uno o più settori. I dispositivi fisici vengono controllati per mezzo di [[Input_output|device driver]].
 
 ## STRATIFICAZIONE DEL FILE SYSTEM
 Il file system è ==STRATIFICATO==, cioè organizzato in livelli, ognuno dei quali si serve esclusivamente delle funzioni dei livelli inferiori per crearne di nuove. Questa struttura è utile per ridurre la complessità e la ridondanza, ma aggiunge overhead e può diminuire le performance.
 ![250](file_system_strati.png)
-- ==CONTROLLO DELL'I/O / DRIVER DEI DISPOSITIVI==: traducono istruzioni di alto livello in specifiche sequenze di bit, scritte in specifiche locazioni di memoria del controllore, che guidano l'hardware di I/O nel compiere una specifica operazione in una data locazione
-- ==FILE SYSTEM DI BASE==: invia comandi generici ai driver di dispositivo per leggere / scrivere blocchi fisici su disco, gestisce il buffer del dispositivo e la cache che conserva i metadati
+- ==CONTROLLO DELL'I/O / DRIVER DEI DISPOSITIVI==: traducono istruzioni di alto livello in specifiche sequenze di bit, scritte in specifiche locazioni di memoria del [[Input_output|controllore]], che guidano l'hardware di I/O nel compiere una specifica operazione in una data locazione
+- ==FILE SYSTEM DI BASE==: invia comandi generici ai driver di dispositivo per leggere / scrivere blocchi fisici su disco, gestisce il buffer del dispositivo e la [[Dispositivi_di_memoria#CACHING|cache]] che conserva i metadati
 - ==MODULO DI ORGANIZZAZIONE DEI FILE==: traduce gli indirizzi logici di blocco e contiene il modulo per la [[Gestione_spazio_libero|gestione dello spazio libero]]
-- ==FILE SYSTEM LOGICO==: gestisce i ==METADATI==, ovvero tutte le strutture del file system eccetto i dati veri e propri memorizzati nei file:
+- ==FILE SYSTEM LOGICO==: gestisce i ==METADATI==, ovvero tutte le [[Strutture_dati_file_system|strutture del file system]] eccetto i dati veri e propri memorizzati nei file:
 	- mantiene le strutture di file tramite i [[Strutture_dati_file_system#STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO|File Control Block]]
 	- gestisce le directory
 	- gestisce protezione e sicurezza

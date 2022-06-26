@@ -4,7 +4,7 @@ Le funzioni del file system vengono realizzate tramite [[Chiamate_di_sistema|chi
 ## STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO
 - ==BLOCCO DI CONTROLLO DI AVVIAMENTO==: contiene le informazioni per l'avviamento di un SO da quel [[Struttura_disco|volume]]; necessario se il volume contiene un SO, normalmente è il primo blocco del volume
 	_boot block_ nell'[[File_system#TIPI DI FILE SYSTEM|UFS]], _partition boot sector_ nei sistemi Windows
-- ==BLOCCHI DI CONTROLLO DEI VOLUMI==: contengono dettagli riguardanti la partizione, quali numero totale dei blocchi e loro dimensione, contatore dei blocchi liberi e relativi puntatori
+- ==BLOCCHI DI CONTROLLO DEI VOLUMI==: contengono dettagli riguardanti la [[Struttura_disco|partizione]], quali numero totale dei blocchi e loro dimensione, contatore dei blocchi liberi e relativi puntatori
 	_superblocco_ in UFS, _master file table (MFT)_ nell'[[File_system#TIPI DI FILE SYSTEM|NTFS]]
 - ==[[Struttura_directory|STRUTTURE DELLA DIRECTORY]]==: usate per organizzare i file
 	in UFS comprendono i nomi dei file e i numeri di [[File_system#STRATIFICAZIONE DEL FILE SYSTEM|inode]] associati

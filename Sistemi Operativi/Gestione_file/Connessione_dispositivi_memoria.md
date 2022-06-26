@@ -5,7 +5,17 @@ I calcolatori accedono alla memoria secondaria in tre modi:
 - in cloud
 
 ## MEMORIA SECONDARIA CONNESSA ALLA MACCHINA
-Alla memoria secondaria connessa alla macchina si accede dalle _porte locali di I/O_ che sono collegate al _bus di I/O_, al quale sono connessi i dischi, che possono anche essere rimovibili.
+Alla memoria secondaria connessa alla macchina si accede dalle _porte locali di I/O_ che sono collegate al _bus di I/O_, al quale sono connessi i dischi, che possono anche essere rimovibili:
+- _Enhanced Integrated Drive Electronics (EIDE)_
+- _Advanced Technology Attachment (ATA)_
+- _Serial ATA (SATA)_
+	con interfaccia ATA o SATA, al più due unità per ciascun bus di I/O
+- _Universal Series Bus (USB)_
+- _Fiber Channel_
+	architettura seriale ad alta velocità: può gestire uno spazio di indirizzi a 24 bit, che è alla base della _storage area network (SAN)_, nella quale molti host sono connessi con altrettante unità di memorizzazione
+- _Small Computer System Interface (SCSI)_
+	interfaccia standard progettata per realizzare il trasferimento di dati, che permette la connessione di un massimo di 16 device
+
 Il trasferimento di dati in un bus è eseguito da [[Input_output|controllori]]:
 - ==ADATTATORI==: controllori posti all'estremità del bus relativa al calcolatore
 - ==CONTROLLORI DEI DISCHI==: incorporati in ciascuna unità a disco

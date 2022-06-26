@@ -15,7 +15,7 @@ Se il bit $[i]$ è uguale a 1 il blocco $[i]$ è libero, se è uguale a 0 il blo
 ### ==LISTA CONCATENATA==
 Si collegano tutti i blocchi liberi mediante puntatori e si mantiene un puntatore alla testa della lista in memoria centrale:
 - non si spreca spazio, in quanto si conserva solo un puntatore
-- non è necessario attraverso tutta la lista, poichè di solito la richiesta è relativa ad un singolo blocco
+- non è necessario attraversare tutta la lista, poichè di solito la richiesta è relativa ad un singolo blocco
 - non facile da usare per ottenere spazio contiguo
 - nella [[Allocazione#FILE ALLOCATION TABLE FAT|FAT]], il conteggio dei blocchi liberi è incluso nella struttura dati per l'allocazione e non richiede quindi un metodo di gestione separato
 ![300](spazio_libero.png)
@@ -23,15 +23,15 @@ Si collegano tutti i blocchi liberi mediante puntatori e si mantiene un puntator
 - ==GROUPING==: realizzazione di una lista di blocchi
 	il primo blocco contiene gli indirizzi di _n_ blocchi liberi, dei quali _n-1_ sono effettivamente liberi e l'_n_-esimo contiene gli indirizzi di altri _n_ blocchi, e così via
 - ==CONTEGGIO==: si mantiene una lista contenente un indirizzo del disco, che indica un blocco libero, e un contatore, che indica da quanti altri blocchi liberi contigui è seguito
-	utile in quanto lo spazio viene spesso allocato e liberato in modo contiguo (e.g. [[Allocazione#ALLOCAZIONE CONTIGUA|allocazione contigua, extent]] e [[Allocazione#ALLOCAZIONE CONCATENATA|clustering]])
+	utile in quanto lo spazio viene spesso allocato e liberato in modo contiguo (e.g. [[Allocazione#ALLOCAZIONE CONTIGUA|allocazione contigua]], [[Allocazione#ALLOCAZIONE CONTIGUA|extent]] e [[Allocazione#ALLOCAZIONE CONCATENATA|clustering]])
 ![600](schema_concatenato.png)
 ### ==TRIM==
-Comando [[Connessione_dispositivi_memoria|ATA]] che consente al SO di informare un [[Solid_state_drive|SSD]] su quali blocchi di dati può cancellare in quanto non sono in uso. Il TRIM è complementare al [[Struttura_directory#DIRECTORY A GRAFO GENERALE|garbage collection]]:
+Comando [[Connessione_dispositivi_memoria#MEMORIA SECONDARIA CONNESSA ALLA MACCHINA|ATA]] che consente al SO di informare un [[Solid_state_drive|SSD]] su quali blocchi di dati può cancellare in quanto non sono in uso. Il TRIM è complementare al [[Struttura_directory#DIRECTORY A GRAFO GENERALE|garbage collection]]:
 - elimina la copiatura di pagine di dati scartate o non valide durante il processo di garbage collection per risparmiare tempo e migliorare le prestazioni dell'unità SSD
 - l'SSD ha un minor numero di pagine da spostare durante la garbage collecition, il che riduce il numero totale di cicli di programmazione / cancellazione sul supporto flash NAND e prolunga la vita dell'SSD
 
 ## PRESTAZIONI
-Se, nell'elemento di directory, si mantiene la data di ultimo accesso ad un file per consentire all'utente di risalire all'ultima volta che un file è stato letto, ogni volta che si apre un file per la lettura. si deve leggere e scrivere anche l'elemento della directory ad esso associato.
+Se, nell'elemento di directory, si mantiene la data di ultimo accesso ad un file per consentire all'utente di risalire all'ultima volta che un file è stato letto, ogni volta che si apre un file per la lettura si deve leggere e scrivere anche l'elemento della directory ad esso associato.
 Se si aumenta la dimensione dei puntatori, si aumenta la dimensione della memoria gestibile via file system, ma si aumenta anche la dimensione delle strutture dati necessarie per I'allocazione e la gestione dello spazio libero.
 
 Le prestazioni dipendono da:

@@ -12,7 +12,7 @@ Inizialmente, ad ogni file viene allocato un extent; se questo non è sufficient
 ## ==ALLOCAZIONE CONCATENATA==
 Ciascun file è costituito da una lista concatenata di blocchi, i quali possono essere sparsi ovunque nel disco. Ciascuno di loro contiene un puntatore al successivo, e il file termina quando si incontra un blocco con puntatore vuoto.
 Nella directory si mantengono gli indirizzi dei blocchi iniziale e finale.
-Non si ha spreco di spazio, ovvero niente frammentazione esterna. Quando necessita di un nuovo blocco per far crescere il file, il SO invoca il sottosistema per la [[Gestione_spazio_libero|gestione dello spazio libero]]. L'efficienza può essere migliorata raccogliendo i blocchi in cluster, aumentando però la frammentazione interna.
+Non si ha spreco di spazio, ovvero niente frammentazione esterna. Quando necessita di un nuovo blocco per far crescere il file, il SO invoca il sottosistema per la [[Gestione_spazio_libero|gestione dello spazio libero]]. L'efficienza può essere migliorata raccogliendo i blocchi in ==CLUSTER==, aumentando però la frammentazione interna.
 Nota per gli esercizi: ogni blocco contiene sia il puntatore al successivo che i dati del file; quindi, una parte del blocco (e.g. 1 byte) non dovrà essere conteggiata nel calcolare quanti blocchi destinare un file.
 ![400](allocazione_concatenata.png)
 

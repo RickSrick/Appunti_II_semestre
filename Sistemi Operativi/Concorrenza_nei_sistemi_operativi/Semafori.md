@@ -4,6 +4,7 @@ Due tipi principali di semafori:
 - ==SEMAFORO MUTEX==: la variabile intera può assumere solamente i valori 0 e 1
 	il funzionamento è simile a quello del [[Lock|lock mutex]]
 - ==SEMAFORO CONTATORE==: la variabile intera può assumere qualsiasi valore in un dominio non limitato
+Nota per gli esercizi: i semafori mutex vengono usati per gestire l'accesso a variabili "normali" (e.g. interi); altrimenti, non servono se ci sono solo semafori normali.
 
 Il semaforo contatore può essere utilizzato quando bisogna gestire l'accesso a [[Risorse|risorse]] presenti in un numero finito di esemplari:
 - il semaforo è inizialmente impostato al numero di esemplari della risorsa disponibili

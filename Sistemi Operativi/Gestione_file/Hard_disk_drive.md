@@ -14,9 +14,10 @@ I ==DISCHI MAGNETICI== rappresentano il mezzo fondamentale per la memorizzazione
 - ==TEMPO DI POSIZIONAMENTO==: _seek time_ + _latenza di rotazione_:
 	- ==SEEK TIME==: tempo necessario a spostare il braccio del disco in corrispondenza del cilindro desiderato
 	- ==LATENZA DI ROTAZIONE==: tempo necessario affinchè il settore desiderato si porti sotto la testina
-- ==TEMPO DI ACCESSO MEDIO==: seek time medio + latenza media
+- ==TEMPO DI ACCESSO MEDIO==: seek time medio + _latenza media_ (tempo per compiere una mezza rotazione del disco)
 - ==TEMPO MEDIO DI I/O==: tempo medio di accesso + (quantità di dati da trasferire / velocità di trasferimento) + overhead
-Il crollo della testina, normalmente sospesa su un cuscinetto d'aria di pochi micron ($10^-6$ m), corrisponde all'impatto della stessa sulla superficie del disco.
+Il crollo della testina, normalmente sospesa su un cuscinetto d'aria di pochi micron ($10^{-6}$ m), corrisponde all'impatto della stessa sulla superficie del disco.
+Nota per gli esercizi: quando non si sa la posizione precisa a cui accedere, si considera la latenza media.
 
 ## ==BLOCCHI LOGICI==
 Le unità a disco vengono indirizzate come giganteschi vettori monodimensionali di _blocchi logici_, che rappresentano le minime unità di trasferimento e che sono creati all'atto della formattazione di basso livello.

@@ -20,8 +20,8 @@ Il trasferimento di dati in un bus è eseguito da [[Input_output|controllori]]:
 - ==ADATTATORI==: controllori posti all'estremità del bus relativa al calcolatore
 - ==CONTROLLORI DEI DISCHI==: incorporati in ciascuna unità a disco
 
-Per eseguire un operazione di I/O, si inserisce il comando opportuno nell'adattatore, generalmente tramite porte di I/O mappate in memoria. L'adattatore invia il comando al controllore del disco, che agisce sugli elementi elettromeccanici dell'unità per portare a termine il lavoro richiesto.
-Il trasferimento dei dati nell'unità a disco avviene tra la superficie del disco e la cache incorporata nel controllore. Il trasferimento dei dati tra la cache e l'adattatore avviene alla velocità propria dei dispositivi elettronici.
+Per eseguire un operazione di I/O, si inserisce il comando opportuno nell'adattatore, generalmente tramite porte di [[Mappatura#MAPPATURA IN MEMORIA DELL'I O|I/O mappate in memoria]]. L'adattatore invia il comando al controllore del disco, che agisce sugli elementi elettromeccanici dell'unità per portare a termine il lavoro richiesto.
+Il trasferimento dei dati nell'unità a disco avviene tra la superficie del disco e la [[Dispositivi_di_memoria#CACHING|cache]] incorporata nel controllore. Il trasferimento dei dati tra la cache e l'adattatore avviene alla velocità propria dei dispositivi elettronici.
 
 ## MEMORIA SECONDARIA CONNESSA ALLA RETE
 ==NETWORK-ATTACHED STORAGE (NAS)==: dispositivo di memoria connesso alla rete; sistema di memoria specializzato al quale si accede in modo remoto attraverso la rete di trasmissione di dati.

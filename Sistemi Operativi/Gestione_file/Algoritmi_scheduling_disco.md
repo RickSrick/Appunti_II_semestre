@@ -6,7 +6,7 @@ Viene soddisfatta la prima richiesta che arriva. È un algoritmo intrinsecamente
 Test: movimento totale della testina pari a 640 cilindri:
 ![450](fcfs_disco.png)
 
-## ==SHORTEST SEEK TIME FIRST (SSTF)==
+## ==SHORTEST [[Hard_disk_drive#MISURE|SEEK TIME]] FIRST (SSTF)==
 Seleziona la richiesta di accesso con seek time minimo in relazione alla posizione corrente della testina. È una forma di [[Criteri_scheduling#PRIORITÀ SHORTEST JOB FIRST SJF SHORTEST PROCESS NEXT SPN|SJF]]; può causare l'attesa indefinita di alcune richieste. Inoltre, non è un algoritmo ottimo.
 Test: movimento totale della testina pari a 236 cilindri:
 ![450](sstf.png)
@@ -19,7 +19,7 @@ Test: movimento totale della testina pari a 236 cilindri:
 ![450](scan.png)
 
 ## ==LOOK==
-Variante di SCAN che ferma la testina dopo che l'ultima richiesta è stata completata, piuttosto che fermarsi al cilindro più interno / esterno.
+Variante di SCAN che ferma la testina dopo che l'ultima richiesta è stata completata, piuttosto che raggiungere il cilindro più interno / esterno.
 
 ## ==C-SCAN==
 La testina si muove da un estremo all'altro del disco servendo sequenzialmente le richieste, come lo SCAN, ma quando raggiunge l'ultimo cilindro ritorna immediatamente all'inizio del disco, senza servire alcuna richiesta durante il viaggio di ritorno.

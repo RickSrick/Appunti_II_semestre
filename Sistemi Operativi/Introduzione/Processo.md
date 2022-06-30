@@ -1,6 +1,6 @@
 # PROCESSO
 ==PROCESSO==: programma in esecuzione; unità di lavoro del sistema di calcolo.
-Il programma è un'entità passiva, il processo un'entità attiva. Infatti, un programma diventa processo quando viene caricato in memoria principale, e può quindi corrispondere a vari processi. In casi come questi, un programma descrive un insieme di processi (_istanze del programma_).
+Il programma è un'entità passiva, il processo un'entità attiva. Infatti, un programma diventa processo quando viene caricato in [[Memoria_principale_processi|memoria principale]], e può quindi corrispondere a vari processi. In casi come questi, un programma descrive un insieme di processi (_istanze del programma_).
 Un processo necessita di alcune [[Risorse|risorse]] per assolvere al proprio compito, le quali vengono rilasciate all'atto della sua terminazione.
 Ogni processo è suddiviso in [[Thread|thread]].
 Normalmente, in un sistema, vi sono molti processi di uno o più utenti, e alcuni processi del SO, che vengono eseguiti in concorrenza su una o più CPU.
@@ -15,7 +15,7 @@ Per prevenire processi che eseguono cicli infiniti senza più restituire il cont
 ==STATO DI UN PROCESSO==: tutte le informazioni modificabili contenuti nei registri condivisi nel sistema che sono accessibili dal processo.
 I processi vengono rappresentati da un ==PROCESS CONTROL BLOCK (PCB) / DESCRITTORE DI PROCESSO / STRUTTURA DI CONTROLLO / VETTORE DI STATO==, il quale contiene tutte le informazioni relative ad un processo.
 Il PCB viene chiamato anche ==TCB== in Linux (nel gergo di Linux si parla di _task_).
-Ad ogni processo vengono associate le seguenti informazioni, conservate nel PCB:
+Le informazioni associate ad ogni processo e conservate nel PCB sono:
 - stato del processo
 - nome (numero) del processo
 - contesto del processo: program counter, registri della CPU (accumulatori, registri indice, stack pointer, registri di controllo)
@@ -89,5 +89,5 @@ Questo richiede un meccanismo di ==INTER-PROCESS COMMUNICATION (IPC)==:
 - ==MEMORIA CONDIVISA==
 	- massima efficienza nella comunicazione e velocità maggiore: richiede l'intervento del kernel solo per allocare la memoria, non richiede system call, gli accessi sono gestiti dai processi
 	- fornisce prestazioni migliori nei [[Multiprocessore_multicore#SISTEMI MULTICORE|multicore]]
-	- più difficile da gestire: problemi di coerenza dovuti alla migrazione di dati condivisi tra varie cache
+	- più difficile da gestire: problemi di coerenza dovuti alla migrazione di dati condivisi tra varie [[Dispositivi_di_memoria#CACHING|cache]]
 ![500](comunicazione_processi.png)

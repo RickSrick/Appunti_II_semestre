@@ -10,13 +10,13 @@ La lista dello spazio libero può non essere realizzata come una lista.
 Se il bit $[i]$ è uguale a 1 il blocco $[i]$ è libero, se è uguale a 0 il blocco è occupato:
 - per calcolare il numero del primo blocco libero si scorre il vettore, cercando il primo bit diverso da 0
 - buone prestazioni se il vettore è conservato in memoria centrale
-- è adatta per gestire file contigui
+- è adatta per gestire [[Allocazione#ALLOCAZIONE CONTIGUA|file contigui]]
 ![500](bitmap.png)
 ### ==LISTA CONCATENATA==
 Si collegano tutti i blocchi liberi mediante puntatori e si mantiene un puntatore alla testa della lista in memoria centrale:
 - non si spreca spazio, in quanto si conserva solo un puntatore
 - non è necessario attraversare tutta la lista, poichè di solito la richiesta è relativa ad un singolo blocco
-- non facile da usare per ottenere spazio contiguo
+- non facile da usare per ottenere [[Allocazione#ALLOCAZIONE CONTIGUA|spazio contiguo]]
 - nella [[Allocazione#FILE ALLOCATION TABLE FAT|FAT]], il conteggio dei blocchi liberi è incluso nella struttura dati per l'allocazione e non richiede quindi un metodo di gestione separato
 ![300](spazio_libero.png)
 ### GROUPING / CONTEGGIO
@@ -37,7 +37,7 @@ Se si aumenta la dimensione dei puntatori, si aumenta la dimensione della memori
 Le prestazioni dipendono da:
 - mantenere dati e metadati "vicini" nel disco
 - disporre di una [[Buffer_cache|buffer cache]]
-- scritture _sincrone_, talvolta richieste dalle applicazioni oppure necessarie al SO:
+- [[Input_output|scritture sincrone]], talvolta richieste dalle applicazioni oppure necessarie al SO:
 	- impossibilità di buffering / caching: l'operazione di scrittura su disco deve essere completata prima di proseguire l'esecuzione
 	- le scritture _asincrone_, che sono le più comuni, sono invece bufferizzabili e più veloci
 - utilizzo di svuotamento / riempimento delle cache per ottimizzare l'[[Accesso_file#ACCESSO SEQUENZIALE|accesso sequenziale]]

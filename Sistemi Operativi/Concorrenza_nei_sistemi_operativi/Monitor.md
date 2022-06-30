@@ -3,7 +3,7 @@ Nonostante i [[Semafori|semafori]] rappresentino un meccanismo pratico ed effica
 - per effettuare l'allocazione di risorse tramite monitor, un processo deve richiamare una routine interna al monitor
 - la mutua esclusione è rigidamente forzata ai confini del monitor stesso, al quale può accedere solo un processo alla volta
 
-Tuttavia, tale definizione di monitor non è sufficientemente potente per modellare alcuni schemi di sincronizzazione per permettere ad un processo di attendere, causa occupazione della risorsa richiesta, dopo l'ingresso al monitor.
+Tuttavia, tale definizione di monitor non è sufficientemente potente per modellare alcuni schemi di sincronizzazione che permettano ad un processo di attendere dopo essere entrato nel monitor a causa dell'occupazione della [[Risorse|risorsa]] richiesta.
 Per questo si dichiarano apposite _variabili condition_.
 ![400](monitor.png)
 ![400](monitor2.png)
@@ -16,6 +16,7 @@ Variabile $x$ che può essere usata solo in relazione alle operazioni $x.wait()$
 Un processo utilizza una variabile condition interna al monitor per attendere il verificarsi di una certa condizione, uscendo dal monitor nel frattempo. Pertanto, il monitor ne associa una per ogni situazione che potrebbe portare un processo a mettersi in attesa. Un processo può quindi uscire dal monitor mettendosi in attesa su una variabile condition oppure completando il codice protetto dal monitor.
 In particolare, se il processo $P$ invoca $x.signal()$ sulla variabile condition $x$ ed esiste un processo $Q$ in coda a quella variabile:
 - ==SEGNALARE E ATTENDERE / SIGNAL AND WAIT==: $Q$ entra nel monitor e $P$ attende fuori dal monitor che $Q$ abbia terminato o si metta in attesa su una variabile condition
-- ==SEGNALARE E PROSEGUIRE / SIGNAL AND CONTINUE==: $Q$ attende che $P$ lasci il monitor o si metta in attesa ($x.wait()$) su una condition
+- ==SEGNALARE E PROSEGUIRE / SIGNAL AND CONTINUE==: $Q$ attende che $P$ lasci il monitor o si metta in attesa ($x.wait()$) su una variabile condition
+
 Dato che $P$ era già in esecuzione nel monitor, segnalare e proseguire sembra più ragionevole, però quando $P$ termina, la condizione attesa da $\mathrm{Q}$ potrebbe non essere più valida. Una terza alternativa di compromesso potrebbe essere che $P$ lascia il monitor volontariamente subito dopo aver invocato $signal()$.
 ![350](monitor3.png)

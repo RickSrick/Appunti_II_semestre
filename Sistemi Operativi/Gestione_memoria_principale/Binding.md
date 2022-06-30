@@ -11,5 +11,5 @@ Può avvenire in fase di:
 Prima di essere eseguiti, i programmi passano attraverso stadi diversi con diverse rappresentazioni degli indirizzi:
 - ==SIMBOLICI==: indirizzi presenti nel codice sorgente (e.g. nomi di variabili)
 - ==RILOCABILI==: indirizzi associati a quelli simbolici dal compilatore (e.g. calcolati a partire dalla locazione della prima istruzione del programma)
-- ==ASSOLUTI==: indirizzi di memoria fisica associati a quelli rilocabili dal linker/loader
+- ==ASSOLUTI==: indirizzi di memoria fisica associati a quelli rilocabili dal [[Linker_loader|linker/loader]]
 ![650](binding.png)

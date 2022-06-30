@@ -26,7 +26,7 @@ Il file system risiede nella memoria secondaria:
 I [[Hard_disk_drive|dischi]] sono un mezzo conveniente per la memorizzazione di file, in quanto:
 - si possono riscrivere localmente
 - è possibile accedere direttamente a qualsiasi blocco di informazione del disco, ovvero a qualsiasi file, sia in modo [[Accesso_file#ACCESSO SEQUENZIALE|sequenziale]] che [[Accesso_file#ACCESSO DIRETTO|diretto]]
-Le operazioni di I/O su disco avvengono con _granularità di blocco_: ciascun blocco è composto da uno o più settori. I dispositivi fisici vengono controllati per mezzo di [[Input_output|device driver]].
+Le operazioni di I/O su disco avvengono con ==GRANULARITÀ DI BLOCCO==: ciascun blocco è composto da uno o più settori. I dispositivi fisici vengono controllati per mezzo di [[Input_output|device driver]].
 
 ## STRATIFICAZIONE DEL FILE SYSTEM
 Il file system è ==STRATIFICATO==, cioè organizzato in livelli, ognuno dei quali si serve esclusivamente delle funzioni dei livelli inferiori per crearne di nuove. Questa struttura è utile per ridurre la complessità e la ridondanza, ma aggiunge overhead e può diminuire le performance.

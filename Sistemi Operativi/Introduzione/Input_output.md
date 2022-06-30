@@ -4,7 +4,7 @@ Una percentuale cospicua del codice del SO è dedicata alla gestione dell'==I/O=
 - ==DEVICE DRIVER==: "SO" del controllore; presente uno per ciascun controllore di device, ne guida le operazioni di I/O e garantisce un'interfaccia comune fra kernel e controllore.
 
 In seguito ad una richiesta di I/O da parte di un processo utente, si verifica un [[Interrupt|interrupt]]. Dopo l'inizio dell'operazione di I/O, il flusso di esecuzione può seguire due percorsi distinti:
-- ==I/O SINCRONO==: si restituisce il controllo al processo utente solo dopo il completamento dell'operazione di I/O; la CPU è mantenuta in stato idle dalla [[Chiamate_di_sistema|system call]] $wait()$, e ad ogni istante si può avere una sola richiesta di $\mathrm{I} / \mathrm{O}$ in esecuzione
+- ==I/O SINCRONO==: si restituisce il controllo al processo utente solo dopo il completamento dell'operazione di I/O; la CPU è mantenuta in stato idle dalla [[Chiamate_di_sistema|system call]] $wait()$, e ad ogni istante si può avere una sola richiesta di I/O in esecuzione
 - ==I/O ASINCRONO==: si prevede la restituzione immediata del controllo a un altro processo utente; in questo modo l'I/O può proseguire mentre il sistema esegue altre operazioni
 
 Il sottosistema di I/O è quindi formato da:

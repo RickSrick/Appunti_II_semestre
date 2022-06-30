@@ -2,7 +2,7 @@
 Nelle [[Multiprocessore_multicore#SISTEMI MULTICORE|architetture multicore]], sono presenti diverse unità di calcolo sullo stesso chip, ognuna delle quali appare al SO come un chip separato. Su questi sistemi i [[Thread|thread]] possono essere eseguiti in parallelo, poichè il sistema li può assegnare a diverse unità di calcolo.
 
 - ==PARALLELISMO==: eseguire più calcoli / task contemporaneamente
-	- task multipli, o diverse parti dello stesso task, vengono eseguiti contemporaneamente in sistemi multi-processore o multi-core
+	- task multipli, o diverse parti dello stesso task, vengono eseguiti contemporaneamente in sistemi [[Multiprocessore_multicore#SISTEMI MULTIPROCESSORE|multi-processore]] o multi-core
 	- richiedono strutture hardware apposite
 	- si trasforma un flusso di esecuzione sequenziale in uno parallelo
 - ==CONCORRENZA==: eseguire più calcoli / task nello stesso periodo di tempo
@@ -10,5 +10,5 @@ Nelle [[Multiprocessore_multicore#SISTEMI MULTICORE|architetture multicore]], so
 	- possibile grazie al _time slicing_ della CPU, ovvero allo [[Scheduler|scheduler]] che dedica l'unità di calcolo ai vari task per unità di tempo infinitesimali
 
 Due tipi di parallelismo:
-- ==DATA PARELLELISM==: la stessa operazione viene eseguita più volte contemporaneamente sullo stesso insieme di dati; questo viene partizionato in modo che più thread possano agire simultaneamente su segmenti diversi
+- ==DATA PARELLELISM==: la stessa operazione viene eseguita da più thread contemporaneamente sullo stesso insieme di dati, che viene partizionato in segmenti diversi
 - ==TASK PARALLELISM==: distrubuzione di thread diversi in esecuzione nei diversi nodi di calcolo in ambienti di calcolo parallelo

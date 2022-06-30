@@ -2,8 +2,7 @@
 Le funzioni del file system vengono realizzate tramite [[Chiamate_di_sistema|chiamate di sistema]] invocate attraverso l'API, che utilizzano dati, gestiti dal kernel, residenti sia su disco che su memoria.
 
 ## STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO
-- ==BLOCCO DI CONTROLLO DI AVVIAMENTO==: contiene le informazioni per l'avviamento di un SO da quel [[Struttura_disco|volume]]; necessario se il volume contiene un SO, normalmente è il primo blocco del volume
-	_boot block_ nell'[[File_system#TIPI DI FILE SYSTEM|UFS]], _partition boot sector_ nei sistemi Windows
+- ==[[Avviamento_so_memoria#BOOT BLOCK|BLOCCO DI CONTROLLO DI AVVIAMENTO]]==: contiene le informazioni per l'[[Avviamento_so_memoria|avviamento di un SO]] da quel [[Struttura_disco|volume]]; necessario se il volume contiene un SO, normalmente è il primo blocco del volume
 - ==BLOCCHI DI CONTROLLO DEI VOLUMI==: contengono dettagli riguardanti la [[Struttura_disco|partizione]], quali numero totale dei blocchi e loro dimensione, contatore dei blocchi liberi e relativi puntatori
 	_superblocco_ in UFS, _master file table (MFT)_ nell'[[File_system#TIPI DI FILE SYSTEM|NTFS]]
 - ==[[Struttura_directory|STRUTTURE DELLA DIRECTORY]]==: usate per organizzare i file
@@ -13,7 +12,7 @@ Le funzioni del file system vengono realizzate tramite [[Chiamate_di_sistema|chi
 	- NTFS memorizza i dati nella _master file table_ utilizzando una struttura in stile database relazionale
 ![400](fcb.png)
 
-## STRUTTURE DATI DEL FILE SYSTEM RESIDENTI IN MEMORIA
+## STRUTTURE DATI DEL FILE SYSTEM RESIDENTI IN MEMORIA PRINCIPALE
 - ==TABELLA DI [[Montaggio|MONTAGGIO]]==: contiene le informazioni relative a ciascun volume montato 
 - ==STRUTTURA DELLE DIRECTORY==: contiene informazioni relative a tutte le directory cui i processi hanno avuto accessi di recente
 - ==[[Tabelle_file_aperti|TABELLA DEI FILE APERTI]]==

@@ -1,6 +1,6 @@
 # PROGRAMMI DI SISTEMA
 I ==PROGRAMMI DI SISTEMA== forniscono un ambiente conveniente per lo sviluppo e l'esecuzione di ==PROGRAMMI UTENTE== (semplici interfacce alle [[Chiamate_di_sistema|chiamate di sistema]] oppure programmi complesssi). L'aspetto del SO per la maggioranza degli utenti è infatti definito dai programmi di sistema, non dalle chiamate di sistema vere e proprie.
-Alcune delle funzioni assolte dai programmmi di sistema:
+Alcune delle funzioni assolte dai programmi di sistema:
 - gestione di file
 - informazioni di stato
 - editing di file

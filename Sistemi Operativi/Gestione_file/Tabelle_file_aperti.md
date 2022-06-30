@@ -1,7 +1,7 @@
 # TABELLA DEI [[File|FILE]] APERTI
 Quando si richiede un'operazione su file si ricercano le informazioni relative reperendole, tramite un puntatore, nella ==TABELLLA DEI FILE APERTI==. Questa tabella contiene una copia dell'[[Strutture_dati_file_system#STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO|FCB]] per ogni file aperto nel sistema. Quando il file non è più attivo, dev'essere chiuso e il SO rimuove l'elemento relativo nella tabella.
 Le [[Chiamate_di_sistema|chiamate di sistema]] per aprire e chiudere i file sono:
-- $open(\text{F}_{i})$: ricerca nella struttura di directory sul disco l'elemento $\text{F}_{i}$ e ne copia il contenuto nella tabella dei file aperti in memoria centrale, riporta un puntatore all'elemento della tabella
+- $open(\text{F}_{i})$: ricerca nella [[Struttura_directory|struttura di directory]] sul disco l'elemento $\text{F}_{i}$ e ne copia il contenuto nella tabella dei file aperti in memoria centrale, riporta un puntatore all'elemento della tabella
 - $close(\text{F}_{i})$: copia il contenuto dell'elemento $\text{F}_{i}$, attualmente residente in memoria principale, nella struttura di directory sul disco e lo rimuove
 
 Nei sistemi multiutente, sono presenti due livelli di tabelle:

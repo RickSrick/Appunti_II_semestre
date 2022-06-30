@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Gestione_file/Algoritmi_scheduling_disco.md",
+            "file": "Scheduling_CPU/Valutazione_criteri_scheduling.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "descrittor",
+                "query": "slicing",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,14 +69,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gestione_file/Algoritmi_scheduling_disco.md",
+                "file": "Scheduling_CPU/Valutazione_criteri_scheduling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           }
@@ -89,15 +89,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
-    "Gestione_file/Algoritmi_scheduling_disco.md",
-    "Gestione_file/Accesso_file.md",
-    "Concorrenza_nei_sistemi_operativi/Monitor.md",
-    "Concorrenza_nei_sistemi_operativi/Lock.md",
-    "Gestione_file/Hard_disk_drive.md",
-    "Gestione_file/Formattazione.md",
-    "Gestione_file/Lock_file_aperti.md",
-    "Gestione_file/Strutture_dati_file_system.md",
-    "Gestione_file/Allocazione.md",
-    "Gestione_file/Gestione_swap.md"
+    "Scheduling_CPU/Valutazione_criteri_scheduling.md",
+    "Struttura_dei_sistemi_operativi/Debugging.md",
+    "readme.txt.md",
+    "Struttura_dei_sistemi_operativi/Tipi_di_SO.md",
+    "Struttura_dei_sistemi_operativi/Servizi.md",
+    "Struttura_dei_sistemi_operativi/Programmi_di_sistema.md",
+    "Struttura_dei_sistemi_operativi/Progettazione_sviluppo_SO.md",
+    "Struttura_dei_sistemi_operativi/Linker_loader.md",
+    "Gestione_memoria_principale/Binding.md",
+    "Struttura_dei_sistemi_operativi/CLI.md"
   ]
 }

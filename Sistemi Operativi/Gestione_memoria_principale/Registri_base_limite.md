@@ -9,5 +9,5 @@ Per proteggere gli spazi di memoria del SO o di altri processi utente, la CPU co
 - indirizzo $\geq$ base
 - indirizzo $\lt$ base + limite
 Solo il SO può caricare i registri base e limite usando [[Modalità#ISTRUZIONI PRIVILEGIATE|istruzioni privilegiate]].
-Un tentativo di accedere agli spazi di memoria del SO o di altri processi utente effettuato in [[Modalità|modalità utente]] provoca un segnale di [[Interrupt|eccezione]], che trasferisce il controllo al SO, e l'emissione di un messaggio di errore.
+Un tentativo di accedere agli spazi di memoria del SO o di altri processi utente effettuato in [[Modalità|modalità utente]] provoca una [[Interrupt|trap]], che trasferisce il controllo al SO, e l'emissione di un messaggio di errore.
 ![600](registri_base_limite.png)

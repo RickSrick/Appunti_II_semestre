@@ -4,8 +4,8 @@ Si utilizza un ==DIAGRAMMA TEMPORALE==:
 - ascissa: tempo ($\text{t}_{0}$: istante iniziale, $\text{t}_{f}$: istante finale)
 - ordinata: stato del processo ($\text{S}_{0}$: stato iniziale, $\text{S}_{f}$: stato finale)
 ![400](diagramma_temporale.png)
-
 I plateau indicano che il processo non sta proseguendo, dunque tale diagramma permette di rappresentare processi in attesa di dati esterni.
+
 A meno che il processo non sia indipendente da fattori esterni, è impossibile prevedere perfettamente i tempi; si preferisce quindi una rappresentazione che evidenzi solo gli stati più significativi del processo.
 Inoltre, è conveniente scomporre il processo in sottoprocessi, anche se la suddivisione può non essere univoca.
 Esempio:

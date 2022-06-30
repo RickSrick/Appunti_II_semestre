@@ -16,7 +16,7 @@ Sono più efficienti, perché le comunicazioni, sul singolo chip, sono più velo
 
 ## ==CLUSTER==
 Sono simili ai sistemi multiprocessore, ma sono composti da due o più calcolatori completi, detti ==NODI==, collegati ad una memoria secondaria condivisa tramite una [[Connessione_dispositivi_memoria#MEMORIA SECONDARIA CONNESSA ALLA RETE|SAN]].
-Presentano una notevole _tolleranza ai guasti / fault tolerance_. I cluster vengono impiegati nell'_high performance computing (HPC)_. Le applicazioni devono essere parallelizzate, cioè scritte per trarre vantaggio dall'architettura.
+Presentano una notevole [[Fault_tolerance|fault tolerance]]. I cluster vengono impiegati nell'_high performance computing (HPC)_. Le applicazioni devono essere [[Parellelismo_concorrenza|parallelizzate]], cioè scritte per trarre vantaggio dall'architettura.
 - ==CLUSTERING ASIMMETRICO==: un calcolatore rimane nello stato di attesa attiva mentre gli altri eseguono le applicazioni; il calcolatore in stand-by controlla gli altri nodi e si attiva nel caso di malfunzionamenti
 - ==CLUSTERING SIMMETRICO==: tutti i nodi eseguono le applicazioni e si controllano reciprocamente.
 ![450](cluster.png)

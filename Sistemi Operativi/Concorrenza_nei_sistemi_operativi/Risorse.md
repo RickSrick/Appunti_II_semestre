@@ -3,11 +3,11 @@
 Vari tipi di risorse:
 - ==CONDIVISIBILI==: possono essere usate da più processi in parallelo (e.g. RAM)
 - ==NON CONDIVISIBILI==: non possono essere usate da più processi in parallelo (e.g. stampante)
-- ==CONSUMABILI==: non riutilizzabili (e.g. messaggi, segnali, interrupt, batteria)
-- ==NON CONSUMABILI==: possono essere riutilizzate (e.g. core di CPU, file)
+- ==CONSUMABILI==: non riutilizzabili (e.g. messaggi, segnali, [[Interrupt|interrupt]], batteria)
+- ==NON CONSUMABILI==: possono essere riutilizzate (e.g. core di CPU, [[File|file]])
 
 Il protocollo di accesso alle risorse da parte dei thread prevede:
-- ==RICHIESTA== (se la richiesta non può essere soddisfatta subito, il processo deve attendere il rilascio della risorsa richiesta da parte del thread che la trattiene)
+- ==RICHIESTA== (se la richiesta non può essere soddisfatta subito, il processo deve attendere il rilascio della risorsa richiesta da parte del [[Thread|thread]] che la trattiene)
 - ==UTILIZZO==
 - ==RILASCIO==
 

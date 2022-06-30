@@ -17,7 +17,7 @@ Dal punto di vista del SO, i file vengono mappati su dispositivi fisici di memor
 - ==PROTEZIONE==: parametri di controllo per l'accesso in lettura, scrittura ed esecuzione del file
 - ==ORA, DATE E IDENTIFICAZIONE DELL'UTENTE== (dati necessari alla sicurezza del sistema e per il controllo dell'uso)
 Alcuni file system più recenti supportano anche gli ==ATTRIBUTI ESTESI== dei file, tra cui la codifica dei caratteri del file e le funzioni di sicurezza come la _checksum_. Non sono parte del file a cui vengono associati, ma sono gestiti separatamente dal file system. Ognuno di essi viene infatti identificato da una coppia (nome, valore) per permettere il reperimento delle informazioni.
-Le informazioni sui file sono conservate nella struttura di [[Directory|directory]], che risiede sulla memoria secondaria. Un elemento di directory consiste di un nome di file e di un identificatore unico, che a sua volta individua gli altri attributi. Un elemento di directory può avere una dimensione maggiore di 1 KB.
+Le informazioni sui file sono conservate nella struttura di [[Directory|directory]], che risiede sulla memoria secondaria. Un ==ELEMENTO DI DIRECTORY== consiste di un nome di file e di un identificatore unico, che a sua volta individua gli altri attributi. Un elemento di directory può avere una dimensione maggiore di 1 KB.
 
 ## OPERAZIONI SUI FILE
 - ==CREAZIONE==

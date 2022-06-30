@@ -19,11 +19,11 @@ La maggior parte delle organizzazioni può essere distinta in base a due caratte
 	- granularità idonea per _transaction processing_
 ![550](raid_grana_grossa.png)
 
-## ==SEZIONAMENTO==
-_Sezionamento / striping_: i dati vengono suddivisi in sezioni di uguale lunghezza e scritti su dischi differenti.
+## ==SEZIONAMENTO DEL DISCO / DATA STRIPING==
+I dati vengono suddivisi in sezioni di uguale lunghezza e scritti su dischi differenti.
 
 ### ==RAID 0==
-Si usa il ==SEZIONAMENTO DEL DISCO / DATA STRIPING==: tratta un gruppo di dischi come un'unica unità di memorizzazione. Ogni blocco di dati è suddiviso in "sottoblocchi" memorizzati su dischi distinti. Il tempo di trasferimento per rotazioni sincronizzate diminuisce proporzionalmente al numero di dischi nella batteria.
+Tratta un gruppo di dischi come un'unica unità di memorizzazione. Ogni blocco di dati è suddiviso in "sottoblocchi" memorizzati su dischi distinti. Il tempo di trasferimento per rotazioni sincronizzate diminuisce proporzionalmente al numero di dischi nella batteria.
 Non è una vera architettura RAID, in quanto non mantiene ridondanza e consente solo data striping, a livello di blocco o multipli di blocco.
 Vantaggi:
 - minor costo tra le architetture RAID
@@ -40,7 +40,7 @@ Il ==MIRRORING / SHADOWING== conserva duplicati di ciascun disco. I dati sono ma
 
 ### ==RAID 2==
 La struttura a ==BLOCCHI DI PARITÀ== utilizza un minor grado di ridondanza, mantenendo buone caratteristiche di affidabilità. Viene effettuato uno striping a livello di bit, e si effettua un unico movimento parallelo delle testine.
-Per rilevare e correggere gli errori, si usa un metodo analogo alla [[Malfunzionamenti#DISTANZA DI HAMMING|codifica di Hamming]]. Viene fornito un numero di dischi ridondanti in un gruppo circa proporzionale al logaritmo del numero dei dischi dati nel gruppo. Nei dischi ridondanti viene inserita la parità calcolata sui diversi sottoinsiemi (stripes) dell'informazione, analoga al bit di parità. Un unico disco di parità può rilevare un singolo errore, ma per correggere un errore sono necessari più dischi di parità per identificare il disco con l'errore.
+Per rilevare e correggere gli errori, si usa un metodo analogo alla [[Malfunzionamenti#DISTANZA DI HAMMING|codifica di Hamming]]. Viene fornito un numero di dischi ridondanti in un gruppo circa proporzionale al logaritmo del numero dei dischi dati nel gruppo. Nei dischi ridondanti viene inserita la parità calcolata sui diversi sottoblocchi (stripes) dell'informazione, analoga al bit di parità. Un unico disco di parità può rilevare un singolo errore, ma per correggere un errore sono necessari più dischi di parità per identificare il disco con l'errore.
 Data l'ormai la diffusa inclusione della correzione tramite codifica di Hamming direttamente nel [[Connessione_dispositivi_memoria#MEMORIA SECONDARIA CONNESSA ALLA MACCHINA|controllori dei dischi]], questa architettura non è diffusa commercialmente.
 ![550](raid_2.png)
 

@@ -1,10 +1,10 @@
 # MEMORIA VIRTUALE
-Il codice deve risiedere in memoria principale per essere eseguiti, ma raramente tutto il codice relativo ad un programma è necessario durante l'esecuzione:
+Il codice deve risiedere in memoria principale per essere eseguito, ma raramente tutto il codice relativo ad un programma è necessario durante l'esecuzione:
 - porzioni di codice per la gestione di errori insoliti o percorsi nel flusso raramente seguiti
 - array, liste e tabelle sovradimensionate rispetto all'utilizzo reale standard
 Mantenere solo porzioni di programmi in memoria ha dei vantaggi:
 - i programmi non sono vincolati alla quantità di memoria fisica disponibile
-- aumenta il grado di multiprogrammazione e la produttività del sistema senza influenzare i [[Definizioni#MISURE|tempi di risposta o di turnaround]]
+- aumenta il grado di [[Multiprogrammazione|multiprogrammazione]] e la produttività del sistema senza influenzare i [[Definizioni#MISURE|tempi di risposta]] o [[Definizioni#MISURE|di turnaround]]
 
 ==MEMORIA VIRTUALE==: separazione della memoria logica dell'utente dalla memoria fisica:
 - solo parte del programma si trova in memoria per l'esecuzione (le parti rimanenti si trovano sulla memoria secondaria)

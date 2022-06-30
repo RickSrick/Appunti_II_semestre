@@ -1,5 +1,4 @@
 # [[Tabella_delle_pagine|TABELLA DELLE PAGINE]] HASH
-Comune per spazi di indirizzi a più di 32 bit.
 ==TABELLA DELLE PAGINE HASH==: viene applicata una funzione hash:
 - l'argomento della funzione è il numero della pagina
 - per gestire le collisioni, ogni elemento della tabella hash contiene una lista concatenata di elementi
@@ -8,7 +7,7 @@ Comune per spazi di indirizzi a più di 32 bit.
 	- indirizzo del frame corrispondente
 	- puntatore all'elemento successivo della lista
 - il numero di pagina viene confrontato con tutti gli elementi della lista concatenata
-Metodo particolarmente utile per spazi di indirizzi sparsi con riferimenti di memoria non contigui (situazione un po' improbabile).
+Metodo particolarmente utile per spazi di indirizzi sparsi con riferimenti di memoria non contigui (situazione un po' improbabile); comune per spazi di indirizzi a più di 32 bit.
 ![500](hash.png)
 
 ## ==TABELLA DELLE PAGINE A CLUSTER==

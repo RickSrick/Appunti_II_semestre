@@ -2,7 +2,7 @@
 Un [[File_system|file system]] dev'essere ==MONTATO== prima di poter essere acceduto dai processi di un sistema. Un file system _unmounted_ può essere montato in un _mount point_ prescelto.
 Alcuni SO richiedono un file system prefissato; altri ne supportano diversi e sondano le strutture dei dispositivi per determinare i tipi di file system presenti, eventualmente montandoli automaticamente in fase di boot.
 
-Per montare un file system, si fornisce al SO il nome del dispositivo da montare, sotto forma di [[Struttura_disco|volume]] e pathname, e la locazione che dovrà assumere nella struttura del file system (_mount point_).
+Per montare un file system, si fornisce al SO il nome del dispositivo da montare, sotto forma di [[Struttura_disco|volume]] e pathname, e la locazione che dovrà assumere nella struttura del file system (==MOUNT POINT==).
 Una volta montato, il file system risulta accessibile a programmi e utenti in modo trasparente e diventa parte integrante del [[Struttura_directory|grafo delle directory]]. La directory su cui viene montato un file system può non essere vuota, ma dal momento in cui si effettua il montaggio i dati contenuti in essa diventano inaccessibili fino all'operazione di _unmount_.
 ![650](montaggio.png)
 

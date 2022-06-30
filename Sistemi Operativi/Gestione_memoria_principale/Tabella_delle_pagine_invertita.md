@@ -6,4 +6,4 @@ Un problema delle tabelle delle pagine è che la loro dimensione è proporzional
 - la tabella è ordinata secondo i frame in memoria (per questo è detta _invertita_)
 - gli indirizzi virtuali sono formati dalla tripla <numero processo, numero pagina, offset>
 ![550](tabella_invertita.png)
-Si riduce la memoria necessaria per il mapping indirizzi logici-fisici, ed è possibile condividere pagine fisiche tra diversi processi con relativa facilità, ma si incrementa il tempo per le ricerche nella tabella e si presentano difficoltà implementative.
+Si riduce la memoria necessaria per il [[Indirizzi_logici_fisici|mapping tra indirizzi logici e fisici]], ed è possibile condividere pagine fisiche tra diversi processi con relativa facilità, ma si incrementa il tempo per le ricerche nella tabella e si presentano difficoltà implementative.

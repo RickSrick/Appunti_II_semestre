@@ -3,7 +3,7 @@ Algoritmi per l'==ALLOCAZIONE DEI FRAME==: determinano quanti frame vengono asse
 Ciascun processo richiede un numero minimo di frame, determinato dall'architettura, mentre il numero massimo è determinato dalla disponibilità di memoria.
 
 ## ==ALLOCAZIONE UNIFORME==
-Assegnare ad ogni processo la stessa quantità di frame; possibile implementarla mantenando un [[Algoritmi_sostituzione_pagina#POOL DI FRAME LIBERI|pool di frame liberi]]).
+Assegnare ad ogni processo la stessa quantità di frame; possibile implementarla mantenando un [[Algoritmi_sostituzione_pagina#POOL DI FRAME LIBERI|pool di frame liberi]].
 
 ## ==ALLOCAZIONE PROPORZIONALE==
 Si allocano frame sulla base di:
@@ -24,7 +24,8 @@ La sostituzione globale garantisce un maggiore [[Definizioni#MISURE|throughput]]
 Se un processo non ha abbastanza frame a disposizione, la frequenza di page fault è abbastanza alta. In tal caso, si verifica un caso di _thrashing_: un processo è costantemente occupato a spostare pagine dal disco alla memoria e viceversa.
 ![500](thrashing.png)
 
-## ==WORKING-SET==
+## COME RISOLVERE IL THRASHING
+### ==WORKING-SET==
 - ==LOCALITÀ==: insieme di pagine che vengono accedute insieme e che sono contemporaneamente in uso attivo (connotazione spazio-temporale)
 - $\Delta$: finestra di working-set; un numero fissato di riferimenti a pagina
 - $\text{WSS}_{i}$: ==WORKING-SET== del processo $\text{P}_{i}$; insieme di pagine diverse referenziate da $\text{P}_{i}$ nel più recente $\Delta$:
@@ -32,6 +33,7 @@ Se un processo non ha abbastanza frame a disposizione, la frequenza di page faul
 	- se $\Delta$ è troppo grande comprende più località
 	- se $\Delta \rightarrow \infty$ comprende l'intero programma
 - $D = \sum \text{WSS}_{i} \equiv$ numero totale di pagine richieste
+- $m$: numero totale dei frame allocati a $\text{P}_{i}$
 
 Politica: se $D > m$ presente thrashing; occorre sospendere un processo o sottoporlo a [[Swapping#SWAPPING|swapping]].
 ![550](working-set.png)
@@ -42,7 +44,7 @@ Esempio:
 	- quando si ha un interrupt del timer, si copiano i valori di tutti i bit di riferimento e si pongono a 0
 	- se uno dei bit in memoria è 1, pagina nel working-set
 
-## ==FREQUENZA DI PAGE FAULT==
+### FREQUENZA DI PAGE FAULT
 Si stabilisce una frequenza di page fault "accettabile" e si utilizza una politica di sostituzione locale; tuttavia:
 - se la frequenza effettiva è troppo bassa, il processo rilascia dei frame
 - se la frequenza effettiva è troppo alta, il processo acquisisce dei frame
@@ -51,6 +53,6 @@ Costituisce un approccio più diretto e intuitivo rispetto al working-set, ma ha
 - quando si verifica un cambio di località del processo si ha un picco della frequenza di page fault
 ![550](frequenza_page_fault.png)
 
-## ==PREPAGING==
+### ==PREPAGING==
 Si portano in memoria tutte o alcune delle pagine necessarie al processo, prima che vengano referenziate (ad esempio, memorizzare il working-set al momento della sospensione per I/O per poi riprendere tutte le pagine che gli appartengono). Si utilizza questo metodo per ridurre il numero di page fault necessari allo startup del processo in regime di [[Paginazione_a_richiesta#PAGINAZIONE A RICHIESTA PURA|paginazione a richiesta pura]].
 Se le pagine precaricate non vengono usate, si sprecano I/O e memoria: bisogna valutare se il costo dei page fault evitati è maggiore o minore del costo di prepaging relativo al caricamento delle pagine inutilizzate. Infatti, se la percentuale delle pagine inutilizzate rispetto a quelle precaricate tende a 0, il prepaging non conviene.

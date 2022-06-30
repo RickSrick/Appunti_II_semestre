@@ -18,8 +18,8 @@ Se il sistema è aperto, è possibile renderlo chiuso aggiungendo dei processi d
 Due insieme di processi $\text{C}_{a}$ e $\text{C}_{b}$ possono essere combinati ==IN SERIE== ($\text{C}_{a} *\text{C}_{b}$) o ==IN PARALLELO== ($\text{C}_{a}+\text{C}_{b}$). Questa formalizzazione permetterà di capire i tempi di calcoli in base al ==PARALLELISMO== del sistema. Da notare che in genere, nelle CPU in vendita, aumentando il numero di core cala la frequenza massima.
 ![400](grafo_precedenza3.png)
 
-## MASSIMO GRADO DI PARALLELISMO
-==MASSIMO GRADO DI PARALLELISMO==: cardinalità del più grande sottoinsieme di processi tale per cui, dati due nodi qualsiasi del sottoinsieme, non esiste un percorso orientato che li connette.
+## ==MASSIMO GRADO DI PARALLELISMO==
+Cardinalità del più grande sottoinsieme di processi (ovvero nodi del grafo) tale per cui, dati due nodi qualsiasi del sottoinsieme preso, non esiste un percorso orientato che li connette.
 Indica quanti sottoprocessi indipendenti potrebbero essere parallelizzati. Per ridurre il massimo grado di parallelismo (i.e. ottimizzare il sistema per hardware con un [[Multiprocessore_multicore#SISTEMI MULTICORE|numero prefissato di core]]) si può agire sui vari insiemi che hanno un massimo grado di parallelismo maggiore del numero di core.
 
 ## INTERFERENZA E DETERMINATEZZA

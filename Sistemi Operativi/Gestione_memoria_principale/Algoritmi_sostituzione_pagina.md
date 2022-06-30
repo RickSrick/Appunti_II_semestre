@@ -11,12 +11,12 @@ Implementato mediante una coda FIFO relativa alle pagine residenti in memoria: s
 Esempio con stringa _s_ e 3 frame disponibili per processo:
 ![550](fifo.png)
 
-## ANOMALIA DI BELADY
+## ==ANOMALIA DI BELADY==
 Esempio di FIFO con stringa _1 2 3 4 1 2 5 1 2 3 4 5_, 3 frame:
 ![400](belady1.png)
 Esempio di FIFO con stringa _1 2 3 4 1 2 5 1 2 3 4 5_, 4 frame:
 ![400](belady2.png)
-==ANOMALIA DI BELADY==: aumentando il numero di frame aumenta il numero di page fault.
+_Anomalia di Belady_: aumentando il numero di frame aumenta il numero di page fault.
 Perchè accade con il FIFO?
 - un processo richiede consecutivamente un insieme di pagine in maniera ciclica
 - l'insieme delle pagine richieste ciclicamente ha una dimensione uguale o maggiore del numero di frame fisici liberi
@@ -41,7 +41,7 @@ OPT e LRU sono ==ALGORITMI "A PILA"==, che non soffrono dell'anomalia di Belady.
 ## VARIANTI DELL'LRU
 - ==IMPLEMENTAZIONE CON CONTATORE==:
 	- ciascuna pagina ha un contatore
-	- ogni volta che si fa riferimento ad una pagina si copia il momento in cui è stato effettuato il riferimento nel contatore
+	- ogni volta che si fa riferimento ad una pagina si copia nel contatore il momento in cui è stato effettuato il riferimento
 	- quando si deve rimuovere una pagina si analizzano i contatori per scegliere quale pagina rimuovere (necessaria la ricerca lineare sulla [[Tabella_delle_pagine|tabella delle pagine]])
 - ==IMPLEMENTAZIONE CON STACK==:
 	- si mantiene uno stack di numeri di pagina tramite lista doppiamente concatenata
@@ -50,11 +50,11 @@ OPT e LRU sono ==ALGORITMI "A PILA"==, che non soffrono dell'anomalia di Belady.
 	- si associa un bit ad ogni pagina, inizialmente a 0
 	- ogni volta che si fa riferimento ad una pagina si pone il bit a 1
 	- si rimpiazza la pagina il cui bit di riferimento vale 0, se zero (non si conosce l'ordine di accesso alle pagine)
-	- possibile registrare i bit di riferimento ad intervalli regolari in un registro a scorrimento ($\mathrm{p}_{i}$ con registro di scorrimento _11000100_ acceduta più recentemente di $\mathrm{p}_{j}$ con valore 01100101)
+	- possibile registrare i bit di riferimento ad intervalli regolari in un registro a scorrimento ($\mathrm{p}_{i}$ con registro di scorrimento _11000100_ acceduta più recentemente di $\mathrm{p}_{j}$ con valore _01100101_)
 
 ## ==SECONDA CHANCE (CLOCK ALGORITHM)==
-Si basa sul FIFO, con l'aggiunta di un bit di riferimento.
-- se la pagina da rimpiazzare in ordine di clock ha il bit di riferimento a 0 viene rimpiazzata
+Si basa sul FIFO, con l'aggiunta di un bit di riferimento:
+- se la pagina da rimpiazzare in ordine di clock (di arrivo) ha il bit di riferimento a 0 viene rimpiazzata
 - se la pagina da rimpiazzare in ordine di clock ha il bit di riferimento a 1 riceve una seconda chance:
 	- si pone il bit a 0
 	- si lascia la pagina in memoria

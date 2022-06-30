@@ -10,8 +10,8 @@ Esempio:
 	![400](race_condition2.png)
 	Questi processi sono corretti se considerati separatamente, ma potrebbero non funzionare correttamente se eseguiti in concorrenza, in particolare le operazioni $contatore ++$ e $contatore --$.
 
-## SEZIONE CRITICA
-==SEZIONE CRITICA==: segmento di codice in cui un processo accede a dati condivisi.
+## ==SEZIONE CRITICA==
+Segmento di codice in cui un processo accede a dati condivisi.
 Bisogna assicurarsi che, ogni volta che un processo entra in una sezione critica, a nessun altro processo sia concesso l'ingresso in una sezione critica analoga, che accede agli stessi dati. Bisogna quindi progettare un protocollo di cooperazione tra i processi, dove ogni processo chieda l'accesso alla sezione critica tramite una ==ENTRY SECTION== e tale sezione critica sia seguita da una ==EXIT SECTION==.
 ==SEZIONI CRITICHE CONDIZIONALI==: sezioni critiche per le quali esistono condizioni di sincronizzazione.
 
@@ -21,14 +21,14 @@ L'accesso alle sezioni critiche dovrà quindi avere le seguenti caratteristiche:
 - ==ATTESA LIMITATA==: se un processo ha richiesto di entrare nella sua sezione critica, bisogna porre un limite al numero di volte in cui si consente ad altri processi di entrare nella propria sezione critica prima che venga soddisfatta la richiesta del primo processo (politica equa per evitare la _starvation_)
 
 Molti sistemi forniscono soluzioni hardware per risolvere problemi legati alle sezioni critiche:
-- in un sistema monoprocessore è sufficiente interdire le [[Interrupt|interruzioni]] mentre si modificano le variabili condivise, eseguendo quindi il processo senza possibilità di [[Risorse#PREEMPTION PRELAZIONE|prelazione]] (soluzione inefficiente nei sistemi multiprocessore)
+- in un sistema monoprocessore è sufficiente interdire le [[Interrupt|interruzioni]] mentre si modificano le variabili condivise, eseguendo quindi il processo senza possibilità di [[Risorse#PREEMPTION PRELAZIONE|prelazione]] (soluzione inefficiente nei [[Multiprocessore_multicore|sistemi multiprocessore]])
 - molte architetture attuali forniscono speciali istruzioni atomiche implementate in hardware
 Tuttavia, queste soluzioni sono complicate e generalmente inaccessibili ai programmatori di applicazioni. I progettisti di SO hanno quindi implementato soluzioni software per risolvere questi problemi:
 - [[Lock|lock]]
 - [[Semafori|semafori]]
 - [[Monitor|monitor]]
 
-## SEZIONI CRITICHE E KERNEL
+## SEZIONI CRITICHE E [[Sistema_operativo#STRUTTURA DEL SISTEMA DI CALCOLO|KERNEL]]
 In particolare, il codice del kernel dovrà regolare l'accesso ai dati condivisi, nel caso in cui più processi utente richiedano servizi al SO.
 A questo proposito, esistono due tipi di kernel:
 - ==KERNEL SENZA DIRITTO DI PRELAZIONE==: i processi vengono eseguiti finchè non escono dalla [[Modalità|modalità kernel]], si bloccano o restituiscono volontariamente la CPU

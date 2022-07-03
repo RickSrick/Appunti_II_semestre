@@ -14,6 +14,7 @@ Dati _n_ processi:
 Le risorse vengono allocate solo se:
 - la concessione non rende possibile uno stallo
 - le risorse residue sono sufficienti alla terminazione del processo richiedente
+- il sistema si trova in uno stato sicuro
 
 Data una serie di processi $\text{P}_{i}$ e una serie di risorse $\text{R}_{j}$, si rappresenta il sistema con tre tabelle:
 - risorse massime richieste dai processi
@@ -26,8 +27,8 @@ Definiamo:
 - $\text{R}_{ij}$: numero di risorse richieste dal processo $\text{P}_{i}$ durante la fase $j$
 - $\text{D}_{j}$: risorse disponibili durante la fase $j$: $\text{D}_{j} = D - \sum_i^{} \text{A}_{ij}$
 Avranno concesse le risorse richieste solo i processi che possono portare a termine la propria esecuzione, ovvero quelli per cui è soddisfatta la condizione di terminazione di $\text{P}_{i}$: $\text{M}_{i} - \text{A}_{ij} = \text{R}_{ij} \le \text{D}_{j}$
-Se vengono allocate le risorse richieste da $\text{P}_{i}$, questo viene eseguito fino alla sua terminazione; allora, le righe $\text{P}_{i}$ delle tabelle vengono eliminate, e le risorse che gli erano state assegnate all'inizio (riga $\text{P}_{i}$ della tabella delle risorse assegnate) si aggiungono alle richieste disponibili al sistema, $\text{D}_{j}$.
-Se tutte le righe delle tabelle vengono eliminate, la riduzione è completa e il sistema non è in deadlock.
+Se vengono allocate le risorse richieste da $\text{P}_{i}$, questo viene eseguito fino alla sua terminazione; allora, le righe $\text{P}_{i}$ vengono eliminate da tutte le tabelle, e le risorse che gli erano state assegnate all'inizio (riga $\text{P}_{i}$ della tabella delle risorse assegnate) si aggiungono alle richieste disponibili al sistema, $\text{D}_{j}$.
+Se tutte le righe delle tabelle vengono eliminate, la [[Grafo_delle_risorse#INDIVIDUAZIONE DEL Deadlock DEADLOCK|riduzione]] è completa e il sistema non è in deadlock.
 
 Esempio:
 	![400](banchiere.png)

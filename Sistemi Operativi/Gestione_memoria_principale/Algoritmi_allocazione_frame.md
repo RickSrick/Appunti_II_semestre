@@ -16,7 +16,7 @@ Si allocano frame sulla base di:
 	- un processo non può controllare la propria frequenza di page fault
 	- il tempo di esecuzione di ogni processo può variare in modo significativo
 - ==SOSTITUZIONE LOCALE==: il SO, per ogni processo, seleziona il frame da sostituire solo dal relativo insieme di frame allocati
-	- non rende disponibili a processi che ne facciano richiesta pagine di altri processi scarsamente utilizzate
+	- non rende disponibili pagine di altri processi scarsamente utilizzate a processi che ne facciano richiesta
 	- possibile un sottoutilizzo della memoria
 La sostituzione globale garantisce un maggiore [[Definizioni#MISURE|throughput]], ed è implementata nei SO più diffusi.
 
@@ -32,9 +32,9 @@ Se un processo non ha abbastanza frame a disposizione, la frequenza di page faul
 	- se $\Delta$ è troppo piccolo non comprende tutta la località
 	- se $\Delta$ è troppo grande comprende più località
 	- se $\Delta \rightarrow \infty$ comprende l'intero programma
+
 - $D = \sum \text{WSS}_{i} \equiv$ numero totale di pagine richieste
 - $m$: numero totale dei frame allocati a $\text{P}_{i}$
-
 Politica: se $D > m$ presente thrashing; occorre sospendere un processo o sottoporlo a [[Swapping#SWAPPING|swapping]].
 ![550](working-set.png)
 Problema: la finestra di working-set è mobile, con riferimenti che entrano ed escono. Si approssima con un [[Interrupt|interrupt]] del timer e un bit di riferimento.
@@ -54,5 +54,5 @@ Costituisce un approccio più diretto e intuitivo rispetto al working-set, ma ha
 ![550](frequenza_page_fault.png)
 
 ### ==PREPAGING==
-Si portano in memoria tutte o alcune delle pagine necessarie al processo, prima che vengano referenziate (ad esempio, memorizzare il working-set al momento della sospensione per I/O per poi riprendere tutte le pagine che gli appartengono). Si utilizza questo metodo per ridurre il numero di page fault necessari allo startup del processo in regime di [[Paginazione_a_richiesta#PAGINAZIONE A RICHIESTA PURA|paginazione a richiesta pura]].
+Si portano in memoria tutte o alcune delle pagine necessarie al processo, prima che vengano referenziate (ad esempio, memorizzare il working-set al momento della sospensione per I/O per poi riprendere tutte le pagine che gli appartengono). Si utilizza questo metodo per ridurre il numero di page fault necessari allo startup del processo in regime di [[Paginazione_su_richiesta#PAGINAZIONE A RICHIESTA PURA|paginazione a richiesta pura]].
 Se le pagine precaricate non vengono usate, si sprecano I/O e memoria: bisogna valutare se il costo dei page fault evitati è maggiore o minore del costo di prepaging relativo al caricamento delle pagine inutilizzate. Infatti, se la percentuale delle pagine inutilizzate rispetto a quelle precaricate tende a 0, il prepaging non conviene.

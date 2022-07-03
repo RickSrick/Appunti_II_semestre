@@ -1,5 +1,5 @@
 # INTERFACCIA A RIGA DI COMANDO / COMMAND LINE INTERFACE (CLI)
-L'interfaccia utente a riga di comando permette di impartire comandi direttamente al SO, dette ==ISTRUZIONI DI CONTROLLO==; la sua funzione è di interpretare ed eseguire queste istruzioni di controllo. Funziona quindi come un ==INTERPRETE DEI COMANDI==.
+L'==INTERFACCIA UTENTE A RIGA DI COMANDO / COMMAND LINE INTERFACE (CLI)== permette di impartire comandi direttamente al SO, dette ==ISTRUZIONI DI CONTROLLO==; la sua funzione è di interpretare ed eseguire queste istruzioni di controllo. Funziona quindi come un ==INTERPRETE DEI COMANDI==.
 Talvolta viene implementata nel kernel, altrimenti attraverso [[Programmi_di_sistema|programmi di sistema]] (e.g. UNIX / Linux). Può essere parzialmente personalizzabile, ovvero il SO può mettere a disposizione più ambienti diversi (==SHELL==) da cui l'utente può impartire le proprie istruzioni al sistema.
 
 I comandi ricevuti dall'interprete possono essere eseguiti in due modi:

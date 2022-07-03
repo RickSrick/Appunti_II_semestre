@@ -16,12 +16,12 @@ Esempio:
 ## ==ALLOCAZIONE A LASTRA==
 ==LASTRA/SLAB==: insieme di uno o più frame fisicamente contigui.
 ==CACHE==: insieme di una o più lastre contigue (contiguità non richiesta nelle nuove versioni di Linux).
-Ciascuna categoria di strutture dati del kernel ([[Processo#STATO DI UN PROCESSO|PCB]], [[Strutture_dati_file_system#STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO|descrittori di file]], [[Semafori|semafori]], etc.) è dotata di una sola cache, e ciascuna cache è popolata da istanze della relativa struttura dati.
+Ciascuna categoria di strutture dati del kernel ([[Processo#STATO DI UN PROCESSO|PCB]], [[Strutture_dati_file_system#STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO|descrittori di file]], [[Semafori|semafori]], etc.) è dotata di una sola cache, e ciascuna cache è popolata da istanze della relativa struttura dati. Le istanze vengono create in anticipo, nelle varie lastre associate alla loro cache, per poi essere assegnate ad un processo / file / etc. e successivamente rilasciate quando non servono più.
 ![400](allocazione_lastra.png)
 Stati di una lastra:
 - _piena_: tutti gli oggetti contrassegnati come usati
 - _vuota_: tutti gli oggetti contrassegnati come liberi
-- _parzialmente occupata_: la lastra contiene oggetti sia usari che liberi
+- _parzialmente occupata_: la lastra contiene oggetti sia usati che liberi
 Quando una lastra diventa piena, un nuovo oggetto viene allocato in una lastra completamente vuota; se non ci sono lastre vuote, si alloca una nuova lastra e la si appende in fondo alla cache opportuna (==CACHE GROW==).
 
 Questo metodo offre due benefici principali:

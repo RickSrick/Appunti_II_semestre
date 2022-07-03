@@ -13,8 +13,12 @@ _Svantaggi_:
 - definire in modo appropriato i diversi strati può essere difficile, dato che ogni strato deve utilizzare solamente le funzionalità degli strati inferiori
 	esempi:
 	- il driver della [[Memoria_virtuale|memoria virtuale]] dovrebbe trovarsi sopra lo [[Scheduler|scheduler della CPU]], perché può accadere che il driver debba attendere un'istruzione di I/O e, in questo periodo, la CPU viene sottoposta a scheduling
-	- lo scheduler della CPU deve mantenere più informazioni sui processi attivi di quante ne possono essere contenute in memoria: deve fare uso del driver della memoria ausiliaria
+	- lo scheduler della CPU deve mantenere più informazioni sui processi attivi di quante ne possono essere contenute in memoria: deve fare uso del driver della memoria virtuale
 - scarsa efficienza del SO, a causa del tempo di attraversamento degli strati per portare a termine l'esecuzione di una [[Chiamate_di_sistema|system call]]
+	- per eseguire un'operazione di I/O, un programma utente invoca una system call che è intercettata dallo strato di I/O
+	- lo strato di I/O esegue una chiamata allo strato di gestione della memoria
+	- lo strato di gestione della memoria richiama lo strato di scheduling della CPU
+	- lo strato di scheduling della CPU passa la chiamata all'opportuno dispositivo di I/O
 ![300](strati2.png)
 
 ## ==MICROKERNEL==
@@ -37,3 +41,5 @@ Approccio utilizzato da molti SO attuali (e.g. Linux, Solaris).
 
 ## ==IBRIDI==
 La maggior parte dei SO attuali non adotta un modello "puro", ma usano modelli ibridi che combinano diversi approcci implementativi allo scopo di migliorare le performance, la sicurezza e l'usabilità.
+- _Linux_, _Solaris_: fondamentalmente monolitici, dato che mantenere il SO in un unico spazio di indirizzamento garantisce prestazioni migliori, ma anche modulari, così le nuove funzionalità possono essere aggiunte dinamicamente al kernel
+- _Windows_: perlopiù monolitico, ma conserva alcuni comportamenti tipici dei sistemi microkernel, tra cui il supporto per sottoinsiemi separati (==PERSONALITÀ==) che vengono eseguiti come processi in modalità utente

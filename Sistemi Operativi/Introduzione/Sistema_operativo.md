@@ -8,7 +8,8 @@ Ha i seguenti scopi:
 - _prevenire le interferenze_ tra le attività degli utenti (coordinare i [[Processo|processi]])
 - _protezione_ nell'uso delle [[Risorse|risorse]] e terminazione dei processi che ne abusano 
 ![SO|300](Images/struttura_so_1.png)
-# STRUTTURA DEL SISTEMA DI CALCOLO
+
+## STRUTTURA DEL SISTEMA DI CALCOLO
 - ==SHELL==: parte più esterna del SO che permette l'interazione tra utente e sistema stesso, interpretando comandi e avviando programmi
 - ==KERNEL==: unico programma sempre in esecuzione nel SO, che fornisce le sue funzionalità base
 - ==MIDDLEWARE==: presente nei SO dei dispositivi mobili, insieme di programmi che fungono da intermediari tra diverse applicazioni e componenti software
@@ -21,4 +22,4 @@ Il kernel è composto da tre sezioni, implementate direttamente in hardware e sc
 	- attivare il segmento di codice specifico per l'interruzione identificata
 - ==[[Dispatcher|DISPATCHER]]==: assegna i CPU core ai vari processi
 - terza sezione: implementa i costrutti per la sincronizzazione dei processi (e.g. [[Semafori|semafori]])
-Ogni sistem è anche dotato di un orologio in tempo reale (==REAL-TIME CLOCK (RTC)==) per misurare gli intervalli di tempo.
+Ogni sistema è anche dotato di un orologio in tempo reale (==REAL-TIME CLOCK (RTC)==) per misurare gli intervalli di tempo.

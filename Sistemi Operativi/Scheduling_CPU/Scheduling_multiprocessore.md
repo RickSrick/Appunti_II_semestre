@@ -16,17 +16,18 @@ L'accesso concorrente di più processori ad una struttura dati comune rende deli
 - devono evitare di scegliere contemporaneamente lo stesso processo
 - devono evitare che qualche processo vada "perso"
 
-Tradizionalmente i sistemi SMP hanno reso possibile la concorrenza fra [[Thread|thread]] con l'utilizzo di diversi processori fisici; questi sistemi su [[Multiprocessore_multicore#SISTEMI MULTICORE|processori multicore]] sono più veloci e consumano meno energia. Questo metodo viene adottato da molti SO attuali, come Windwos, Mac OS X e Linux.
-Quando un processore accede alla memoria, una quantità significativa di tempo (fino al 50%) è trascorsa in attesa della disponibilità di dati: ==STALLO DELLA MEMORIA==. Progetti hardware recenti di _hyperthreading_ implementano unità di calcolo [[Thread#MULTITHREADING|multithread]] in cui due o più thread hardware sono assegnati ad una singola CPU.
-
 Due versioni del SMP:
 - ==BILANCIAMENTO DEL CARICO / LOAD BALANCING==: ripartire uniformementex il carico di lavoro sui vari processori (è automatico in sistemi con [[Scheduling|ready queue]] comune)
 	- ==MIGRAZIONE GUIDATA (PUSH MIGRATION)==: un processo dedicato controlla periodicamente il carico dei processori per effettuare eventuali riequilibri
 	- ==MIGRAZIONE SPONTANEA (PULL MIGRATION)==: un processore inattivo sottrae ad uno sovraccarico un processo in attesa
 	- Linux le implementa entrambe: esegue il proprio algoritmo di bilanciamento ad intervalli regolari e ogniqualvolta si svuota la coda di attesa di un processore
-- ==PREDILEZIONE PER IL PROCESSORE / AFFINITY==: mantenere un processo in esecuzione sempre sullo stesso processore, per poter riutilizzare il contenuto della cache per burst successivi
+- ==PREDILEZIONE / AFFINITY PER IL PROCESSORE==: mantenere un processo in esecuzione sempre sullo stesso processore, per poter riutilizzare il contenuto della cache per burst successivi
 	- ==PREDILEZIONE FORTE (HARD AFFINITY)==: si specifica che un processo non può abbandonare un dato processore
 	- ==PREDILEZIONE DEBOLE (SOFT AFFINITY)==: non si garantisce che, per particolari condizioni di carico, i processi non subiscano spostamenti
 	- Linux le implementa entrambe, Solaris solo la predilezione debole
 	- l'architettura della memoria influenza la predilezione
 		in caso di ==NON UNIFORM MEMORY ACCESS (NUMA)==, situazione standard in sistemi costituiti da diverse schede ognuna con una o più CPU e memoria, le CPU di una scheda accedono più velocemente alla memoria locale rispetto alle memorie residenti sulle altre schede; pertanto, ogni thread dovrebbe risiedere nella memoria locale al processore su cui viene eseguito
+		![450](numa.png)
+
+Tradizionalmente i sistemi SMP hanno reso possibile la concorrenza fra [[Thread|thread]] con l'utilizzo di diversi processori fisici; questi sistemi su [[Multiprocessore_multicore#SISTEMI MULTICORE|processori multicore]] sono più veloci e consumano meno energia. Questo metodo viene adottato da molti SO attuali, come Windwos, Mac OS X e Linux.
+Quando un processore accede alla memoria, una quantità significativa di tempo (fino al 50%) è trascorsa in attesa della disponibilità di dati: ==STALLO DELLA MEMORIA==. Progetti hardware recenti di _hyperthreading_ implementano unità di calcolo [[Thread#MULTITHREADING|multithread]] in cui due o più thread hardware sono assegnati ad una singola CPU.

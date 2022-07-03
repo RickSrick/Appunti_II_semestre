@@ -1,10 +1,11 @@
 # SEMAFORI
-==SEMAFORO==: strumento di sincronizzazione composto da una variabile intera, ai quali si può accedere solo attraverso due operazioni indivisibili e [[Race_condition|atomiche]], $wait(S)$ e $signal(S)$ ($S$: nome del semaforo).
+==SEMAFORO==: strumento di sincronizzazione composto da una variabile intera, ai quali si può accedere solo attraverso due operazioni indivisibili e [[Race_condition|atomiche]] ($S$ nome del semaforo):
+- $wait(S)$, anche detto $P$ dall'olandese _proberen_ (verificare)
+- $signal(S)$, anche detto $V$ dall'olandese _verhogen_ (incrementare)
 Due tipi principali di semafori:
-- ==SEMAFORO MUTEX==: la variabile intera può assumere solamente i valori 0 e 1
+- ==SEMAFORO BINARIO==: la variabile intera può assumere solamente i valori 0 e 1
 	il funzionamento è simile a quello del [[Lock|lock mutex]]
 - ==SEMAFORO CONTATORE==: la variabile intera può assumere qualsiasi valore in un dominio non limitato
-Nota per gli esercizi: i semafori mutex vengono usati per gestire l'accesso a variabili "normali" (e.g. interi); altrimenti, non servono se ci sono solo semafori normali.
 
 Il semaforo contatore può essere utilizzato quando bisogna gestire l'accesso a [[Risorse|risorse]] presenti in un numero finito di esemplari:
 - il semaforo è inizialmente impostato al numero di esemplari della risorsa disponibili
@@ -24,6 +25,7 @@ Con questo semaforo, si usano due metodi, forniti dal SO come [[Chiamate_di_sist
 - $block()$: posiziona il processo che richiede di essere bloccato nell'oppurtuna coda d'attesa, ovvero sospende il processo che invoca il metodo (chiamato all'interno di $wait(S)$)
 - $wakeup()$: rimuove un processo dalla coda d'attesa e lo sposta nella [[Scheduling|ready queue]] (chiamato all'interno di $signal(S)$)
 ![700](semafori3.png)
+
 Mentre la definizione classica di semaforo ad attesa attiva implica che il valore del semaforo non può mai essere negativo, in questo nuovo semaforo il valore può essere negativo: se è negativo, il modulo del valore fornisce il numero di processi in attesa al semaforo.
 Inoltre, questo nuovo tipo di semaforo può condurre a situazioni in cui ciascun processo attende l'esecuzione di un'istruzione $signal(S)$, che solo uno degli altri processi in coda può chiamare; se ciò avviene, si verifica un [[Deadlock|deadlock]].
 Infine, un processo può attendere al semaforo per un tempo indefinito senza venir mai rimosso dalla coda d'attesa, causando un fenomeno di _starvation_. In particolare, può avvenire se la rimozione dei processi dalla coda avviene in modalità _LIFO (Last In First Out)_, mentre si può garantire che ciò non avvenga usando la modalità _FIFO (First In First Out)_.

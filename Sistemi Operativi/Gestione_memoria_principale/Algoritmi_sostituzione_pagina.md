@@ -11,12 +11,12 @@ Implementato mediante una coda FIFO relativa alle pagine residenti in memoria: s
 Esempio con stringa _s_ e 3 frame disponibili per processo:
 ![550](fifo.png)
 
-## ==ANOMALIA DI BELADY==
+## ANOMALIA DI BELADY
 Esempio di FIFO con stringa _1 2 3 4 1 2 5 1 2 3 4 5_, 3 frame:
 ![400](belady1.png)
 Esempio di FIFO con stringa _1 2 3 4 1 2 5 1 2 3 4 5_, 4 frame:
 ![400](belady2.png)
-_Anomalia di Belady_: aumentando il numero di frame aumenta il numero di page fault.
+==ANOMALIA DI BELADY==: aumentando il numero di frame aumenta il numero di page fault.
 Perchè accade con il FIFO?
 - un processo richiede consecutivamente un insieme di pagine in maniera ciclica
 - l'insieme delle pagine richieste ciclicamente ha una dimensione uguale o maggiore del numero di frame fisici liberi
@@ -64,7 +64,7 @@ Si basa sul FIFO, con l'aggiunta di un bit di riferimento:
 
 ## VARIANTI DELLA SECONDA CHANCE
 - ==ALGORITMO SECONDA CHANCE MIGLIORATO==:
-	- si considera la coppia (_bit_riferimento_, _[[Paginazione_a_richiesta#SOVRALLOCAZIONE|bit_modifica]]_)
+	- si considera la coppia (_bit_riferimento_, _[[Paginazione_su_richiesta#SOVRALLOCAZIONE|bit_modifica]]_)
 	- possibili 4 casi:
 		- (0,0): non recentemente usata né modificata; è la scelta migliore per la sostituzione
 		- (0,1): non usata recentemente ma modificata; dev'essere salvata su disco
@@ -82,6 +82,6 @@ L'implementazione è costosa e le prestazioni sono scadenti.
 ## ==POOL DI FRAME LIBERI==
 Si mantiene un pool di frame liberi; ci sono due modi di gestire un page fault:
 - si seleziona un frame vittima, ma prima di trascriverlo su disco si procede alla copia della pagina richiesta in un frame del pool (il processo può essere riavviato rapidamente senza attendere la fine del salvataggio su memoria di massa del frame vittima)
-- prima di accedere alla memoria di massa si controlla se la pagina richiesta è ancora presente nel pool dei frame liberi (non serve alcuna operazione di I/O)
+- quando si richiede di nuovo la pagina sostituita in precedenza, prima di accedere alla memoria di massa si controlla se è ancora presente nel pool dei frame liberi (non serve alcuna operazione di I/O)
 
 In generale, possibile _ottimizzare le scritture_: si mantiene una lista delle pagine modificate e, ogni volta che il dispositivo di paginazione è inattivo, si sceglie una pagina modificata, la si salva su disco e si reimposta il suo bit di modifica. Aumenta la probabilità che, al momento della selezione della vittima, questa non abbia subito modifiche e non debba essere trascritta su disco.

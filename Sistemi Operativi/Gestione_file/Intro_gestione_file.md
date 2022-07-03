@@ -1,5 +1,5 @@
-# INTRODUZIONE ALLA GESTIONE DEI FILE
-Il ==SOTTOSISTEMA PER LA GESTIONE DEI [[File|FILE]]== è la parte più visibile del SO: fornisce meccanismi per la registrazione, l'accesso e la protezione di dati e programmmi del SO e degli utenti.
+# INTRODUZIONE ALLA GESTIONE DEI [[File|FILE]]
+Il ==SOTTOSISTEMA PER LA GESTIONE DEI FILE== è la parte più visibile del SO: fornisce meccanismi per la registrazione, l'accesso e la protezione di dati e programmmi del SO e degli utenti.
 Così come i sottosistemi per la gestione dei processi e della memoria "virtualizzano" rispettivamente la CPU e la memoria centrale, così il [[File_system|file system]] "virtualizza" i dispositivi di memorizzazione permanente, fornendone una visione logica uniforme.
 
 Un sistema di calcolo può infatti utilizzare diversi media per registrare stabilmente le informazioni, ognuno con caratteristiche diverse:

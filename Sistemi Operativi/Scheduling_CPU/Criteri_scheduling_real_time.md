@@ -25,6 +25,7 @@ Quando un processo diventa eseguibile:
 - deve annunciare la sua prossima scadenza allo scheduler
 - la priorità viene calcolata dinamicamente in base alla scadenza; più vicina la scadenza, più alta la priorità
 - la priorità di altri processi già presenti nel sistema viene modificata per riflettere la scadenza del nuovo processo
+Spesso, la scadenza di un processo corrisponde all'arrivo della sua prossima istanza in [[Scheduling|ready queue]].
 Si applica anche a processi non periodici e con tempo di elaborazione variabile.
 È un algoritmo ottimale, e porta idealmente ad un utilizzo della CPU pari al 100%.
 Esempio con processi $\text{P}_{1}$ e $\text{P}_{2}$, periodi $\text{T}_{1}$ = 50 e $\text{T}_{2}$ = 80, tempi di elaborazione $\text{C}_{1}$ = 20 e $\text{C}_{2}$ = 35:

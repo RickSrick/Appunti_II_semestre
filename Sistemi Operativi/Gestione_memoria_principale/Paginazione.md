@@ -5,7 +5,7 @@
 
 Si ottiene così uno spazio degli [[Indirizzi_logici_fisici|indirizzi logici]] totalmente separato da quello degli [[Indirizzi_logici_fisici|indirizzi fisici]].
 Per eseguire un processo che impiega _n_ pagine, serve trovare _n_ frame liberi prima di caricarlo, anche non contigui.
-Si impiega una _[[Tabella_delle_pagine|tabella delle pagine]]_ per tradurre gli indirizzi logici negli indirizzi fisici corrispondenti.
+Si impiega una [[Tabella_delle_pagine|tabella delle pagine]] per tradurre gli indirizzi logici negli indirizzi fisici corrispondenti.
 
 ## INDIRIZZI LOGICI NELLA PAGINAZIONE
 Gli indirizzi logici generati dalla CPU vengono divisi in due parti:
@@ -36,7 +36,7 @@ Criteri per determinare la dimensione delle pagine:
 - numero di page fault
 - dimensione ed efficienza della [[Tabella_delle_pagine#REGISTRI ASSOCIATIVI|TLB]]
 - frammentazione
-==TLB REACH==: quantità di memoria accessibile via TLB
+==TLB REACH==: quantità di memoria accessibile via TLB.
 Idealmente, il [[Algoritmi_allocazione_frame#WORKING-SET|working-set]] di ogni processo dovrebbe essere contenuto nella TLB, altrimenti si verificano molti page fault e il tempo di esecuzione diventa proibitivo.
 
 Aumentare le dimensioni delle pagine potrebbe portare ad un incremento della frammentazione.

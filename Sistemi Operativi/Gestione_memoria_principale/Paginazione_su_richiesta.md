@@ -29,7 +29,7 @@ Avviare l'esecuzione di un processo senza pagine in memoria:
 ## ==SOVRALLOCAZIONE==
 Fenomeno per il quale durante l'esecuzione di un processo utente si verifica un page fault, ma non vi sono frame liberi per caricare la pagina richiesta in memoria.
 Soluzione: ==SOSTITUZIONE DI PAGINA==: si trova una pagina in memoria che non risulta attualmente utilizzata e si sposta sul disco.
-Bisogna scegliere un [[Algoritmi_sostituzione_pagina|algoritmo di sostituzione]] che scelega un frame _vittima_ e che provochi il minor numero possibile di page fault.
+Bisogna scegliere un [[Algoritmi_sostituzione_pagina|algoritmo di sostituzione]] che scelega un _frame vittima_ e che provochi il minor numero possibile di page fault.
 
 La sovrallocazione si verifica quando è richiesta più memoria di quella effettivamente disponibile; la si può prevenire modificando la routine di servizio del page fault, includendo la sostituzione delle pagine.
 Si impiega un ==BIT DI MODIFICA/DIRTY BIT== per ridurre il sovraccarico dei trasferimenti di pagine: solo le pagine modificate vengono riscritte su disco.

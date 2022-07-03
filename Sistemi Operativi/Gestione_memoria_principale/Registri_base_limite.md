@@ -8,6 +8,6 @@ Ogni processo deve avere uno spazio di memoria separato: i registri base e limit
 Per proteggere gli spazi di memoria del SO o di altri processi utente, la CPU confronta gli indirizzi generati da un processo utente con i valori contenuti nei due registri:
 - indirizzo $\geq$ base
 - indirizzo $\lt$ base + limite
-Solo il SO può caricare i registri base e limite usando [[Modalità#ISTRUZIONI PRIVILEGIATE|istruzioni privilegiate]].
+Solo il SO può caricare i registri base e limite, usando [[Modalità#ISTRUZIONI PRIVILEGIATE|istruzioni privilegiate]].
 Un tentativo di accedere agli spazi di memoria del SO o di altri processi utente effettuato in [[Modalità|modalità utente]] provoca una [[Interrupt|trap]], che trasferisce il controllo al SO, e l'emissione di un messaggio di errore.
 ![600](registri_base_limite.png)

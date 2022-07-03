@@ -34,6 +34,7 @@ La condivisione può essere implementata per mezzo di:
 Cancellare un file rende inutilizzabile il soft link ma non influisce sull'hard link. Per risolvere questo problema:
 - puntatori all'indietro che permettano il reperimento di tutti i link al file cancellato e la loro eliminazione
 - conservazione del file fino a che non esistono più link, mantenendo una lista dei riferimenti al file e permettendo la cancellazione del file quando il contatore di riferimenti vale 0
+
 Mantenere il grafo aciclico garantisce la semplicità degli algoritmi usati per attraversarlo, per esempio in fase di backup. Per assicurare l'assenza di cicli:
 - sono ammessi link a file, ma non a sottodirectory
 - ogni volta che viene aggiunto un nuovo link si verifica la presenza di cicli, mediante l'uso di un algoritmo di rilevamento, che risulta essere molto dispensioso, soprattutto perchè effettuato sulla memoria di massa

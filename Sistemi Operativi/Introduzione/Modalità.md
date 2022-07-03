@@ -5,6 +5,7 @@ La ==MODALITÀ OPERATIVA DUAL-MODE== permette al SO di proteggersi e di protegge
 ==MODE BIT==: bit, cablato nell'hardware, il cui valore distingue le situazioni in cui il sistema esegue codice utente o codice kernel.
 
 Ogni [[Chiamate_di_sistema|system call]] effettua il passaggio in modalità kernel, il quale non viene gestito tramite normali istruzioni, per motivi di sicurezza. Il ritorno dalla chiamata riporta il sistema in modalità utente, e questo passaggio viene gestito da _istruzioni privilegiate_, che possono essere eseguite solo in modalità kernel.
+![550](modalità.png)
 
 Il concetto di modalità può essere esteso oltre il dual mode:
 - _virtualizzazione_: modalità distinta per indicare che il gestore della macchina virtuale ha il controllo del sistema, con più privilegi dei processi utente ma meno privilegi del kernel

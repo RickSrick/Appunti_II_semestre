@@ -35,8 +35,12 @@ Ci sono varie possibilità per il mapping fra indirizzi logici e indirizzi fisic
 ![300](indice_livelli.png)
 - ==SCHEMA COMBINATO==: misto tra blocchi allocati direttamente e blocchi indice
 ![400](schema_combinato.png)
-	Esempio: [[Strutture_dati_file_system#STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO|inode]] in UNIX (4KB per blocco, indirizzi a 32 bit)
-	![450](inode.png)
+	Esempio: [[Strutture_dati_file_system#STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO|inode]] in UNIX (4KB per blocco, indirizzi a 32 bit): in un sistema UNIX-like tradizionale, gli inode hanno:
+	- 10 puntatori diretti a blocchi
+	- 1 blocco con indirezione singola
+	- 1 blocco con indirezione doppia
+	- 1 blocco con indirezione tripla
+![450](inode.png)
 
 # PRESTAZIONI DELL'ALLOCAZIONE
 Il miglior metodo per l'allocazione di file dipende dal [[Accesso_file|tipo di accesso]]:

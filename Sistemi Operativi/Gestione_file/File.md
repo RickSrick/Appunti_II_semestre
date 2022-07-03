@@ -16,6 +16,7 @@ Dal punto di vista del SO, i file vengono mappati su dispositivi fisici di memor
 - ==DIMENSIONE== attuale del file
 - ==PROTEZIONE==: parametri di controllo per l'accesso in lettura, scrittura ed esecuzione del file
 - ==ORA, DATE E IDENTIFICAZIONE DELL'UTENTE== (dati necessari alla sicurezza del sistema e per il controllo dell'uso)
+
 Alcuni file system più recenti supportano anche gli ==ATTRIBUTI ESTESI== dei file, tra cui la codifica dei caratteri del file e le funzioni di sicurezza come la _checksum_. Non sono parte del file a cui vengono associati, ma sono gestiti separatamente dal file system. Ognuno di essi viene infatti identificato da una coppia (nome, valore) per permettere il reperimento delle informazioni.
 Le informazioni sui file sono conservate nella struttura di [[Directory|directory]], che risiede sulla memoria secondaria. Un ==ELEMENTO DI DIRECTORY== consiste di un nome di file e di un identificatore unico, che a sua volta individua gli altri attributi. Un elemento di directory può avere una dimensione maggiore di 1 KB.
 
@@ -43,15 +44,16 @@ Le informazioni sui file sono conservate nella struttura di [[Directory|director
 	- si rilascia lo spazio allocato al file
 - ==IMPOSTAZIONE DEGLI ATTRIBUTI
 	- reperimento / aggiornamento del relativo elemento di directory
+
 Altre operazioni sui file si ottengono mediante combinazione delle operazioni di base. Esempio: operazione di copia:
 - creazione di un nuovo file
 - lettura del file da copiare
 - scrittura nel nuovo file
-Quasi tutte le operazione richiedono una ricerca dell'elemento associato al file all'interno della struttura della directory. Il SO mantiene in memoria centrale una tabella contenente informazioni su tutti i file aperti, ovvero la _[[Tabelle_file_aperti|tabella dei file aperti]]_.
+Quasi tutte le operazioni richiedono una ricerca dell'elemento associato al file all'interno della struttura della directory. Il SO mantiene in memoria centrale una tabella contenente informazioni su tutti i file aperti, ovvero la [[Tabelle_file_aperti|tabella dei file aperti]].
 
 ## SALVAGUARDIA DELLE INFORMAZIONI
 La salvaguardia delle informazioni contenute in un sistema di calcolo è fondamentale per l'integrità e l'usabilità del sistema:
-- ==AFFIDABILITÀ==: salvaguardia dai danni fisici, assicurata dalla _ridondanza_
+- [[Affidabilità]]: salvaguardia dai danni fisici, assicurata dalla [[Fault_tolerance|ridondanza]]
 - ==PROTEZIONE==: salvaguardia da accessi impropri, ottenute mediante il _controllo degli accessi_
 Il proprietario / creatore del file dev'essere in grado di controllare chi può accedere al file e quali ==TIPI DI ACCESSO== siano leciti:
 - lettura

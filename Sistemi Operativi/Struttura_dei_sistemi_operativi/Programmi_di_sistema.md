@@ -11,9 +11,9 @@ Alcune delle funzioni assolte dai programmi di sistema:
 
 Altri tipi di programma:
 - ==SERVIZI BACKGROUND==
-	- lanciati durante la fase di boot (alcuni utili solo nella fase di startup, altri in esecuzione dal boot allo shutdown)
-	- supportano servizi quali controllo del disco, scheduling dei processi, logging degli errori, stampa, connessioni di rete
-	- vengono eseguiti in modalità utente
+	- lanciati durante la fase di [[Avviamento_del_SO|boot]] (alcuni utili solo nella fase di startup, altri in esecuzione dal boot allo shutdown)
+	- supportano servizi quali controllo del [[Hard_disk_drive|disco]], [[Scheduling|scheduling dei processi]], [[Debugging|logging degli errori]], stampa, connessioni di rete
+	- vengono eseguiti in [[Modalità|modalità utente]]
 	- noti anche come _servizi_, _sottosistemi_, _daemon_
 - ==PROGRAMMI APPLICATIVI==
 	- non fanno parte del sistema operativo

@@ -1,5 +1,5 @@
 # CHIAMATE DI SISTEMA
-==CHIAMATE DI SISTEMA / SYSTEM CALL==: meccanismo, usato da un processo a livello utente o applicativo, per richiedere un servizio a livello kernel. Forniscono l'interfaccia tra i processi e i servizi offerti dal SO.
+==CHIAMATA DI SISTEMA / SYSTEM CALL==: meccanismo, usato da un processo a livello utente o applicativo, per richiedere un servizio a livello kernel. Forniscono l'interfaccia tra i processi e i servizi offerti dal SO.
 Sono realizzate con linguaggi di alto livello (e.g. C o C++). Normalmente, vengono richiamate dai processi attraverso le ==APPLICATION PROGRAMMING INTERFACE (API)== piuttosto che per invocazione diretta.
 Alcuni API molto diffuse sono la _Win64 API_ per Windows, la _POSIX API_ per i sistemi POSIX-based (_POSIX: Portable Operating System Interface per UNIX_), la _Java API_ per la Java Virtual Machine.
 ![450](system_call.png)

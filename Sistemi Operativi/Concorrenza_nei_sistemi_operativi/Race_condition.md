@@ -1,7 +1,7 @@
 # RACE CONDITION
-==RACE CONDITION / CORSA CRITICA==: più [[Processo|processi]] accedono in concorrenza e modificano dati condivisi; l'esito dell'esecuzione dipende dall'ordine di esecuzione di questi processi.
+==RACE CONDITION / CORSA CRITICA==: più [[Processo|processi]] accedono in [[Parellelismo_concorrenza|concorrenza]] e modificano dati condivisi; l'esito dell'esecuzione dipende dall'ordine di esecuzione di questi processi.
 Tali situazioni si verificano spesso nei SO, nei quali diversi componenti agiscono su [[Risorse|risorse]] condivise, soprattutto nei [[Multiprocessore_multicore#SISTEMI MULTICORE|sistemi multicore]], in cui diversi [[Thread|thread]] vengono eseguiti in parallelo su unità di calcolo distinte.
-Per evitare le corse critiche occorre che i processi siano ==SINCRONIZZATI==. A questo scopo, alcune operazioni devono essere ==ATOMICHE==: vengono completate senza subire interruzioni. Se due processi tentano di accedere agli stessi dati contemporaneamente, le istruzioni in linguaggio macchina possono risultare ==INTERFOGLIATE==, e la sequenza effettiva di esecuzione dipende da come i processi vengono schedulati.
+Per evitare le corse critiche occorre che i processi siano ==SINCRONIZZATI==. A questo scopo, alcune operazioni devono essere ==ATOMICHE==: vengono completate senza subire interruzioni. Se due processi tentano di accedere agli stessi dati contemporaneamente, le istruzioni in linguaggio macchina possono risultare ==INTERFOGLIATE==, e la sequenza effettiva di esecuzione dipende da come i processi vengono [[Scheduling|schedulati]].
 
 Esempio:
 	Processo produttore:
@@ -12,11 +12,11 @@ Esempio:
 
 ## ==SEZIONE CRITICA==
 Segmento di codice in cui un processo accede a dati condivisi.
-Bisogna assicurarsi che, ogni volta che un processo entra in una sezione critica, a nessun altro processo sia concesso l'ingresso in una sezione critica analoga, che accede agli stessi dati. Bisogna quindi progettare un protocollo di cooperazione tra i processi, dove ogni processo chieda l'accesso alla sezione critica tramite una ==ENTRY SECTION== e tale sezione critica sia seguita da una ==EXIT SECTION==.
+Bisogna assicurarsi che, ogni volta che un processo entra in una sezione critica, a nessun altro processo sia concesso l'ingresso in una sezione critica analoga, ovvero che accede agli stessi dati. Bisogna quindi progettare un protocollo di cooperazione tra i processi, dove ogni processo chieda l'accesso alla sezione critica tramite una ==ENTRY SECTION== e tale sezione critica sia seguita da una ==EXIT SECTION==.
 ==SEZIONI CRITICHE CONDIZIONALI==: sezioni critiche per le quali esistono condizioni di sincronizzazione.
 
 L'accesso alle sezioni critiche dovrà quindi avere le seguenti caratteristiche:
-- ==MUTUA ESCLUSIONE==: se un processo entra nella sua sezione critica, nessun altro processo può eseguire la propria sezioni critica
+- ==MUTUA ESCLUSIONE==: se un processo entra nella sua sezione critica, nessun altro processo può eseguire la propria sezione critica
 - ==PROGRESSO==: se nessun processo è in esecuzione nella sua sezione e un processo richiede di accedervi, la scelta del prossimo processo che entrerà prossimamente nella sua sezione critica non può essere rimandata indefinitamente
 - ==ATTESA LIMITATA==: se un processo ha richiesto di entrare nella sua sezione critica, bisogna porre un limite al numero di volte in cui si consente ad altri processi di entrare nella propria sezione critica prima che venga soddisfatta la richiesta del primo processo (politica equa per evitare la _starvation_)
 

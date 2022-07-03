@@ -6,8 +6,8 @@ Per i [[Multiprogrammazione|sistemi time-sharing]] invece è più significativo 
 La CPU viene assegnata al primo processo che la richiede.
 La realizzazione di questo criterio si basa sull'implementazione della ready queue con una coda FIFO:
 - quando un processo entra nella ready queue, si collega il suo [[Processo#STATO DI UN PROCESSO|PCB]] all'ultimo elemento della coda
-- quando la CPU è libera, viene assegnata al processo che si trova in testa alla ready queue, rimuovendolo da essa
-Si rischia un ==EFFETTO CONVOGLIO==: processi breve devono aspettare che processi lunghi liberino la CPU.
+- quando la CPU è libera, viene assegnata al processo che si trova in testa alla [[Scheduling|ready queue]], rimuovendolo da essa
+Si rischia un ==EFFETTO CONVOGLIO==: processi brevi devono aspettare che processi lunghi liberino la CPU.
 Esempio (processi arrivano nell'ordine indicato):
 ![300](fcfs.png)
 ![600](gantt_esempio.png)
@@ -26,7 +26,7 @@ Usando il tempo di burst come priorità:
 ## ==ROUND ROBIN==
 A ciascun processo viene associata una piccola quantità di tempo di CPU, detta ==QUANTO DI TEMPO== e indicata con _q_ (di solito 10-100 millisecondi); dopo un quanto di tempo, il processo è obbligato a rilasciare la CPU e a tornare nella [[Scheduling|ready queue]].
 Se _q_ diventa grande, il Round Robin diventa simile al FCFS. Inoltre, _q_ deve rimanere grande rispetto al tempo di [[Processo#CONTEXT SWITCH|context switch]] (di solito inferiore a 10 microsecondi), altrimenti l'overhead diventa troppo alto.
-In media si ha un [[Definizioni#MISURE|tempo medio di attesa]] e di [[Definizioni#MISURE|turnaround]] maggiore rispetto a SJF, ma anche un miglior tempo medio di risposta.
+In media si ha un [[Definizioni#MISURE|tempo medio di attesa]] e di [[Definizioni#MISURE|turnaround]] maggiore rispetto a SJF, ma anche un miglior [[Definizioni#MISURE|tempo medio di risposta]].
 Esempio con processi:
 ![300](rr1.png)
 ![600](rr2.png)

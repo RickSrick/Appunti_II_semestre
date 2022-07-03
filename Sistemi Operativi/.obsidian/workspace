@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Scheduling_CPU/Valutazione_criteri_scheduling.md",
+            "file": "Concorrenza_nei_sistemi_operativi/Race_condition.md",
             "mode": "source",
             "source": false
           }
@@ -69,13 +69,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scheduling_CPU/Valutazione_criteri_scheduling.md",
+                "file": "Concorrenza_nei_sistemi_operativi/Race_condition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": false
               }
             }
@@ -89,15 +89,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
-    "Scheduling_CPU/Valutazione_criteri_scheduling.md",
-    "Struttura_dei_sistemi_operativi/Debugging.md",
-    "readme.txt.md",
-    "Struttura_dei_sistemi_operativi/Tipi_di_SO.md",
-    "Struttura_dei_sistemi_operativi/Servizi.md",
-    "Struttura_dei_sistemi_operativi/Programmi_di_sistema.md",
-    "Struttura_dei_sistemi_operativi/Progettazione_sviluppo_SO.md",
-    "Struttura_dei_sistemi_operativi/Linker_loader.md",
-    "Gestione_memoria_principale/Binding.md",
-    "Struttura_dei_sistemi_operativi/CLI.md"
+    "Concorrenza_nei_sistemi_operativi/Race_condition.md",
+    "Gestione_file/Condivisione_file.md",
+    "Gestione_file/Strutture_dati_file_system.md",
+    "Gestione_file/Avviamento_so_memoria.md",
+    "Introduzione/Avviamento_del_SO.md",
+    "Gestione_file/Algoritmi_scheduling_disco.md",
+    "Gestione_file/Allocazione.md",
+    "Gestione_file/Struttura_directory.md",
+    "Gestione_file/File.md",
+    "Gestione_file/Directory.md"
   ]
 }

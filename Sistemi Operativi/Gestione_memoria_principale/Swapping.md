@@ -6,6 +6,6 @@ La richiesta di una pagina corrisponde ad un riferimento alla pagina:
 - pagina non presente in memoria: _trasferimento in memoria_
 ![550](swapping.png)
 A seconda del SO si possono avere:
-- _file di [[Gestione_swap|swap]]_, che risiedono nel file system (e.g. Windows)
-- _[[Struttura_disco|partizioni]] di swap_, sezioni del disco interamente dedicate allo swapping e inizializzate con un proprio tipo di [[File_system|file system]] (e.g. Linux)
-L'uso della partizione è generalmente migliore dal punto vista delle prestazioni, perché evita che lo swap vada soggetto alla frammentazione tipica di alcuni file system.
+- _[[File|file]] di [[Gestione_swap|swap]]_, che risiedono nel [[File_system|file system]] (e.g. Windows)
+- _[[Struttura_disco|partizioni]] di swap_, sezioni del disco interamente dedicate allo swapping e inizializzate con un proprio tipo di file system (e.g. Linux)
+L'uso della partizione è generalmente migliore dal punto vista delle prestazioni, perché evita che lo swap vada soggetto alla [[Frammentazione|frammentazione]] tipica di alcuni file system.

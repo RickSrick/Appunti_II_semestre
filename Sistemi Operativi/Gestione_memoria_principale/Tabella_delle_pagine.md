@@ -31,6 +31,6 @@ Nelle architetture hardware attuali, le ricerche nella TLB fanno parte della pip
 ## PROTEZIONE DELLA MEMORIA
 - ==BIT DI PROTEZIONE==: uno o più bit associati a ciascun frame per determinare in che modalità si può accedere alla pagina (lettura/scrittura/esecuzione)
 	mentre si mappa l'indirizzo logico all'indirizzo fisico, si verifica la modalità di accesso a tale pagina; se l'accesso viola le modalità codificate nei bit di protezione si causa una [[Interrupt|trap]] al SO
-- ==BIT DI VALIDITÀ==: un bit associato a ciascun frame:
+- [[Paginazione_su_richiesta#BIT DI VALIDITÀ|bit di validità]]: un bit associato a ciascun frame:
 	- valore valido: pagina presente nello spazio degli indirizzi logici del processo, pagina legale
 	- valore non valido: pagina assente dallo spazio degli indirizzi logici del processo, pagina illegale

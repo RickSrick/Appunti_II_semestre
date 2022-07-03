@@ -11,14 +11,14 @@
 - _Informazioni di protezione_
 
 ## OPERAZIONI SULLA DIRECTORY
-- _Ricerca di un file_: possibilità di scorrere la directory per reperire l'elemento associato ad un particolare file:
+- ==RICERCA== di un file: possibilità di scorrere la directory per reperire l'elemento associato ad un particolare file:
 	- nomi simili possono corrispondere a relazioni logiche fra i contenuti dei file
 	- capacità di reperire tutti i file il cui nome soddisfi una particolare espressione
-- _Creazione di un file_: aggiunta del record descrittivo del file alla directory
-- _Cancellazione di un file_: rimozione del record descrittivo del file dalla directory
-- _Elenco dei contenuti di una directory_: possibilità di elencare tutti i file di una directory ed il contenuto degli elementi della directory associati ai file
-- _Ridenominazione di un file_: possibilità di modificare il nome di un file (che dovrebbe essere significativo del contenuto) a fronte di cambiamenti del contenuto stesso o di uso del file
-- _Attraversamento del file system_: possibilità di accedere ad ogni directory e ad ogni file in essa contenuto, visitandone l'intero "organigramma"
+- ==CREAZIONE== di un file: aggiunta del record descrittivo del file alla directory
+- ==CANCELLAZIONE== di un file: rimozione del record descrittivo del file dalla directory
+- ==ELENCO DEI CONTENUTI== di una directory: possibilità di elencare tutti i file di una directory ed il contenuto degli elementi della directory associati ai file
+- ==RIDENOMINAZIONE== di un file: possibilità di modificare il nome di un file (che dovrebbe essere significativo del contenuto) a fronte di cambiamenti del contenuto stesso o di uso del file
+- ==ATTRAVERSAMENTO== del [[File_system|file system]]: possibilità di accedere ad ogni directory e ad ogni file in essa contenuto, visitandone l'intero "organigramma"
 
 ## REALIZZAZIONE DELLA DIRECTORY
 L'organizzazione della [[Struttura_directory|struttura di directory]] deve garantire:

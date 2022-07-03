@@ -6,5 +6,5 @@ Durante l'operazione di montaggio, si verifica la presenza sul volume di un file
 
 ## ==BOOT BLOCK==
 Il _boot block_ contiene le informazioni necessarie all'inizializzazione del sistema. Mentre il [[Avviamento_del_SO|bootstrap loader]] è memorizzato nella ROM, il bootstrap completo è memorizzato in posizione fissa nell'[[Hard_disk_drive|hard disk]]; per esempio, nel primo settore del _disco di avviamento / disco di sistema_.
-Esempio: ==MASTER BOOT RECORD (MBR)== in Windows
+Esempio: ==MASTER BOOT RECORD (MBR)== in Windows.
 ![400](mbr.png)

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Gestione_file/Gestione_spazio_libero.md",
+            "file": "Gestione_file/Strutture_dati_file_system.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gestione_file/Gestione_spazio_libero.md",
+                "file": "Gestione_file/Strutture_dati_file_system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
-    "Gestione_file/Gestione_spazio_libero.md",
-    "Gestione_file/Connessione_dispositivi_memoria.md",
-    "Gestione_file/Allocazione.md",
-    "Gestione_file/Directory.md",
-    "Gestione_file/File.md",
-    "Gestione_file/Accesso_file.md",
-    "Gestione_file/Condivisione_file.md",
-    "Gestione_file/Struttura_disco.md",
-    "Gestione_file/Tabelle_file_aperti.md",
-    "Gestione_file/Tipi_struttura_file.md"
+    "Gestione_file/Strutture_dati_file_system.md",
+    "Gestione_file/RAID.md",
+    "Gestione_file/Network_file_system.md",
+    "Gestione_file/Buffer_cache.md",
+    "Affidabilità_sistemi/Fault_tolerance.md",
+    "Affidabilità_sistemi/Calcolo_affidabilità.md",
+    "Affidabilità_sistemi/Guasti.md",
+    "Affidabilità_sistemi/Affidabilità.md",
+    "Gestione_file/Gestione_swap.md",
+    "Gestione_file/Formattazione.md"
   ]
 }

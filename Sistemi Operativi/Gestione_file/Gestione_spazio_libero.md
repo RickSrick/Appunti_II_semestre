@@ -34,7 +34,7 @@ Risulta utile in quanto lo spazio viene spesso allocato e liberato in modo conti
 ### ==TRIM==
 Comando [[Connessione_dispositivi_memoria#MEMORIA SECONDARIA CONNESSA ALLA MACCHINA|ATA]] che consente al SO di informare un [[Solid_state_drive|SSD]] su quali blocchi di dati può cancellare in quanto non sono in uso. Il TRIM è complementare al [[Struttura_directory#DIRECTORY A GRAFO GENERALE|garbage collection]]:
 - elimina la copiatura di pagine di dati scartate o non valide durante il processo di garbage collection per risparmiare tempo e migliorare le prestazioni dell'unità SSD
-- l'SSD ha un minor numero di pagine da spostare durante la garbage collecition, il che riduce il numero totale di cicli di programmazione / cancellazione sul supporto flash NAND e prolunga la vita dell'SSD
+- l'SSD ha un minor numero di pagine da spostare durante il garbage collecition, il che riduce il numero totale di cicli di programmazione / cancellazione sul supporto flash NAND e prolunga la vita dell'SSD
 
 ## PRESTAZIONI
 Se, nell'elemento di directory, si mantiene la data di ultimo accesso ad un file per consentire all'utente di risalire all'ultima volta che un file è stato letto, ogni volta che si apre un file per la lettura si deve leggere e scrivere anche l'elemento della directory ad esso associato.
@@ -46,4 +46,4 @@ Le prestazioni dipendono da:
 - [[Input_output|scritture sincrone]], talvolta richieste dalle applicazioni oppure necessarie al SO:
 	- impossibilità di buffering / caching: l'operazione di scrittura su disco deve essere completata prima di proseguire l'esecuzione
 	- le scritture _asincrone_, che sono le più comuni, sono invece bufferizzabili e più veloci
-- utilizzo di svuotamento / riempimento delle cache per ottimizzare l'[[Accesso_file#ACCESSO SEQUENZIALE|accesso sequenziale]]
+- utilizzo di svuotamento / riempimento delle [[Dispositivi_di_memoria#CACHING|cache]] per ottimizzare l'[[Accesso_file#ACCESSO SEQUENZIALE|accesso sequenziale]]

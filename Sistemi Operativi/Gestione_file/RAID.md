@@ -22,6 +22,7 @@ La maggior parte delle organizzazioni può essere distinta in base a due caratte
 ## ==SEZIONAMENTO DEL DISCO / DATA STRIPING==
 I dati vengono suddivisi in sezioni di uguale lunghezza e scritti su dischi differenti.
 
+## TIPI DI RAID
 ### ==RAID 0==
 Tratta un gruppo di dischi come un'unica unità di memorizzazione. Ogni blocco di dati è suddiviso in "sottoblocchi" memorizzati su dischi distinti. Il tempo di trasferimento per rotazioni sincronizzate diminuisce proporzionalmente al numero di dischi nella batteria.
 Non è una vera architettura RAID, in quanto non mantiene ridondanza e consente solo data striping, a livello di blocco o multipli di blocco.

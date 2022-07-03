@@ -2,8 +2,8 @@
 I ==DISCHI MAGNETICI== rappresentano il mezzo fondamentale per la memorizzazione di massa negli attuali sistemi di calcolo.
 ![400](hdd.png)
 - ==PIATTO==: ognuna delle superfici dei dischi paralleli, identificata da un numero univoco e destinata alla memorizzazione dei dati
-- ==TRACCIA==: anelli concentrici presenti su ogni piatto, ciascuno identificato da un numero univoco
-- ==SETTORE==: settori circolari che compongono le tracce, ciascuno identificato da un numero univoco
+- ==TRACCIA==: ognuno degli anelli concentrici presenti su ogni piatto, ciascuno identificato da un numero univoco
+- ==SETTORE==: ognuno dei settori circolari che compongono le tracce, ciascuno identificato da un numero univoco
 - ==CILINDRO==: insieme delle tracce poste alla stessa distanza dal centro e relative a tutti i dischi; corrisponde a tutte le tracce con lo stesso numero, ma giacenti su piatti diversi
 - ==BLOCCO==: insieme dei settori posti nella stessa posizione in tutti i piatti
 - ==TESTINA==: testina di lettura e scrittura presente su ogni piatto; la posizione di ogni testina è solidale con tutte le altre sui diversi piatti: se una testina è posizionata su una traccia, le altre tracce si posizionano sul cilindro a cui la traccia appartiene

@@ -15,7 +15,7 @@ Possono verificarsi problemi di autenticazione, come protocolli insicuri che pos
 Nei file system locali possono verificarsi [[Malfunzionamenti|malfunzionamenti]] dovuti a:
 - problemi hardware dei dischi che li contengono
 - alterazioni dei metadati (e.g. informazioni per il reperimento dei file, contenute nella directory)
-- problemi ai controllori dei dischi
+- problemi ai [[Input_output|controllori]] dei dischi
 - problemi ai cavi di connessione
 - errori umani
 

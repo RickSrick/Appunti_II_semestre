@@ -12,6 +12,7 @@ Se il bit $[i]$ è uguale a 1 il blocco $[i]$ è libero, se è uguale a 0 il blo
 - buone prestazioni se il vettore è conservato in memoria centrale
 - è adatta per gestire [[Allocazione#ALLOCAZIONE CONTIGUA|file contigui]]
 ![500](bitmap.png)
+
 ### ==LISTA CONCATENATA==
 Si collegano tutti i blocchi liberi mediante puntatori e si mantiene un puntatore alla testa della lista in memoria centrale:
 - non si spreca spazio, in quanto si conserva solo un puntatore
@@ -19,12 +20,17 @@ Si collegano tutti i blocchi liberi mediante puntatori e si mantiene un puntator
 - non facile da usare per ottenere [[Allocazione#ALLOCAZIONE CONTIGUA|spazio contiguo]]
 - nella [[Allocazione#FILE ALLOCATION TABLE FAT|FAT]], il conteggio dei blocchi liberi è incluso nella struttura dati per l'allocazione e non richiede quindi un metodo di gestione separato
 ![300](spazio_libero.png)
-### GROUPING / CONTEGGIO
-- ==GROUPING==: realizzazione di una lista di blocchi
-	il primo blocco contiene gli indirizzi di _n_ blocchi liberi, dei quali _n-1_ sono effettivamente liberi e l'_n_-esimo contiene gli indirizzi di altri _n_ blocchi, e così via
-- ==CONTEGGIO==: si mantiene una lista contenente un indirizzo del disco, che indica un blocco libero, e un contatore, che indica da quanti altri blocchi liberi contigui è seguito
-	utile in quanto lo spazio viene spesso allocato e liberato in modo contiguo (e.g. [[Allocazione#ALLOCAZIONE CONTIGUA|allocazione contigua]], [[Allocazione#ALLOCAZIONE CONTIGUA|extent]] e [[Allocazione#ALLOCAZIONE CONCATENATA|clustering]])
+
+### ==GROUPING==
+Si realizza una lista di blocchi, sui quali si memorizzano gli indirizzi di _n_ blocchi liberi: i primi _n-1_ blocchi sono effettivamente liberi, mentre l'_n_-esimo contiene l'indirizzo del prossimo elemento della lista.
 ![600](schema_concatenato.png)
+
+### ==CONTEGGIO==
+Si mantiene una lista i cui elementi comprendono:
+- un indirizzo del disco che indica un blocco libero
+- un contatore che indica da quanti altri blocchi liberi contigui è seguito
+Risulta utile in quanto lo spazio viene spesso allocato e liberato in modo contiguo (e.g. [[Allocazione#ALLOCAZIONE CONTIGUA|allocazione contigua]], [[Allocazione#ALLOCAZIONE CONTIGUA|extent]] e [[Allocazione#ALLOCAZIONE CONCATENATA|clustering]])
+
 ### ==TRIM==
 Comando [[Connessione_dispositivi_memoria#MEMORIA SECONDARIA CONNESSA ALLA MACCHINA|ATA]] che consente al SO di informare un [[Solid_state_drive|SSD]] su quali blocchi di dati può cancellare in quanto non sono in uso. Il TRIM è complementare al [[Struttura_directory#DIRECTORY A GRAFO GENERALE|garbage collection]]:
 - elimina la copiatura di pagine di dati scartate o non valide durante il processo di garbage collection per risparmiare tempo e migliorare le prestazioni dell'unità SSD

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Concorrenza_nei_sistemi_operativi/Race_condition.md",
+            "file": "Gestione_file/Gestione_spazio_libero.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Concorrenza_nei_sistemi_operativi/Race_condition.md",
+                "file": "Gestione_file/Gestione_spazio_libero.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
-    "Concorrenza_nei_sistemi_operativi/Race_condition.md",
-    "Gestione_file/Condivisione_file.md",
-    "Gestione_file/Strutture_dati_file_system.md",
-    "Gestione_file/Avviamento_so_memoria.md",
-    "Introduzione/Avviamento_del_SO.md",
-    "Gestione_file/Algoritmi_scheduling_disco.md",
+    "Gestione_file/Gestione_spazio_libero.md",
+    "Gestione_file/Connessione_dispositivi_memoria.md",
     "Gestione_file/Allocazione.md",
-    "Gestione_file/Struttura_directory.md",
+    "Gestione_file/Directory.md",
     "Gestione_file/File.md",
-    "Gestione_file/Directory.md"
+    "Gestione_file/Accesso_file.md",
+    "Gestione_file/Condivisione_file.md",
+    "Gestione_file/Struttura_disco.md",
+    "Gestione_file/Tabelle_file_aperti.md",
+    "Gestione_file/Tipi_struttura_file.md"
   ]
 }

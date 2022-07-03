@@ -1,5 +1,5 @@
 # CONDIVISIONE DI FILE
-La condivisione di [[File|file]] (_file sharing_) è particolarmente utile negli ambienti multiutente, per permettere la collaborazione tra utenti e per ridurre le [[Risorse|risorse]] richieste per raggiungere un dato obiettivo di calcolo. Tuttavia, la condivisione non può prescindere da uno schema di protezione che garantisca un controllo di accesso ai file mediato dal SO.
+La ==CONDIVISIONE DI [[File|FILE]] / FILE SHARING== è particolarmente utile negli ambienti multiutente, per permettere la collaborazione tra utenti e per ridurre le [[Risorse|risorse]] richieste per raggiungere un dato obiettivo di calcolo. Tuttavia, la condivisione non può prescindere da uno schema di protezione che garantisca un controllo di accesso ai file mediato dal SO.
 Nei sistemi distribuiti, i file vengono condivisi attraverso una rete. Il [[Network_file_system|Network File System (NFS)]] è un metodo molto diffuso per realizzare la condivisione di file distribuiti.
 
 Il modello più diffuso è legato ai concetti di:

@@ -5,7 +5,7 @@ Le [[Chiamate_di_sistema|chiamate di sistema]] per aprire e chiudere i file sono
 - $close(\text{F}_{i})$: copia il contenuto dell'elemento $\text{F}_{i}$, attualmente residente in memoria principale, nella struttura di directory sul disco e lo rimuove
 
 Nei sistemi multiutente, sono presenti due livelli di tabelle:
-- ==TABELLE DI SISTEMA==:
+- ==TABELLA DI SISTEMA==:
 	- riferimenti a tutti i file aperti nel sistema
 	- posizione del file nel disco
 	- dimensione del file
@@ -18,6 +18,6 @@ Nei sistemi multiutente, sono presenti due livelli di tabelle:
 
 In particolare:
 - ==CONTATORE DI APERTURE==: conta il numero di processi che hanno aperto il file, per rimuovere opportunamente i dati dalla tabella dei file aperti alla chiusura del file da parte dell'ultimo processo (tabella di sistema)
-- ==LOCAZIONE DEL FILE SU DISCO==: cache delle informazioni di accesso ai dati permanenti (tabella di sistema)
+- ==LOCAZIONE DEL FILE SU DISCO==: [[Dispositivi_di_memoria#CACHING|cache]] delle informazioni di accesso ai dati permanenti (tabella di sistema)
 - ==PUNTATORE ALLA POSIZIONE CORRENTE NEL FILE==: puntatore alI'ultima locazione dove è stata realizzata un'operazione di lettura/scrittura per ogni processo che ha aperto il file (tabella associata al processo)
 - ==DIRITTI DI ACCESSO==: controllati dal SO per permettere o negare le operazioni di I/O richieste (tabella associata al processo)

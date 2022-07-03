@@ -1,14 +1,14 @@
 # RECORD LOGICI
 ==RECORD FISICI==: blocchi del disco (dimensione fissata).
-Occorre risolvere il problema della corrispondenza tra ==RECORD LOGICI== e record fisici: ==PACKING==. Anche con i file, parte dell'ultimo blocco contenente il file rimane inutilizzata, causando una [[Frammentazione#FRAMMENTAZIONE INTERNA|frammentazione interna]].
+Occorre risolvere il problema della corrispondenza tra ==RECORD LOGICI== e record fisici: ==PACKING==. Anche con i file, parte dell'ultimo blocco contenente il file può rimanere inutilizzata, causando una [[Frammentazione#FRAMMENTAZIONE INTERNA|frammentazione interna]].
 
 # METODI DI ACCESSO AI [[File|FILE]]
 ## ==ACCESSO DIRETTO==
-Modello di accesso che si ispira al disco: si può accedere a record di dati posti in qualunque posizione nel file, determinata rispetto ad un offset. In questo modo si può scrivere o leggere record in ordine casuale o quando si vuole sovrascrivere un singolo record.
+Modello di accesso che si ispira al [[Hard_disk_drive|disco]]: si può accedere a record di dati posti in qualunque posizione nel file, determinata rispetto ad un offset. In questo modo si può scrivere o leggere record in ordine casuale oppure sovrascrivere un singolo record.
 ![350](accesso_diretto.png)
 
 ## ==ACCESSO SEQUENZIALE==
-Modello di accesso che si ispira al nastro:
+Modello di accesso che si ispira al [[Nastro|nastro]]:
 - viene trattato un gruppo di byte o un record alla volta
 - un puntatore indirizza il gruppo o record corrente e avanza a ogni lettura o scrittura
 - la lettura può avvenire in qualunque posizione del file, che deve però essere raggiunta sequenzialmente, e non può avvenire oltre l'ultima posizione scritta

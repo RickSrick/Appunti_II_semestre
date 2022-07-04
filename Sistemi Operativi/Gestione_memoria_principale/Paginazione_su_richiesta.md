@@ -1,5 +1,5 @@
 # [[Paginazione|PAGINAZIONE]] SU RICHIESTA
-I processi possono essere caricati per intero su RAM durante il loading, oppure si può implementare la ==PAGINAZIONE SU RICHIESTA / PAGE DEMANDING==: si carica una certa pagina in memoria solo quando è necessaria, ovvero quando viene referenziata. Il modulo del SO che si occupa di questa tecnica viene detto ==PAGER==.
+I processi possono essere caricati per intero su RAM durante il [[Linker_loader|loading]], oppure si può implementare la ==PAGINAZIONE SU RICHIESTA / PAGE DEMANDING==: si carica una certa pagina in memoria solo quando è necessaria, ovvero quando viene referenziata. Il modulo del SO che si occupa di questa tecnica viene detto ==PAGER==.
 
 Quando un processo sta per essere caricato in memoria, il pager ipotizza quali pagine saranno usate prima che il processo venga di nuovo rimosso dalla memoria. Così, anzichè caricare in memoria tutto il processo, il pager trasferisce in memoria solo le pagine che ritiene necessarie.
 Serve quindi una [[MMU]] con ulteriori funzionalità:

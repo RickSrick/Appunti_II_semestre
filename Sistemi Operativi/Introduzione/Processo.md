@@ -10,6 +10,7 @@ Il SO è responsabile delle seguenti attività relative alla gestione dei proces
 - sospensione e riattivazione di processi
 - fornire meccanismi per la [[Race_condition|sincronizzazione di processi]], la comunicazione fra processi e la gestione del [[Deadlock|deadlock]]
 Per prevenire processi che eseguono cicli infiniti senza più restituire il controllo al SO si ha un timer, realizzato mediante un clock e un contatore. Il SO inizializza il contatore al tempo massimo stimato di esecuzione del processo e lo decrementa ad ogni impulso. Quando il contatore ha valore zero, si genera un [[Interrupt|interrupt]], che restituisce il controllo al SO. Questo timer viene impostato ogni volta che un processo accede alla CPU.
+
 Il supporto alla sincronizzazione dei processi è implementato nel [[Sistema_operativo#STRUTTURA DEL SISTEMA DI CALCOLO|kernel]] dalle primitive _wait_ e _signal_; in questo modo:
 - sono utilizzabili da tutti i processi
 - _wait_ può accedere al [[Dispatcher|dispatcher]] e causarne l'attivazione

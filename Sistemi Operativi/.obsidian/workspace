@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Gestione_file/Strutture_dati_file_system.md",
+            "file": "Introduzione/Thread.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gestione_file/Strutture_dati_file_system.md",
+                "file": "Introduzione/Thread.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
-    "Gestione_file/Strutture_dati_file_system.md",
-    "Gestione_file/RAID.md",
-    "Gestione_file/Network_file_system.md",
-    "Gestione_file/Buffer_cache.md",
-    "Affidabilità_sistemi/Fault_tolerance.md",
-    "Affidabilità_sistemi/Calcolo_affidabilità.md",
-    "Affidabilità_sistemi/Guasti.md",
-    "Affidabilità_sistemi/Affidabilità.md",
-    "Gestione_file/Gestione_swap.md",
-    "Gestione_file/Formattazione.md"
+    "Introduzione/Thread.md",
+    "Introduzione/Processo.md",
+    "Introduzione/Multiprogrammazione.md",
+    "Introduzione/Multiprocessore_multicore.md",
+    "Introduzione/Modalità.md",
+    "Introduzione/Interrupt.md",
+    "Introduzione/Input_output.md",
+    "Introduzione/Dispositivi_di_memoria.md",
+    "Introduzione/Avviamento_del_SO.md",
+    "Introduzione/Architettura_sistema_calcolo.md"
   ]
 }

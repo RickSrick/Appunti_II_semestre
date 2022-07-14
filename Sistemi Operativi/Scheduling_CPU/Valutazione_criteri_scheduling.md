@@ -5,7 +5,7 @@ Come selezionare un algoritmo di scheduling della CPU per un certo SO?
 - ==RETI DI CODE==: il sistema di calcolo viene descritto come una rete di server, ognuno con la propria coda d'attesa
 	- la CPU è un server con la propria coda di processi in attesa, e il sistema di I/O ha le sue code dei dispositivi; se sono noti l'andamento degli arrivi e dei servizi (sotto forma di distribuzioni di probabilità), si può calcolare l'utilizzo di CPU e dispositivi, la lunghezza media delle code, il tempo medio d'attesa, il [[Definizioni#MISURE|throughput]] medio, etc.
 	- problema: difficoltà nell'utilizzo di distribuzioni complicate o metodi matematici appositi
-	- siano $n$ la lunghezza media di una coda, $W$ il tempo medio di attesa nella coda, $\lambda$ l'andamento medio di arrivo dei nuovi processi; se il sistema è stabile, il numero di processi che lasciano la coda deve essere uguale al numero di processi che vi arrivano: ==FORMULA DI LITTLE== (valida per qualsiasi algoritmo di scheduling e distribuzione degli arrivi)
+	- siano $n$ la lunghezza media di una coda, $W$ il tempo medio di attesa nella coda, $\lambda$ l'andamento medio di arrivo dei nuovi processi; se il sistema è ==STABILE==, il numero di processi che lasciano la coda deve essere uguale al numero di processi che vi arrivano: ==FORMULA DI LITTLE== (valida per qualsiasi algoritmo di scheduling e distribuzione degli arrivi)
 $$
 \begin{equation}
 n=\lambda \times W

@@ -9,7 +9,7 @@ Si impiega una [[Tabella_delle_pagine|tabella delle pagine]] per tradurre gli in
 
 ## INDIRIZZI LOGICI NELLA PAGINAZIONE
 Gli indirizzi logici generati dalla CPU vengono divisi in due parti:
-- ==NUMERO DI PAGINA (p)==: viene impiegato come indice nella tabella delle pagine per ricavarne l'indirizzo base del frame nella memoria fisica
+- ==NUMERO DI PAGINA (p)==: viene impiegato come indice nella tabella delle pagine per ricavarne l'[[Registri_base_limite|indirizzo base]] del frame nella memoria fisica
 - ==OFFSET NELLA PAGINA (d)==: viene combinato con l'indirizzo base del frame per ricavare l'indirizzo fisico corrispondente
 
 ## PAGINAZIONE E FRAMMENTAZIONE
@@ -43,4 +43,4 @@ Aumentare le dimensioni delle pagine potrebbe portare ad un incremento della fra
 Si possono prevedere pagine di diverse dimensioni e permettere l'utilizzo di quelle più grandi ai processi che le richiedono, senza aumentare la frammentazione.
 
 ## PAGINAZIONE E MEMORIA VIRTUALE
-Non sempre un processo necessita della presenza di tutti i suoi frame in memoria; questo consente di implementare meccanismi di ==[[Memoria_virtuale#MEMORIA VIRTUALE|MEMORIA VIRTUALE]]==: si scrivono su disco blocchi di memoria (pagine) da caricare in memoria principale solo quando servono.
+Non sempre un processo necessita della presenza di tutti i suoi frame in memoria. Questo consente di implementare meccanismi di ==[[Memoria_virtuale#MEMORIA VIRTUALE|MEMORIA VIRTUALE]]==: si scrivono su disco blocchi di memoria (pagine) da caricare in memoria principale solo quando servono.

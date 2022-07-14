@@ -13,7 +13,7 @@ Esempio: se si perde un elemento di directory, si può ricostruire un file con [
 Si impiegano programmi di sistema per copiare dati dal disco ad un altro dispostivo di memorizzazione (e.g. altri dischi magnetici, supporti ottici): ==BACK-UP==. Si possono poi recuperare file persi o il contenuto di dischi danneggiati ricaricandoli dal back-up.
 
 ## ==ACCANTONAMENTO DEI SETTORI==
-Per gestire i blocchi difettosi, durante la [[Formattazione#FORMATTAZIONE FISICA DI BASSO LIVELLO|formattazione fisica]] si mantiene un gruppo di riserva non visibili al SO. Il controllore è istruito per sostituire, dal punto di vista logico, un settore difettoso con uno dei settori di riserva inutilizzati.
+Per gestire i blocchi difettosi, durante la [[Formattazione#FORMATTAZIONE FISICA DI BASSO LIVELLO|formattazione fisica]] si mantiene un gruppo di riserva non visibili al SO. Il [[Input_output|controllore]] è istruito per sostituire, dal punto di vista logico, un settore difettoso con uno dei settori di riserva inutilizzati.
 ![650](accantonamento_settori.png)
 
 ## ==DISTANZA DI HAMMING==

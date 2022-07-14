@@ -15,7 +15,7 @@ Il file system garantisce pertanto una gestione dei file indipendente dalle cara
 Esistono diversi tipi di file system e non è raro che i sistemi operativi ne prevedano più di uno.
 - CD-ROM: _ISO 9660_
 - UNIX: _UNIX File System (UFS)_ che si fonda sul _File System Berkeley Fast (FFS)_
-- Windows: _FAT, FAT32, FAT64, NTFS_
+- Windows: _[[Allocazione#FILE ALLOCATION TABLE FAT|FAT]], FAT32, FAT64, NTFS_
 - Linux: _extended file system (ext2, ext3, ext4...)_, ne supporta più di quaranta tipi diversi
 - _File system in USErspace (FUSE)_: progetto open source, rilasciato sotto la licenza GPL e LGPL, volto alla realizzazione di un modulo per il kernel Linux che permetta agli utenti non privilegiati di creare un proprio file system senza scrivere codice a livello kernel
 

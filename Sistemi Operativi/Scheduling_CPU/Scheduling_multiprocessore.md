@@ -17,7 +17,7 @@ L'accesso concorrente di più processori ad una struttura dati comune rende deli
 - devono evitare che qualche processo vada "perso"
 
 Due versioni del SMP:
-- ==BILANCIAMENTO DEL CARICO / LOAD BALANCING==: ripartire uniformementex il carico di lavoro sui vari processori (è automatico in sistemi con [[Scheduling|ready queue]] comune)
+- ==BILANCIAMENTO DEL CARICO / LOAD BALANCING==: ripartire uniformemente il carico di lavoro sui vari processori (è automatico in sistemi con [[Scheduling|ready queue]] comune)
 	- ==MIGRAZIONE GUIDATA (PUSH MIGRATION)==: un processo dedicato controlla periodicamente il carico dei processori per effettuare eventuali riequilibri
 	- ==MIGRAZIONE SPONTANEA (PULL MIGRATION)==: un processore inattivo sottrae ad uno sovraccarico un processo in attesa
 	- Linux le implementa entrambe: esegue il proprio algoritmo di bilanciamento ad intervalli regolari e ogniqualvolta si svuota la coda di attesa di un processore

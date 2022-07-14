@@ -8,6 +8,7 @@ Esistono tre tecniche principali per identificare i tipi di file:
 UNIX, oltre a usare il magic number, usa le estensioni solo come suggerimento; non vengono imposte né dipendono dal SO.
 ![400](tipi_file.png)
 
+# STRUTTURA DI UN FILE
 La struttura di un file può essere:
 - _nessuna_: sequenza di parole o byte
 - ==STRUTTURA A RECORD SEMPLICE==:

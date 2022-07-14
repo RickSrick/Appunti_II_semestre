@@ -15,7 +15,7 @@ Inizialmente viene posto a _i_ per tutte le pagine; durante la traduzione degli 
 Il SO consulta una tabella interna delle pagine (conservata con il [[Processo#STATO DI UN PROCESSO|PCB]]) per decidere se si tratta di riferimento non valido (abort) o pagina non in memoria.
 Nel secondo caso:
 - si individua la pagina richiesta su disco
-- si seleziona un frame libero: se esiste lo si usa, altrimenti si applica un [[Algoritmi_sostituzione_pagina|algoritmo di sostituzione]] per selezionare un _frame vittima_
+- si seleziona un frame libero: se esiste lo si usa, altrimenti si applica un [[Algoritmi_sostituzione_pagina|algoritmo di sostituzione]] per selezionare un ==FRAME VITTIMA==
 - si sposta la pagina nel frame (schedulando un operazione di I/O) e si scrive la pagina vittima su disco
 - aggiorna la tabella delle pagine (impostando il bit a _v_ / _i_ ) e dei frame (marcando come occupato il frame utilizzato)
 - riavvia l'operazione interrotta
@@ -29,7 +29,7 @@ Avviare l'esecuzione di un processo senza pagine in memoria:
 ## ==SOVRALLOCAZIONE==
 Fenomeno per il quale durante l'esecuzione di un processo utente si verifica un page fault, ma non vi sono frame liberi per caricare la pagina richiesta in memoria.
 Soluzione: ==SOSTITUZIONE DI PAGINA==: si trova una pagina in memoria che non risulta attualmente utilizzata e si sposta sul disco.
-Bisogna scegliere un [[Algoritmi_sostituzione_pagina|algoritmo di sostituzione]] che scelega un _frame vittima_ e che provochi il minor numero possibile di page fault.
+Bisogna scegliere un [[Algoritmi_sostituzione_pagina|algoritmo di sostituzione]] che scelga un _frame vittima_ e che provochi il minor numero possibile di page fault.
 
 La sovrallocazione si verifica quando è richiesta più memoria di quella effettivamente disponibile; la si può prevenire modificando la routine di servizio del page fault, includendo la sostituzione delle pagine.
 Si impiega un ==BIT DI MODIFICA/DIRTY BIT== per ridurre il sovraccarico dei trasferimenti di pagine: solo le pagine modificate vengono riscritte su disco.

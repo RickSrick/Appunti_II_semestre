@@ -49,7 +49,7 @@ OPT e LRU sono ==ALGORITMI "A PILA"==, che non soffrono dell'anomalia di Belady.
 - ==BIT DI RIFERIMENTO==:
 	- si associa un bit ad ogni pagina, inizialmente a 0
 	- ogni volta che si fa riferimento ad una pagina si pone il bit a 1
-	- si rimpiazza la pagina il cui bit di riferimento vale 0, se zero (non si conosce l'ordine di accesso alle pagine)
+	- si rimpiazza la pagina il cui bit di riferimento vale 0, se esiste (non si conosce l'ordine di accesso alle pagine)
 	- possibile registrare i bit di riferimento ad intervalli regolari in un registro a scorrimento ($\mathrm{p}_{i}$ con registro di scorrimento _11000100_ acceduta più recentemente di $\mathrm{p}_{j}$ con valore _01100101_)
 
 ## ==SECONDA CHANCE (CLOCK ALGORITHM)==

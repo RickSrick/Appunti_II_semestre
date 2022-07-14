@@ -10,7 +10,7 @@ Lo scheduler deve prendere decisioni in quattro casi:
 2. passa da _running_ a _ready_ (e.g. [[Interrupt|interrupt]])
 3. passa da _waiting_ a _ready_ (e.g. completamento di I/O)
 4. [[Processo#STATO DI UN PROCESSO|termina]]
-==NON [[Risorse#PREEMPTION PRELAZIONE|PREEMPTIVE]] / COOPERATIVO==: scheduling effettuato solo nei casi 1 e 4, non possiede diritto di prelazione.
+==NON [[Risorse#PREEMPTION PRELAZIONE|PREEMPTIVE]] / COOPERATIVO==: scheduling effettuato solo nei casi 1 e 4, ovvero non possiede diritto di prelazione.
 Altrimenti, ==PREEMPTIVE==.
 
 In caso di scheduler preemptive, bisogna tenere in considerazione:

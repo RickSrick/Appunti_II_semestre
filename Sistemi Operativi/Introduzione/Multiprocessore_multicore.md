@@ -8,8 +8,8 @@ Fino a qualche anno fa molti sistemi utilizzavano un singolo processore general-
 Sistemi a ==MEMORIA CONDIVISA==, ossia sistemi in cui tutte le CPU condividono una memoria fisica comune.
 ![350](multiprocessore.png)
 I sistemi multiprocessore attualmente in uso permettono:
-- [[Scheduling_multiprocessore#MULTIELABORAZIONE ASIMMETRICA|multielaborazione asimmetrica]]: ad ogni processore viene assegnato un compito specifico, e uno principale sovrintende all'intero sistema
-- [[Scheduling_multiprocessore#MULTIELABORAZIONE SIMMETRICA SYMMETRIC MULTI-PROCESSING SMP|multielaborazione simmetrica]]: ogni processore è abilitato ad eseguire tutte le operazioni del sistema
+- ==MULTIELABORAZIONE ASIMMETRICA==: ad ogni processore viene assegnato un compito specifico, e uno principale sovrintende all'intero sistema
+- ==MULTIELABORAZIONE SIMMETRICA / SYMMETRIC MULTI-PROCESSING (SMP)==: ogni processore è abilitato ad eseguire tutte le operazioni del sistema
 
 ## ==SISTEMI MULTICORE==
 Si raggruppano diverse unità di calcolo core in un singolo chip.

@@ -45,6 +45,6 @@ A questo proposito, esistono due tipi di kernel:
 - ==KERNEL SENZA DIRITTO DI PRELAZIONE==: i processi vengono eseguiti finchè non escono dalla [[Modalità|modalità kernel]], si bloccano o restituiscono volontariamente la CPU
 	- immuni dai problemi legati all'ordine degli accessi alle strutture dati del kernel: non si consente l'interruzione forzata di processi attivi in modalità di sistema
 - ==KERNEL CON DIRITTO DI PRELAZIONE==: si consente la prelazione di processi in esecuzione in modalità kernel
-	- critici per [[Scheduling_multiprocessore#MULTIELABORAZIONE SIMMETRICA SYMMETRIC MULTI-PROCESSING SMP|sistemi SMP]], in cui due processi in modalità kernel possono essere eseguiti su processori distinti
+	- critici per [[Multiprocessore_multicore|sistemi SMP]], in cui due processi in modalità kernel possono essere eseguiti su processori distinti
 	- necessari in ambito [[Sistemi_real-time|real-time]]: permettono ai processi in tempo reale di far valere il loro diritto di precedenza
 	- utili nei sistemi [[Multiprogrammazione|time-sharing]]: diminuiscono il [[Definizioni#MISURE|tempo medio di risposta]]

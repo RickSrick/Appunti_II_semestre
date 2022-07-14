@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Concorrenza_nei_sistemi_operativi/Race_condition.md",
+            "file": "Scheduling_CPU/Scheduler.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Concorrenza_nei_sistemi_operativi/Race_condition.md",
+                "file": "Scheduling_CPU/Scheduler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
+    "Scheduling_CPU/Scheduler.md",
+    "Scheduling_CPU/Scheduling.md",
+    "Concorrenza_nei_sistemi_operativi/Semafori.md",
+    "Concorrenza_nei_sistemi_operativi/Risorse.md",
     "Concorrenza_nei_sistemi_operativi/Race_condition.md",
-    "Affidabilità_sistemi/Fault_tolerance.md",
-    "Affidabilità_sistemi/Guasti.md",
-    "Affidabilità_sistemi/Calcolo_affidabilità.md",
-    "Affidabilità_sistemi/Affidabilità.md",
-    "Gestione_file/Tipi_struttura_file.md",
-    "Gestione_file/Tabelle_file_aperti.md",
-    "Gestione_file/Strutture_dati_file_system.md",
-    "Gestione_file/Struttura_disco.md",
-    "Gestione_file/Struttura_directory.md"
+    "Introduzione/Multiprocessore_multicore.md",
+    "Scheduling_CPU/Scheduling_multiprocessore.md",
+    "Concorrenza_nei_sistemi_operativi/Prevenzione_deadlock.md",
+    "Introduzione/Multiprogrammazione.md",
+    "Concorrenza_nei_sistemi_operativi/Parellelismo_concorrenza.md"
   ]
 }

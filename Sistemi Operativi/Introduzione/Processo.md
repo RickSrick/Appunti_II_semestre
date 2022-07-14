@@ -45,7 +45,7 @@ Transizioni tra stati:
 - _da ready a running_: in seguito al blocco del processo in esecuzione, il processo viene scelto dal dispatcher, fra tutti i processi pronti, per essere eseguito
 - _da running a ready_ (==REVOCA / PRE-RILASCIO==):
 	- [[Criteri_scheduling#PRIORITÀ SHORTEST JOB FIRST SJF SHORTEST PROCESS NEXT SPN|scheduling a priorità]], quando arriva al sistema un processo con priorità maggiore
-	- nei [[Criteri_scheduling#ROUND ROBIN|sistemi a partizione di tempo]], per esaurimento del quanto di tempo
+	- nei [[Criteri_scheduling#ROUND ROBIN|sistemi a partizione di tempo (RR)]], per esaurimento del quanto di tempo
 	- al verificarsi di un interrupt esterno (asincrono)
 - _da running a waiting_: richiesta di un servizio di I/O al SO, o per l’attesa di un qualche evento
 - _da waiting a ready_: il servizio richiesto viene completato, oppure l'evento si è verificato

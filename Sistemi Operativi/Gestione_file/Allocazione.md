@@ -38,9 +38,9 @@ Ci sono varie possibilità per il mapping fra indirizzi logici e indirizzi fisic
 ![400](schema_combinato.png)
 	Esempio: [[Strutture_dati_file_system#STRUTTURE DATI DEL FILE SYSTEM RESIDENTI SU DISCO|inode]] in UNIX (4KB per blocco, indirizzi a 32 bit): in un sistema UNIX-like tradizionale, gli inode hanno:
 	- 10 puntatori diretti a blocchi
-	- 1 blocco con indirezione singola
-	- 1 blocco con indirezione doppia
-	- 1 blocco con indirezione tripla
+	- 1 blocco con indirezione singola (in totale si possono puntare $2^{10}$ = 1K blocchi)
+	- 1 blocco con indirezione doppia (in totale si possono puntare $(2^{10})^2 = 2^{20}$ = 1M blocchi)
+	- 1 blocco con indirezione tripla (in totale si possono puntare $(2^{10})^3 = 2^{30}$ = 1G blocchi)
 ![450](inode.png)
 
 # PRESTAZIONI DELL'ALLOCAZIONE

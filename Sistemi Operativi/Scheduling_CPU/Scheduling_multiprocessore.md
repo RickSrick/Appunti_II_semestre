@@ -1,10 +1,10 @@
 # [[Scheduling|SCHEDULING]] IN [[Multiprocessore_multicore#SISTEMI MULTIPROCESSORE|SISTEMI MULTIPROCESSORE]]
 Lo scheduling diventa più complesso quando sono presenti più CPU nel sistema di calcolo. Si assume come ipotesi che le unità di elaborazione siano identiche nelle loro funzioni: ==SISTEMI OMOGENEI==.
 
-## ==MULTIELABORAZIONE ASIMMETRICA==
+## [[Multiprocessore_multicore#SISTEMI MULTIPROCESSORE|MULTIELABORAZIONE ASIMMETRICA]]
 Lo scheduling, l'elaborazione dell'I/O e le altre attività del sistema sono affidate ad un solo processore (==MASTER SERVER==). Si riduce così la necessità di condividere dati.
 
-## ==MULTIELABORAZIONE SIMMETRICA / SYMMETRIC  MULTI-PROCESSING (SMP)==
+## [[Multiprocessore_multicore#SISTEMI MULTIPROCESSORE|MULTIELABORAZIONE SIMMETRICA]]
 Ciascun processore ha un proprio [[Scheduler|scheduler]] che seleziona la [[Scheduling|coda d'attesa]] migliore da cui prelevare il prossimo processo da eseguire.
 ![450](smp.png)
 Ci sono due possibilità per implementare le code di attesa:

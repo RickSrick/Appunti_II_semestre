@@ -28,7 +28,7 @@ Con questo semaforo, si usano due metodi, forniti dal SO come [[Chiamate_di_sist
 
 Mentre la definizione classica di semaforo ad attesa attiva implica che il valore del semaforo non può mai essere negativo, in questo nuovo semaforo il valore può essere negativo: se è negativo, il modulo del valore fornisce il numero di processi in attesa al semaforo.
 Inoltre, questo nuovo tipo di semaforo può condurre a situazioni in cui ciascun processo attende l'esecuzione di un'istruzione $signal(S)$, che solo uno degli altri processi in coda può chiamare; se ciò avviene, si verifica un [[Deadlock|deadlock]].
-Infine, un processo può attendere al semaforo per un tempo indefinito senza venir mai rimosso dalla coda d'attesa, causando un fenomeno di _starvation_. In particolare, può avvenire se la rimozione dei processi dalla coda avviene in modalità _LIFO (Last In First Out)_, mentre si può garantire che ciò non avvenga usando la modalità _FIFO (First In First Out)_.
+Infine, un processo può attendere al semaforo per un tempo indefinito senza venir mai rimosso dalla coda d'attesa, causando un fenomeno di ==STARVATION==. In particolare, può avvenire se la rimozione dei processi dalla coda avviene in modalità _LIFO (Last In First Out)_, mentre si può garantire che ciò non avvenga usando la modalità _FIFO (First In First Out)_.
 
 ## ==SEMAFORI PRIVATI==
 In problemi reali la condizione per cui un processo può continuare a lavorare non dipende solo da una variabile, ma da diversi fattori chiamati ==CONDIZIONI DI SINCRONIZZAZIONE==.

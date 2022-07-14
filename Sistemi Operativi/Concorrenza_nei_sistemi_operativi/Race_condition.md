@@ -3,12 +3,23 @@
 Tali situazioni si verificano spesso nei SO, nei quali diversi componenti agiscono su [[Risorse|risorse]] condivise, soprattutto nei [[Multiprocessore_multicore#SISTEMI MULTICORE|sistemi multicore]], in cui diversi [[Thread|thread]] vengono eseguiti in parallelo su unità di calcolo distinte.
 Per evitare le corse critiche occorre che i processi siano ==SINCRONIZZATI==. A questo scopo, alcune operazioni devono essere ==ATOMICHE==: vengono completate senza subire interruzioni. Se due processi tentano di accedere agli stessi dati contemporaneamente, le istruzioni in linguaggio macchina possono risultare ==INTERFOGLIATE==, e la sequenza effettiva di esecuzione dipende da come i processi vengono [[Scheduling|schedulati]].
 
-Esempio:
-	Processo produttore:
+## APPLICARE LE ISTRUZIONI ATOMICHE NEGLI ESERCIZI
+Processo produttore:
 	![400](race_condition.png)
-	Processo consumatore:
+Processo consumatore:
 	![400](race_condition2.png)
-	Questi processi sono corretti se considerati separatamente, ma potrebbero non funzionare correttamente se eseguiti in concorrenza, in particolare le operazioni $contatore ++$ e $contatore --$.
+Questi processi sono corretti se considerati separatamente, ma potrebbero non funzionare correttamente se eseguiti in concorrenza, in particolare le operazioni $contatore ++$ e $contatore --$.
+
+La prima viene tradotta in linguaggio macchina come:
+![500](produttore.png)
+La seconda viene tradotta in linguaggio macchina come:
+![500](consumatore.png)
+Pertanto, a seconda di come i processi vengono schedulati e/o interrotti, il valore finale del contatore può variare. In particolare, se l'istruzione A interrompe l'istruzione B dopo che A ha già salvato il valore del contatore in un registro, l'operazione sul valore effettuata da A alla fine andrà persa, in quanto B opererà sul valore che il contatore aveva prima che le due istruzioni iniziassero.
+
+Supponiamo quindi che il valore iniziale del contatore sia 5, e che le istruzioni in linguaggio macchina che compongono $contatore++$ e $contatore--$ vengano eseguite in questo ordine:
+![500](prod_cons.png)
+In questo caso, $contatore++$ viene interrotta da $contatore--$ dopo aver salvato il valore del contatore, ovvero 5, in un registro. A causa di questo, le due operazioni vengono effettuate sullo stesso valore. Pertanto, il valore che il contatore dovrebbe avere dopo l'incremento, ovvero 6, viene perso una volta che entrambe le istruzioni sono concluse, conservando solo l'esito di $contatore--$, ovvero il valore 4.
+In generale, alla fine di queste due istruzioni, il contatore può assumere valore 4, 5 o 6, quando invece dovrebbe essere sempre 5, in quanto viene prodotto un elemento e consumato un elemento.
 
 ## ==SEZIONE CRITICA==
 Segmento di codice in cui un processo accede a dati condivisi.

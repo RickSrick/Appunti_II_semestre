@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Affidabilità_sistemi/Fault_tolerance.md",
+            "file": "Concorrenza_nei_sistemi_operativi/Race_condition.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Affidabilità_sistemi/Fault_tolerance.md",
+                "file": "Concorrenza_nei_sistemi_operativi/Race_condition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "855289636e79ceaa",
   "lastOpenFiles": [
+    "Concorrenza_nei_sistemi_operativi/Race_condition.md",
     "Affidabilità_sistemi/Fault_tolerance.md",
     "Affidabilità_sistemi/Guasti.md",
     "Affidabilità_sistemi/Calcolo_affidabilità.md",
@@ -97,7 +98,6 @@
     "Gestione_file/Tabelle_file_aperti.md",
     "Gestione_file/Strutture_dati_file_system.md",
     "Gestione_file/Struttura_disco.md",
-    "Gestione_file/Struttura_directory.md",
-    "Gestione_file/Solid_state_drive.md"
+    "Gestione_file/Struttura_directory.md"
   ]
 }

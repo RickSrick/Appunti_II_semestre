@@ -1,0 +1,28 @@
+# AREE DI GESTIONE DI UN PROGETTO
+![500](aree_gestione.png)
+- ==STAKEHOLDER==:
+	- identificare le persone, i gruppi o le organizzazioni che potrebbero influenzare il [[Definizioni#PROGETTO|Progetto]] o esserne influenzati
+	- analizzare le loro aspettative e il loro impatto sul progetto
+	- sviluppare le strategie di gestione appropriate per coinvolgerli efficacemente nel Progetto
+- ==SCOPE==:
+	- garantire che il Progetto comprenda tutto il lavoro necessario ed esclusivamente il lavoro necessario
+	- completare con successo il Progetto
+	- definizione e controllo di ciò che è incluso o meno nel progetto
+- ==[[Diagrammi_di_schedulazione|SCHEDULE]]==: gestire il completamento del Progetto nel rispetto dei tempi previsti
+- ==COST==:
+	- pianificazione, stima, allocazione del budget
+	- finanziamento e stanziamento di fondi
+	- gestione e controllo dei costi in modo che il Progetto possa essere completato nel rispetto del budget approvato
+- ==QUALITY==:
+	- integrare la politica di qualità dell’organizzazione in merito alla pianificazione, alla gestione e al controllo del Progetto e ai requisiti di [[Qualità|qualità]] del prodotto per soddisfare gli obiettivi degli [[Stakeholder|stakeholder]]
+	- attività di continuo miglioramento dei processi intraprese per conto dell’azienda coinvolta nell’eseguire il lavoro di Progetto (_Performing Organization_)
+- ==RISK==:
+	- pianificare la [[Gestione_rischi|gestione dei rischi]], la loro identificazione, analisi, pianificazione e implementazione delle risposte e al monitoraggio dei rischi all’interno di un Progetto
+	- aumentare la probabilità e/o l’impatto di [[Rischio|rischi positivi (opportunità)]]
+	- ridurre la probabilità e/o l’impatto di [[Rischio|rischi negativi (minacce)]] nel Progetto per ottimizzare le sue possibilità di successo
+- ==RESOURCE==:
+	- identificare, acquisire e gestire le [[Risorse|risorse]] necessarie per completare con successo il Progetto
+	- garantire che le adeguate risorse siano a disposizione del [[Project_manager|Project Manager]] e del gruppo di Progetto nel momento e nel posto giusto
+- ==[[Comunicazione|COMMUNICATIONS]]==: garantire che le esigenze di informazione del Progetto e dei suoi stakeholder siano soddisfatte attraverso lo sviluppo di elaborati e l’implementazione di [[Attività|attività]] progettate per raggiungere un efficace scambio di informazioni
+- ==[[Fornitori|PROCUREMENT]]==: acquistare o acquisire i prodotti, servizi o risultati necessari all’esterno del gruppo di Progetto
+- ==INTEGRATION==: identificare, definire, unificare e coordinare i vari processi e le attività di gestione del Progetto nell’ambito dei gruppi di processi di [[Project_management|Project Management]]

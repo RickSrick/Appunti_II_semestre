@@ -1,5 +1,5 @@
 # GESTIONE DELLO SPAZIO LIBERO
-Per tener traccia dello spazio libero su disco, il sistema conserva una ==LISTA DELLO SPAZIO LIBERO==. Per creare un file occorre:
+Per tenere traccia dello spazio libero su disco, il sistema conserva una ==LISTA DELLO SPAZIO LIBERO==. Per creare un file occorre:
 - cercare nella lista dello spazio libero la quantità di spazio necessaria ed allocarla al nuovo file
 - aggiornare al contenuto della lista
 Quando si cancella un file, si aggiungono allo lista dello spazio libero i blocchi di disco precedentemente assegnati al file.

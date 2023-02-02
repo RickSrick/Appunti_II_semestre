@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "63ed104a08fdec1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "55c6c56da7c426f1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Stakeholder.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "71a9bb7b8e39c4a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e56c92f9a851c6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6da8d19e0fbc346",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7dda7c9cc8ed7471",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6e96329a1a1e59f7",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "56275599fee86e65",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c9f954a066d0a29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e3cd2d73a7023489",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Stakeholder.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "406c7668d0e96be5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Stakeholder.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8888ac916f8c5ed1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "358f38b41e386d7f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Stakeholder.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "55c6c56da7c426f1",
+  "lastOpenFiles": [
+    "Aree_di_gestione.md",
+    "Caratteristiche_progetti.md",
+    "Approcci.md",
+    "Processi_di_gestione.md",
+    "Triplo_vincolo.md",
+    "Project_management.md",
+    "Project_sponsor.md",
+    "Storia_del_project_management.md",
+    "Definizioni.md",
+    "o.md"
+  ]
+}

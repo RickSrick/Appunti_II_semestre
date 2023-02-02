@@ -1,46 +1,50 @@
 {
   "main": {
-    "id": "18b6221807e2ee2b",
+    "id": "e3da1e6c92d19b15",
     "type": "split",
     "children": [
       {
-        "id": "855289636e79ceaa",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Gestione_memoria_principale/Paginazione_gerarchica.md",
-            "mode": "source",
-            "source": false
+        "id": "81ac47da33b7795d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9010da24499831fb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "11a10b293b19070e",
+    "id": "38b3fb5d1120f4a0",
     "type": "split",
     "children": [
       {
-        "id": "271c3dad7e52356f",
+        "id": "2ab36bacad2b4e9b",
         "type": "tabs",
         "children": [
           {
-            "id": "51521408acd26d61",
+            "id": "eebc28d2375efe03",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
-            "id": "467df341451be962",
+            "id": "c5e6c838a9a002f8",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "slicing",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,30 +57,29 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305
+    "width": 300
   },
   "right": {
-    "id": "34ffee804900c13a",
+    "id": "4e54c4e31f7fe88c",
     "type": "split",
     "children": [
       {
-        "id": "ef39c63468a631f0",
+        "id": "22941496e2540b8b",
         "type": "tabs",
         "children": [
           {
-            "id": "4914eeb65ea9a624",
+            "id": "1842c0a29fd018e1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gestione_memoria_principale/Paginazione_gerarchica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": false
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -87,17 +90,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "855289636e79ceaa",
-  "lastOpenFiles": [
-    "Gestione_memoria_principale/Paginazione_su_richiesta.md",
-    "Gestione_memoria_principale/Paginazione.md",
-    "Scheduling_CPU/Criteri_scheduling_real_time.md",
-    "Scheduling_CPU/Valutazione_criteri_scheduling.md",
-    "Scheduling_CPU/Sistemi_real-time.md",
-    "Scheduling_CPU/Scheduling_multiprocessore.md",
-    "Scheduling_CPU/Scheduling.md",
-    "Scheduling_CPU/Scheduler.md",
-    "Scheduling_CPU/Dispatcher.md",
-    "Scheduling_CPU/Definizioni.md"
-  ]
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "9010da24499831fb",
+  "lastOpenFiles": []
 }

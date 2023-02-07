@@ -1,5 +1,5 @@
 # PIANO DI PROGETTO
-==PIANO DI PROGETTO==: insieme delle informazioni per la gestione di un [[Definizioni#==PROGETTO==|Progetto]]. Il Piano è contenuto in un documento contenente le informazioni del Progetto necessarie alla sua realizzazione, monitoraggio e controllo e chiusura. Il contenuto, inoltre, varia a seconda della complessità del progetto. Il Piano deve essere formalizzato, realistico, condiviso, autorizzato e soggetto a revisione.
+==PIANO DI PROGETTO==: insieme delle informazioni per la gestione di un [[Definizioni#==PROGETTO==|Progetto]]. Il Piano è contenuto in un documento contenente le informazioni del Progetto necessarie alla sua realizzazione, [[Monitoraggio_controllo|monitoraggio e controllo]] e [[Processi_chiusura|chiusura]]. Il contenuto, inoltre, varia a seconda della complessità del progetto. Il Piano deve essere formalizzato, realistico, condiviso, autorizzato e soggetto a revisione.
 
 Il Piano deve contenere:
 - il codice del Progetto

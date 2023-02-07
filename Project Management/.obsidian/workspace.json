@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ordine_slide.md",
+                "file": "Processi_di_pianificazione/Legame_di_precedenza.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pmb",
+                "query": "quality",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ordine_slide.md",
+                "file": "Processi_di_pianificazione/Legame_di_precedenza.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ordine_slide.md",
+                "file": "Processi_di_pianificazione/Legame_di_precedenza.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ordine_slide.md"
+                "file": "Processi_di_pianificazione/Legame_di_precedenza.md"
               }
             }
           }
@@ -148,15 +148,15 @@
   },
   "active": "c11c78b9711cf4fb",
   "lastOpenFiles": [
-    "Processi_di_pianficazione/Kick_off_meeting.md",
     "Ordine_slide.md",
-    "Processi_di_pianficazione/Baseline.md",
-    "Processi_di_pianficazione/Piano_di_progetto.md",
-    "Generale/Processi_di_gestione.md",
-    "Processi_di_pianficazione/Gestione_comunicazione.md",
-    "Processi_di_pianficazione/Comunicazione.md",
-    "Processi_di_pianficazione/Gestione_costi.md",
-    "Processi_di_pianficazione/Identificare_rischi.md",
-    "Processi_di_pianficazione/Gestione_rischi.md"
+    "Processi_di_monitoraggio_controllo/EVM.md",
+    "Processi_di_monitoraggio_controllo/Avanzamento_progetto.md",
+    "Processi_di_chiusura/Processi_chiusura.md",
+    "Processi_di_monitoraggio_controllo/Reportistica.md",
+    "Processi_di_monitoraggio_controllo/Monitoraggio_controllo.md",
+    "Processi_di_pianificazione/Kick_off_meeting.md",
+    "Processi_di_pianificazione/Baseline.md",
+    "Processi_di_pianificazione/Piano_di_progetto.md",
+    "Processi_di_avvio/Project_charter.md"
   ]
 }

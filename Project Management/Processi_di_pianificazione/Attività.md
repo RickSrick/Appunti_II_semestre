@@ -28,7 +28,7 @@ Ci sono vari metodi per stimare la durata di un'attività:
 	  - stima approssimativa e meno accurata, usata quando vi sono poche informazioni dettagliate
 	  - di solito meno costosa e richiede tempi minori rispetto ad altre tecniche
 - ==STIMA PARAMETRICA==: determina quantitativamente la durata
-	  - moltiplica la quantità di lavoro da eseguire per il numero ore di lavoro richieste da ciascuna attività
+	  - moltiplica la quantità di lavoro da eseguire per il numero di ore di lavoro richieste da ciascuna attività
 	  - e.g. progettazione tecnica: numeri di disegni per il numero di ore di lavoro per disegno
 - ==STIMA BOTTOM-UP==: stima che aggrega le stime dei componenti di livello inferiore della WBS
 	  - il lavoro viene scomposto nel dettaglio, le durate dettagliate sono stimate, le stime sono poi aggregate

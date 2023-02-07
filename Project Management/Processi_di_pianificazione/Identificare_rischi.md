@@ -35,7 +35,7 @@ Rappresenta il principale strumento di [[Gestione_rischi|gestione dei rischi]] p
 - stato del rischio
 - analisi qualitativa dei rischi
 	l'obiettivo principale è quello di valutare l’esposizione al rischio, e si basa sulla [[Rischio#COMPONENTI DEL RISCHIO|probabilità]] attribuita ad ogni singolo evento (alta media bassa, da 1 a 10, oppure in percentuale) e l’entità dell’[[Rischio#COMPONENTI DEL RISCHIO|impatto]] conseguente (alto medio o basso, oppure da 1 a 10):
-	_livello = probabilità $\cdot$ rischio_
+	_livello = probabilità $\cdot$ impatto_
 - [[Strategie_rischi|strategia]] adottata contro il rischio, responsabile della strategia e attività della [[Work_breakdown_structure|WBS]] corrispondente
 - analisi qualitativa del ==RISCHIO RESIDUO==: rischio rimanente dopo aver attuato le strategie per affrontarlo
 - ==CONTINGENCY RESPONSE STRATEGY==: scelta di accantonare una riserva economica o di tipo temporale, detta ==DI CONTINGENCY RESERVE==:

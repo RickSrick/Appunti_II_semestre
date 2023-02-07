@@ -3,7 +3,7 @@
 - ==MINACCIA / THREAT==: rishio negativo
 - ==OPPORTUNITÀ / OPPORTUNITY==: rischio positivo
 
-Tutti i progetti hanno componenti di rischio, in quanto sono iniziative uniche con diversi gradi di complessità, in un contesto di vincoli che rispondono alle aspettative degli [[Stakeholder|stakeholder]], alle volte conflittuali e mutevoli. La [[Gestione_rischi|gestione di rischio]] di Progetto mira a identificare e gestire i rischi; quando non sono gestiti, possono potenzialmente far deviare il Progetto dal piano e impedire il raggiungimento degli obbiettivi.
+Tutti i progetti hanno componenti di rischio, in quanto sono iniziative uniche con diversi gradi di complessità, in un contesto di [[Triplo_vincolo|vincoli]] che rispondono alle aspettative degli [[Stakeholder|stakeholder]], alle volte conflittuali e mutevoli. La [[Gestione_rischi|gestione di rischio]] di Progetto mira a identificare e gestire i rischi; quando non sono gestiti, possono potenzialmente far deviare il Progetto dal piano e impedire il raggiungimento degli obbiettivi.
 
 In ogni Progetto, l'insieme degli eventi realmente dannosi e quello degli eventi che noi percepiamo come dannosi sono diversi, a causa di distorsioni e sfocature. All'interno del secondo insieme, riteniamo di dover contrastare solo una parte degli eventi presenti, e ne contrastiamo realmente solo una parte ancora minore. Avremo quindi:
 - una parte di eventi per i quali percepiamo una falsa sicurezza del fatto che non saranno dannosi
@@ -27,4 +27,4 @@ Il rischio è massimo all’inizio del Progetto, per poi diminuire nel tempo man
 	- livello di esposizione del progetto ai rischi
 	- risk factor: qualsiasi elemento da prendere in considerazione dato che può provocare (direttamente o indirettamente) un problema al Progetto, le cui conseguenze sono indesiderabili
 	- livello: importanza-criticità di un rischio (in modo qualitativo o in modo quantitativo in termini di valore atteso di perdita/guadagno)
-	- _livello = probabilità $\cdot$ rischio_
+	- _livello = probabilità $\cdot$ impatto_

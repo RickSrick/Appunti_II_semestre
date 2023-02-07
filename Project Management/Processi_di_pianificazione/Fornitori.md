@@ -9,7 +9,7 @@ Il [[Project_manager|Project Manager]] non deve essere un esperto di leggi e nor
 - conosce le problematiche dei processi di acquisto
 - ha la capacità di valutare termini e condizioni contrattuali
 - si assicura che il contratto includa gli adempimenti legati ai requisiti, alla comunicazione, ai meeting, etc.
-- identifica i rischi e le azioni di contrasto legate ai contratti
+- identifica i [[Rischio|rischi]] e le azioni di contrasto legate ai contratti
 - aiuta a personalizzare il contratto in funzione del Progetto
 - pianifica le [[Attività|attività]] di gestione dei contratti e degli ordini
 - è coinvolto nella negoziazione e gestione del contenzioso

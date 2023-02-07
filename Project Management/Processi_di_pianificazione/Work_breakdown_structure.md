@@ -1,5 +1,5 @@
 # WORK BREAKDOWN STRUCTURE
-==WORK BREAKDOWN STRUCTURE (WBS)==: _scomposizione gerarchica orientata ai deliverable del lavoro_ che deve essere eseguito dal gruppo di Progetto per conseguire gli obiettivi del Progetto e realizzare i deliverable richiesti.
+==WORK BREAKDOWN STRUCTURE (WBS)==: _scomposizione gerarchica orientata ai deliverable del lavoro_ che deve essere eseguito dal gruppo di [[Definizioni#==PROGETTO==|Progetto]] per conseguire gli obiettivi del Progetto e realizzare i deliverable richiesti.
 La WBS organizza e definisce l’ambito totale ([[Aree_di_gestione|scope]]) del Progetto e rappresenta il lavoro specificato nella descrizione attuale approvata dell’ambito del Progetto; il lavoro non inserito nella WBS è escluso dal Progetto. Ogni livello di scomposizione rappresenta un ulteriore grado di dettaglio dell’elemento di Progetto (prodotti o servizi). Pertanto, questo documento suddivide la complessità progettuale in componenti di lavoro facilmente gestibili.
 La WBS è considerata dal [[Storia_del_project_management#DIFFUSIONE DEL Project_management PROJECT MANAGEMENT|PMI]] uno strumento _etico_ perché fornisce la visibilità del contenuto del Progetto. Infatti, è uno strumento di comunicazione forte, ed è spesso utilizzata per sviluppare e confermare la comune comprensione dello scope del Progetto.
 

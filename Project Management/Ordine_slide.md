@@ -61,4 +61,4 @@
 48. [[Reportistica]]
 14 Chiusura
 49. [[Processi_chiusura]]
-15 Agile e Scum (assente)
+15 Agile e Scrum (assente)

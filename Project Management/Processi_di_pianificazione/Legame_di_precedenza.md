@@ -17,10 +17,10 @@ Ne esistono 4 tipi:
 - ==FINISH TO FINISH (FF)==: B non può finire prima che sia stata finita A
 	- usata per porre attività in parallelo alla fine
 	- ![300](ff.png)
-- ==FINISH TO START (FS)==: B non può finire prima che sia stata iniziata A
+- ==START TO FINISH (SF)==: B non può finire prima che sia stata iniziata A
 	- modalità meno usata
 	- es: deve essere avviato un nuovo sistema di contabilità fornitori prima che il vecchio sistema possa essere dismesso
-	- ![600](fs.png)
+	- ![600](sf.png)
 
 Inoltre, ad ogni legame di precedenza può essere associato:
 - ==RITARDO / LAG== (+n): quantità di tempo di cui B sarà ritardata rispetto ad A

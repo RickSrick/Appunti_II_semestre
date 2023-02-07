@@ -1,9 +1,9 @@
 ## CONTROLLARE L'AVANZAMENTO DEL PROGETTO
 Per controllare l'avanzamento del [[Definizioni#==PROGETTO==|Progetto]] servono:
-- ==DATA DATE / DATA DI AGGIORNAMENTO==: momento in cui viene rilevato lo stato del progetto (necessaria per costruire la [[Baseline|baseline di controllo]]
+- ==DATA DATE / DATA DI AGGIORNAMENTO==: momento in cui viene rilevato lo stato del Progetto (necessaria per costruire la [[Baseline|baseline di controllo]])
 - ==PERIODO DI AVANZAMENTO / CONSOLIDAMENTO==: periodo tra un rilevamento e il successivo (deve avere degli obiettivi fissati)
 
-All'inizio di un rilevamento, le singole risorse comunicano il lavoro svolto e quello rimanente, i deliverable completati e lo stato delle criticità. Il [[Project_manager|Project Manager]] analizza e verifica:
+All'inizio di un rilevamento, le singole [[Risorse|risorse]] comunicano il lavoro svolto e quello rimanente, i deliverable completati e lo stato delle criticità. Il [[Project_manager|Project Manager]] analizza e verifica:
 - risultati prodotti (deliverable)
 - tempi e costi: percentuale di completamento, stime a completare
 - criticità
@@ -14,7 +14,7 @@ L’ampiezza del periodo di consolidamento deve essere scelta in base a:
 - caratteristiche del Progetto (complessità, innovazione, ambito)
 - fase attualmente in corso
 - caratteristiche dell’organizzazione
-Inoltre, durante il periodo le persone devono aver chiaro il Progetto e le attività:
+Inoltre, durante il periodo le persone devono aver chiaro il Progetto e le [[Attività|attività]]:
 - da rendicontare
 - su cui rendicontare
 - cosa rendicontare
@@ -26,8 +26,8 @@ Per segnare i dati di avanzamento, si possono segnare sulla [[Work_breakdown_str
 Inoltre, si può creare un grafico dei [[Gestione_costi|costi]] che contenga quelli previsti ([[Gestione_costi|Cost Baseline]]) e quelli sostenuti realmente fino ad un certo punto del Progetto.
 ![450](avanzamento_costi.png)
 In questo grafico si segnano vari valori calcolati:
-- durante la pianificazione:
-	- ==VALORE PIANIFICATO / PLANNED VALUE (PV)==: budget autorizzato assegnato al lavoro schedulato
+- durante la [[Monitoraggio_controllo#==PIANIFICAZIONE==|pianificazione]]:
+	- ==VALORE PIANIFICATO / PLANNED VALUE (PV)==: budget autorizzato assegnato al lavoro schedulato fino ad una certa data
 	- ==BUDGET AL COMPLETAMENTO / BUDGET AT COMPLETION (BAC)==: ammontare complessivo del valore pianificato (PV totale = BAC)
 - durante il [[Monitoraggio_controllo|monitoraggio e controllo]]:
 	- ==COSTO SOSTENUTO / ACTUAL COST (AC)==: costo sostenuto per il lavoro eseguito su un’attività durante uno specifico periodo di tempo

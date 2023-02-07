@@ -3,7 +3,7 @@
 - ==EARLY START (ES)==: il primo momento possibile in cui un’attività può cominciare in base alla sequenza logica
 - ==EARLY FINISH (EF)==: il primo momento possibile in cui un’attività può finire in base alla sequenza logica
 - ==LATE START (LS)==: l’ultimo momento possibile in cui un’attività può cominciare senza ritardare il completamento del Progetto
-- ==LATE FINISH (LF)==: l’ultimo momento possibile in cui un’attività può finire senza ritardare il completamento del progetto
+- ==LATE FINISH (LF)==: l’ultimo momento possibile in cui un’attività può finire senza ritardare il completamento del Progetto
 ![450](date.png)
 
 Vengono effettuate delle analisi di calcolo:

@@ -3,10 +3,10 @@ Al fine di monitorare il [[Definizioni#==PROGETTO==|Progetto]], il [[Project_man
 - il Progetto è complesso
 - impiega un team numeroso
 - il team è dislocato in sedi diverse
-- il team composto sia di persone interne sia di [[Fornitori|fornitori]]
+- il team è composto sia di persone interne sia di [[Fornitori|fornitori]]
 Per questo motivo, il Project Manager per questa attività si può avvalere della collaborazione del [[PMO]]. L’uso di un sistema informativo semplifica enormemente questa attività di raccolta delle informazioni.
 
-## ==CONTROLLO==:
+## ==CONTROLLO==
 Il termine Controllo è normalmente da intendersi nel significato corrispondente al termine inglese Control (==REGOLARE==). In questo senso il termine Control verrà utilizzato nel contesto del [[Project_management|Project Management]]: ad esempio, nel _Cost Control/Controllo dei Costi_ si osserva e si regola/contiene l’andamento dei costi nel corso del Progetto.
 
 ## ==PIANIFICAZIONE==

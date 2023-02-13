@@ -3,7 +3,7 @@
 - ==MINACCIA / THREAT==: rishio negativo
 - ==OPPORTUNITÀ / OPPORTUNITY==: rischio positivo
 
-Tutti i progetti hanno componenti di rischio, in quanto sono iniziative uniche con diversi gradi di complessità, in un contesto di [[Triplo_vincolo|vincoli]] che rispondono alle aspettative degli [[Stakeholder|stakeholder]], alle volte conflittuali e mutevoli. La [[Gestione_rischi|gestione di rischio]] di Progetto mira a identificare e gestire i rischi; quando non sono gestiti, possono potenzialmente far deviare il Progetto dal piano e impedire il raggiungimento degli obbiettivi.
+Tutti i progetti hanno componenti di rischio, in quanto sono iniziative uniche con diversi gradi di complessità, in un contesto di [[Vincoli|vincoli]] che rispondono alle aspettative degli [[Stakeholder|stakeholder]], alle volte conflittuali e mutevoli. La [[Gestione_rischi|gestione di rischio]] di Progetto mira a identificare e gestire i rischi; quando non sono gestiti, possono potenzialmente far deviare il Progetto dal piano e impedire il raggiungimento degli obbiettivi.
 
 In ogni Progetto, l'insieme degli eventi realmente dannosi e quello degli eventi che noi percepiamo come dannosi sono diversi, a causa di distorsioni e sfocature. All'interno del secondo insieme, riteniamo di dover contrastare solo una parte degli eventi presenti, e ne contrastiamo realmente solo una parte ancora minore. Avremo quindi:
 - una parte di eventi per i quali percepiamo una falsa sicurezza del fatto che non saranno dannosi

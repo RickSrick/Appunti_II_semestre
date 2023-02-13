@@ -1,5 +1,5 @@
 ## DIFFUSIONE DEL [[Project_management|PROJECT MANAGEMENT]]
-Durante il Novecento, dai grandi [[Definizioni#==PROGETTO==|progetti]] statunitensi come il Progetto Manhattan, il Programma Solaris e il Programma Apollo, si diffusero nel mondo industriale le tecniche usate per gestire la loro esecuzione:
+Durante il Novecento, dai grandi [[Definizioni#==PROGETTO==|Progetti]] statunitensi come il Progetto Manhattan, il Programma Solaris e il Programma Apollo, si diffusero nel mondo industriale le tecniche usate per gestire la loro esecuzione:
 - _International Project Management Association (IPMA)_:
 	- associazione non-profit con sede in Svizzera nata nel 1965
 	- inizialmente conosciuta con il nome di _INTERNET (INTERnational NETwork)_

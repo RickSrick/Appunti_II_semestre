@@ -9,7 +9,7 @@
 7. [[Project_manager]]
 8. [[Project_sponsor]]
 9. [[Fallimento]]
-10. [[Triplo_vincolo]]
+10. [[Vincoli]]
 03 Aree, confini e gestione di progetto
 11. [[Aree_di_gestione]]
 12. [[Processi_di_gestione]]

@@ -12,7 +12,7 @@ Il Piano deve contenere:
 - gli obiettivi
 - i deliverable (elementi da realizzare)
 - le [[Risorse|risorse]] e il lavoro
-- i [[Triplo_vincolo|vincoli]] (tempi, costo, risorse, tecnologie, etc.)
+- i [[Vincoli|vincoli]] (tempi, costo, risorse, tecnologie, etc.)
 - la [[Work_breakdown_structure|WBS]]
 - la [[Diagrammi_di_schedulazione|schedulazione]]
 - le [[Milestone|milestone]] principali

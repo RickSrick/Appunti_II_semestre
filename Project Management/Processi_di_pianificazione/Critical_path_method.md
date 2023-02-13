@@ -1,5 +1,5 @@
 # CRITICAL PATH METHOD
-==METODO DEL CAMMINO CRITICO / CRITICAL PATH METHOD (CPM)==: tecnica di analisi per individuare il ==CAMMINO CRITICO==: sequenza di [[Attività|attività]] che rappresenta il percorso più lungo nel [[Definizioni#==PROGETTO==|Progetto]] che determina la durata minore possibile. Questa tecnica calcola per tutte le attività, indipendemente dalle limitazioni delle risorse:
+==METODO DEL CAMMINO CRITICO / CRITICAL PATH METHOD (CPM)==: tecnica di analisi per individuare il ==CAMMINO CRITICO==: sequenza di [[Attività|attività]] che rappresenta il percorso più lungo nel [[Definizioni#==PROGETTO==|Progetto]] che determina la durata minore possibile. Questa tecnica calcola per tutte le attività, indipendemente dalle limitazioni delle [[Risorse|risorse]]:
 - ==EARLY START (ES)==: il primo momento possibile in cui un’attività può cominciare in base alla sequenza logica
 - ==EARLY FINISH (EF)==: il primo momento possibile in cui un’attività può finire in base alla sequenza logica
 - ==LATE START (LS)==: l’ultimo momento possibile in cui un’attività può cominciare senza ritardare il completamento del Progetto

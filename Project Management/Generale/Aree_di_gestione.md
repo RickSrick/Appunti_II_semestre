@@ -2,12 +2,12 @@
 ![500](aree_gestione.png)
 - ==STAKEHOLDER==:
 	- identificare le persone, i gruppi o le organizzazioni che potrebbero influenzare il [[Definizioni#PROGETTO|Progetto]] o esserne influenzati
-	- analizzare le loro aspettative e il loro impatto sul progetto
+	- analizzare le loro aspettative e il loro impatto sul Progetto
 	- sviluppare le strategie di gestione appropriate per coinvolgerli efficacemente nel Progetto
 - ==SCOPE==:
 	- garantire che il Progetto comprenda tutto il lavoro necessario ed esclusivamente il lavoro necessario
 	- completare con successo il Progetto
-	- definizione e controllo di ciò che è incluso o meno nel progetto
+	- definire e controllare ciò che è incluso o meno nel progetto
 - ==[[Diagrammi_di_schedulazione|SCHEDULE]]==: gestire il completamento del Progetto nel rispetto dei tempi previsti
 - ==COST==:
 	- pianificazione, stima, allocazione del budget

@@ -2,7 +2,7 @@
 ==PROJECT CHARTER==: documento emesso dal [[Project_sponsor|Project Sponsor]] e sviluppato dal Project Sponsor o dal [[Project_manager|Project Manager]], assieme con chi ha avviato il [[Definizioni#==PROGETTO==|Progetto]], che:
 - autorizza formalmente l’esistenza del Progetto
 - attribuisce al Project Manager l’autorità necessaria per utilizzare le risorse organizzative per le attività previste dal Progetto
-- raccoglie i primi requisiti che il Progetto deve soddisfare per incontrare le esigenze e le aspettative degli [[Stakeholder|stakeholder]]
+- raccoglie i primi [[Qualità|requisiti]] che il Progetto deve soddisfare per incontrare le esigenze e le aspettative degli [[Stakeholder|stakeholder]]
 Il Project Charter è uno strumento che mette ordine (Stefano Bagato, IRSAP) e che aiuta a ragionare sul Progetto (Elmar Irsara, Skicarosello).
 
 Il Project Charter deve contenere:
@@ -18,7 +18,7 @@ Il Project Charter deve contenere:
 - processo di escalation e risoluzione dei conflitti
 - [[Rischio|rischi]] iniziali
 ![600](charter3.png)
-- [[Triplo_vincolo|vincoli]] (tempo, scope, costi) e [[Milestone|milestone]] principali
+- [[Vincoli|vincoli]] (tempo, scope, costi) e [[Milestone|milestone]] principali
 - [[Diagrammi_di_schedulazione|schedulazione]] di massima delle milestone
 ![600](charter4.png)
 

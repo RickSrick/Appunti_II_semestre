@@ -30,7 +30,7 @@ Per il _fornitore_:
 - ==WORK PACKAGE==: nodo della WBS per il quale è terminata la scomposizione in nodi/attività componenti; costituisce l'ultimo elemento della WBS e può contenere [[Attività|attività]] da realizzare (nello schema sono identificati con un _sostantivo_)
 - ==PLANNING PACKAGE==: nodo che _momentaneamente_ non può essere dettagliato nei nodi o nelle attività componenti
 
-Per scomporre un nodo nei nodi componenti vale la ==REGOLA DEL 100%==: ogni nodo deve essere scomposto con tutti i deliverable di supporto che lo compongono, considerando i requisiti e i vincoli, le esperienze precedenti e le modalità di gestione previste. I nodi di ultimo livello sono scomposti in [[Attività|attività]] (nello schema sono identificate con un _verbo_).
+Per scomporre un nodo nei nodi componenti vale la ==REGOLA DEL 100%==: ogni nodo deve essere scomposto con tutti i deliverable di supporto che lo compongono, considerando i [[Qualità|requisiti]] e i [[Vincoli|vincoli]], le esperienze precedenti e le modalità di gestione previste. I nodi di ultimo livello sono scomposti in [[Attività|attività]] (nello schema sono identificate con un _verbo_).
 
 ## ROLLING WAVE PLANNING VS. SCOPE CREEP
 ==ROLLING WAVE PLANNING==: tecnica di pianificazione in cui si procede per elaborazioni successive tramite la cosiddetta _finestra mobile_:

@@ -13,11 +13,11 @@ Nella [[Work_breakdown_structure|WBS]] le attività devono essere descritte in m
 - descrizione
 - durata (_duration_)
 - durata complessiva, incluse ferie e giorni non lavorativi (_elapsed duration_)
-- vincoli
-- anticipo (_lead_) e ritardo (_lag_)
-- requisiti di risorse
+- [[Vincoli|vincoli]]
+- [[Legame_di_precedenza|anticipo (lead) e ritardo (lag)]]
+- requisiti di [[Risorse|risorse]]
 - tipo di impegno richiesto (_effort_)
-Questi attributi sono molto utili per lo sviluppo della [[Diagrammi_di_schedulazione|schedulazione]] e per il calendario di Progetto a cui è assegnata l’attività
+Questi attributi sono molto utili per lo sviluppo della [[Diagrammi_di_schedulazione|schedulazione]] e per il calendario di Progetto a cui è assegnata l’attività.
 
 ## ==DURATA== DELL'ATTIVITÀ
 Numero di periodi di lavoro necessari per completarla (espresso in ore, giorni o settimane lavorativi), tempo espresso in unità temporali che intercorrono tra l’inizio e la fine dell’attività.

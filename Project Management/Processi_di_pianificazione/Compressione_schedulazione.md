@@ -1,5 +1,5 @@
 # COMPRESSIONE DELLA SCHEDULAZIONE
-==COMPRESSIONE DELLA [[Diagrammi_di_schedulazione|SCHEDULAZIONE]]==: tecniche usate per abbreviare o accelerare la durata della schedulazione senza ridurre lo scope e mantenendo i [[Triplo_vincolo|vincoli]].
+==COMPRESSIONE DELLA [[Diagrammi_di_schedulazione|SCHEDULAZIONE]]==: tecniche usate per abbreviare o accelerare la durata della schedulazione senza ridurre lo scope e mantenendo i [[Vincoli|vincoli]].
 ![600](compressione.png)
 - ==COMPRESSIONE DEI TEMPI / CRASHING==: aumenta il numero di risorse allocate sulle [[Critical_path_method|attività critiche]], con un probabile aumento dei costi
   ![500](compressione2.png)

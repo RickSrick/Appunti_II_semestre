@@ -21,14 +21,14 @@ La pianificazione di Progetto non può dirsi conclusa se non è stata completata
 ![450](gestione_rischi.png)
 
 ## ==RISK MANAGEMENT==
-Il Risk Management ha lo scopo di ridurre [[Rischio#COMPONENTI DEL RISCHIO|probabilità ed impatto]] di “eventi negativi” a livelli accettabili:
+Il Risk Management ha lo scopo di ridurre [[Rischio#COMPONENTI DEL RISCHIO|probabilità ed impatto]] di [[Rischio|eventi negativi]] a livelli accettabili:
 - _ridurre la probabilità_:
 	- i rischi possono essere ridotti, ma spesso non possono essere eliminati completamente
 	- se il futuro fosse certo, non ci sarebbero probabilità, ma solo risultati certi
 	- ciò richiede un approccio proattivo o preventivo
 - _livelli accettabili_:
 	dato che il rischio non può essere del tutto eliminato, un’efficace gestione del rischio consiste nel portarlo ad un livello accettabile, sapendo che i livelli sono accettabili quando il costo di eventuali azioni di mitigazione è più alto di una semplice accettazione del rischio
-Il Risk Management include anche aumentare probabilità ed impatto di “eventi positivi”.
+Il Risk Management include anche aumentare probabilità ed impatto di [[Rischio|eventi positivi]].
 
 Nel Risk Management ci sono due fasi principali:
 - ==RISK ASSESSMENT==: si valuta il rischio
